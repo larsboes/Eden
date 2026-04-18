@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "description": "Top 20 fastest CME events from NASA DONKI API (2024-01-01 to 2026-03-19)",
+    "source": "https://api.nasa.gov/DONKI/CME",
+    "mars_distance_km": 227000000,
+    "eta_formula": "mars_distance_km / speed_km_s",
+    "total_events_analyzed": 3537,
+    "date_range": "2024-01-01 to 2026-03-19",
+    "generated": "2026-03-19"
+  },
+  "top_20_fastest_cmes": [
+    {
+      "activityID": "2024-02-12T06:36:00-CME-001",
+      "startTime": "2024-02-12T06:36Z",
+      "sourceLocation": "",
+      "speed": 3529.0,
+      "type": "ER",
+      "halfAngle": 49.0,
+      "mars_eta_hours": 17.9,
+      "mars_eta_days": 0.74
+    },
+    {
+      "activityID": "2024-12-17T16:00:00-CME-001",
+      "startTime": "2024-12-17T16:00Z",
+      "sourceLocation": "",
+      "speed": 3161.0,
+      "type": "ER",
+      "halfAngle": 44.0,
+      "mars_eta_hours": 19.9,
+      "mars_eta_days": 0.83
+    },
+    {
+      "activityID": "2025-03-21T16:00:00-CME-001",
+      "startTime": "2025-03-21T16:00Z",
+      "sourceLocation": "N02E07",
+      "speed": 3032.0,
+      "type": "ER",
+      "halfAngle": 25.0,
+      "mars_eta_hours": 20.8,
+      "mars_eta_days": 0.87
+    },
+    {
+      "activityID": "2024-05-20T05:36:00-CME-001",
+      "startTime": "2024-05-20T05:36Z",
+      "sourceLocation": "",
+      "speed": 2678.0,
+      "type": "R",
+      "halfAngle": 45.0,
+      "mars_eta_hours": 23.5,
+      "mars_eta_days": 0.98
+    },
+    {
+      "activityID": "2024-02-09T13:23:00-CME-001",
+      "startTime": "2024-02-09T13:23Z",
+      "sourceLocation": "S37W110",
+      "speed": 2534.0,
+      "type": "R",
+      "halfAngle": 48.0,
+      "mars_eta_hours": 24.9,
+      "mars_eta_days": 1.04
+    },
+    {
+      "activityID": "2025-05-31T00:15:00-CME-001",
+      "startTime": "2025-05-31T00:15Z",
+      "sourceLocation": "N12E12",
+      "speed": 2371.0,
+      "type": "R",
+      "halfAngle": 45.0,
+      "mars_eta_hours": 26.6,
+      "mars_eta_days": 1.11
+    },
+    {
+      "activityID": "2025-03-28T15:24:00-CME-001",
+      "startTime": "2025-03-28T15:24Z",
+      "sourceLocation": "N06E80",
+      "speed": 2212.0,
+      "type": "R",
+      "halfAngle": 48.0,
+      "mars_eta_hours": 28.5,
+      "mars_eta_days": 1.19
+    },
+    {
+      "activityID": "2024-05-14T17:00:00-CME-001",
+      "startTime": "2024-05-14T17:00Z",
+      "sourceLocation": "S19W96",
+      "speed": 2119.0,
+      "type": "R",
+      "halfAngle": 37.0,
+      "mars_eta_hours": 29.8,
+      "mars_eta_days": 1.24
+    },
+    {
+      "activityID": "2025-10-21T20:24:00-CME-001",
+      "startTime": "2025-10-21T20:24Z",
+      "sourceLocation": "N24W135",
+      "speed": 2077.0,
+      "type": "R",
+      "halfAngle": 45.0,
+      "mars_eta_hours": 30.4,
+      "mars_eta_days": 1.26
+    },
+    {
+      "activityID": "2024-02-14T04:09:00-CME-001",
+      "startTime": "2024-02-14T04:09Z",
+      "sourceLocation": "",
+      "speed": 2012.0,
+      "type": "R",
+      "halfAngle": 43.0,
+      "mars_eta_hours": 31.3,
+      "mars_eta_days": 1.31
+    },
+    {
+      "activityID": "2024-02-15T09:24:00-CME-001",
+      "startTime": "2024-02-15T09:24Z",
+      "sourceLocation": "",
+      "speed": 1953.0,
+      "type": "O",
+      "halfAngle": 45.0,
+      "mars_eta_hours": 32.3,
+      "mars_eta_days": 1.35
+    },
+    {
+      "activityID": "2025-12-01T02:48:00-CME-001",
+      "startTime": "2025-12-01T02:48Z",
+      "sourceLocation": "N23E90",
+      "speed": 1903.0,
+      "type": "O",
+      "halfAngle": 38.0,
+      "mars_eta_hours": 33.1,
+      "mars_eta_days": 1.38
+    },
+    {
+      "activityID": "2025-11-11T10:23:00-CME-001",
+      "startTime": "2025-11-11T10:23Z",
+      "sourceLocation": "N27W27",
+      "speed": 1856.0,
+      "type": "O",
+      "halfAngle": 45.0,
+      "mars_eta_hours": 34.0,
+      "mars_eta_days": 1.42
+    },
+    {
+      "activityID": "2026-01-18T18:09:00-CME-001",
+      "startTime": "2026-01-18T18:09Z",
+      "sourceLocation": "S15E20",
+      "speed": 1820.0,
+      "type": "O",
+      "halfAngle": 53.0,
+      "mars_eta_hours": 34.6,
+      "mars_eta_days": 1.44
+    },
+    {
+      "activityID": "2024-02-02T13:36:00-CME-001",
+      "startTime": "2024-02-02T13:36Z",
+      "sourceLocation": "",
+      "speed": 1815.0,
+      "type": "O",
+      "halfAngle": 32.0,
+      "mars_eta_hours": 34.7,
+      "mars_eta_days": 1.45
+    },
+    {
+      "activityID": "2025-10-22T21:36:00-CME-001",
+      "startTime": "2025-10-22T21:36Z",
+      "sourceLocation": "",
+      "speed": 1795.0,
+      "type": "O",
+      "halfAngle": 48.0,
+      "mars_eta_hours": 35.1,
+      "mars_eta_days": 1.46
+    },
+    {
+      "activityID": "2024-05-15T08:36:00-CME-001",
+      "startTime": "2024-05-15T08:36Z",
+      "sourceLocation": "S15W90",
+      "speed": 1766.0,
+      "type": "O",
+      "halfAngle": 31.0,
+      "mars_eta_hours": 35.7,
+      "mars_eta_days": 1.49
+    },
+    {
+      "activityID": "2025-05-14T08:00:00-CME-001",
+      "startTime": "2025-05-14T08:00Z",
+      "sourceLocation": "N17E88",
+      "speed": 1755.0,
+      "type": "O",
+      "halfAngle": 16.0,
+      "mars_eta_hours": 35.9,
+      "mars_eta_days": 1.5
+    },
+    {
+      "activityID": "2025-04-29T23:36:00-CME-001",
+      "startTime": "2025-04-29T23:36Z",
+      "sourceLocation": "S31W91",
+      "speed": 1715.0,
+      "type": "O",
+      "halfAngle": 23.0,
+      "mars_eta_hours": 36.8,
+      "mars_eta_days": 1.53
+    },
+    {
+      "activityID": "2024-04-11T06:48:00-CME-001",
+      "startTime": "2024-04-11T06:48Z",
+      "sourceLocation": "",
+      "speed": 1688.0,
+      "type": "O",
+      "halfAngle": 15.0,
+      "mars_eta_hours": 37.4,
+      "mars_eta_days": 1.56
+    }
+  ]
+}

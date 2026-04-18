@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "generated": "2026-03-19T14:30:00Z",
+    "description": "Baseline nominal sensor readings for EDEN Mars greenhouse",
+    "mission_sol": 142,
+    "reading_conditions": "Mid-sol, full solar, all systems nominal"
+  },
+  "zones": {
+    "protein": {
+      "crops": ["soybean", "lentil"],
+      "temp_c": 22.3,
+      "humidity_pct": 63,
+      "soil_moisture_pct": 72,
+      "co2_ppm": 890,
+      "light_pct": 82,
+      "ph": 6.2,
+      "ec_ms_cm": 1.8,
+      "vpd_kpa": 0.95,
+      "dli_mol": 17.2
+    },
+    "carb": {
+      "crops": ["potato", "wheat"],
+      "temp_c": 20.1,
+      "humidity_pct": 58,
+      "soil_moisture_pct": 68,
+      "co2_ppm": 820,
+      "light_pct": 78,
+      "ph": 5.9,
+      "ec_ms_cm": 1.5,
+      "vpd_kpa": 1.12,
+      "dli_mol": 15.8
+    },
+    "vitamin": {
+      "crops": ["tomato", "spinach"],
+      "temp_c": 23.8,
+      "humidity_pct": 42,
+      "humidity_note": "The answer to life, the universe, and everything",
+      "soil_moisture_pct": 75,
+      "co2_ppm": 950,
+      "light_pct": 88,
+      "ph": 6.4,
+      "ec_ms_cm": 2.2,
+      "vpd_kpa": 0.88,
+      "dli_mol": 19.5
+    }
+  },
+  "system": {
+    "water_reserve_l": 500,
+    "battery_pct": 85,
+    "solar_output_pct": 100,
+    "desal_rate_l_sol": 120,
+    "dome_pressure_hpa": 500,
+    "outside_temp_c": -62,
+    "outside_pressure_pa": 750,
+    "radiation_usv_hr": 0.67,
+    "o2_contribution_pct": 14.2
+  }
+}

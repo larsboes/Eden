@@ -1,0 +1,35 @@
+{
+  "source": "Syngenta MCP Knowledge Base Gateway",
+  "endpoint": "https://kb-start-hack-gateway-buyjtibfpg.gateway.bedrock-agentcore.us-east-2.amazonaws.com/mcp",
+  "protocol_version": "2025-03-26",
+  "server_info": {
+    "name": "kb-start-hack-gateway",
+    "version": "1.0.0"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "kb-start-hack-target___knowledge_base_retrieve",
+      "description": "Retrieve relevant information chunks from the knowledge base",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "description": "The search query to find relevant information",
+            "type": "string"
+          },
+          "max_results": {
+            "description": "Maximum number of results to return (default: 5)",
+            "type": "integer"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ],
+  "probed_at": "2026-03-19"
+}

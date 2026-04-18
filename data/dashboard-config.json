@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "description": "EDEN Dashboard configuration — theme, colors, fonts, state machine, agent mapping. Single source of truth for all UI constants."
+  },
+  "theme": {
+    "background": "#0a0c10",
+    "surface": "#111318",
+    "surface_elevated": "#1a1d24",
+    "border": "#2a2d35",
+    "text_primary": "#e8eaed",
+    "text_secondary": "#9aa0a8",
+    "text_muted": "#6b7280",
+    "accent_mars": "#e8913a",
+    "accent_mars_dim": "#b36d2a",
+    "success": "#22c55e",
+    "warning": "#f59e0b",
+    "danger": "#ef4444",
+    "info": "#06b6d4"
+  },
+  "fonts": {
+    "heading": "Space Grotesk, system-ui, sans-serif",
+    "body": "Inter, system-ui, sans-serif",
+    "mono": "JetBrains Mono, Fira Code, monospace",
+    "sizes": {
+      "sol_counter": "48px",
+      "countdown_timer": "64px",
+      "agent_log": "18px",
+      "panel_title": "14px",
+      "gauge_value": "24px",
+      "body": "16px",
+      "small": "12px"
+    }
+  },
+  "state_machine": {
+    "states": {
+      "nominal": {
+        "label": "NOMINAL",
+        "background_tint": "#0a0c10",
+        "accent": "#22c55e",
+        "description": "All systems green. Full dashboard visible. Calm.",
+        "panels_visible": ["sol_counter", "zone_status", "agent_log", "nutrition", "water_energy", "harvest_schedule"]
+      },
+      "alert": {
+        "label": "ALERT",
+        "background_tint": "#1a1408",
+        "accent": "#f59e0b",
+        "description": "CME detected or threat identified. 60% screen = alert + countdown + virtual lab.",
+        "panels_visible": ["sol_counter", "cme_alert", "countdown", "virtual_lab", "agent_log", "water_energy"],
+        "panels_emphasized": ["cme_alert", "countdown"],
+        "panels_minimized": ["nutrition", "harvest_schedule"]
+      },
+      "crisis": {
+        "label": "CRISIS",
+        "background_tint": "#1a0808",
+        "accent": "#ef4444",
+        "description": "Storm impact. Water gauge + triage primary. Countdown massive.",
+        "panels_visible": ["sol_counter", "countdown", "water_energy", "triage", "agent_log"],
+        "panels_emphasized": ["countdown", "triage", "water_energy"],
+        "panels_minimized": ["zone_status", "nutrition"]
+      },
+      "recovery": {
+        "label": "RECOVERY",
+        "background_tint": "#081a0a",
+        "accent": "#22c55e",
+        "description": "Gradual warm-up. Green returning. Systems ramping back.",
+        "panels_visible": ["sol_counter", "zone_status", "agent_log", "water_energy", "nutrition"],
+        "panels_emphasized": ["agent_log"],
+        "transition_duration_ms": 5000
+      }
+    },
+    "transitions": {
+      "nominal_to_alert": {"trigger": "cme_detected", "duration_ms": 1500},
+      "alert_to_crisis": {"trigger": "cme_impact OR resource_critical", "duration_ms": 1000},
+      "crisis_to_recovery": {"trigger": "radiation_normal AND solar_recovering", "duration_ms": 3000},
+      "recovery_to_nominal": {"trigger": "all_systems_nominal", "duration_ms": 5000}
+    }
+  },
+  "agents": {
+    "SENTINEL": {"color": "#ef4444", "label": "SENTINEL", "role": "Threat Detection"},
+    "ORACLE": {"color": "#f59e0b", "label": "ORACLE", "role": "Simulation"},
+    "AQUA": {"color": "#06b6d4", "label": "AQUA", "role": "Resources"},
+    "FLORA": {"color": "#22c55e", "label": "FLORA", "role": "Crops"},
+    "VITA": {"color": "#a855f7", "label": "VITA", "role": "Nutrition"},
+    "COUNCIL": {"color": "#ffffff", "label": "COUNCIL", "role": "Decision"},
+    "FLIGHT_CTRL": {"color": "#f97316", "label": "FLIGHT CTRL", "role": "Rules Engine"},
+    "SYSTEM": {"color": "#6b7280", "label": "SYSTEM", "role": "System"}
+  },
+  "zones": {
+    "caloric": {"label": "CALORIC", "color": "#f59e0b", "crops": ["Potato"], "area_m2": 45, "kb_pct": "40-50%"},
+    "protein": {"label": "PROTEIN", "color": "#06b6d4", "crops": ["Soybean", "Lentil"], "area_m2": 25, "kb_pct": "20-30%"},
+    "leafy_green": {"label": "LEAFY GREEN", "color": "#22c55e", "crops": ["Lettuce", "Spinach"], "area_m2": 18, "kb_pct": "15-20%"},
+    "quick_harvest": {"label": "QUICK HARVEST", "color": "#ef4444", "crops": ["Radish"], "area_m2": 7, "kb_pct": "5-10%"},
+    "support": {"label": "SUPPORT", "color": "#a855f7", "crops": ["Basil", "Microgreens"], "area_m2": 5, "kb_pct": "herbs"}
+  },
+  "triage_colors": {
+    "RED": {"hex": "#ef4444", "label": "IMMEDIATE", "description": "High salvageability if acted upon within hours"},
+    "YELLOW": {"hex": "#f59e0b", "label": "DEFER", "description": "Monitor and intervene within 1-3 sols"},
+    "GREEN": {"hex": "#22c55e", "label": "STABLE", "description": "Schedule intervention during next maintenance window"},
+    "BLACK": {"hex": "#6b7280", "label": "EXPECTANT", "description": "Cost of saving exceeds projected yield. Accept loss."}
+  },
+  "easter_eggs": {
+    "humidity_42": {
+      "description": "When any zone humidity reads exactly 42%, flash a brief tooltip: 'The answer to life, the universe, and everything.'",
+      "reference": "Hitchhiker's Guide — organizer slides explicitly mentioned this"
+    }
+  },
+  "replay_mode": {
+    "enabled_by": "REPLAY_MODE=true environment variable or ?replay=true URL param",
+    "data_source": "data/demo-scenario/demo-script.json",
+    "fallback_sensors": "data/telemetry/timeseries-cme-crisis.json",
+    "fallback_kb": "data/api-cache/syngenta-kb-examples.json"
+  }
+}

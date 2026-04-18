@@ -1,0 +1,15 @@
+.DS_Store
+.idea/
+.claude/settings.local.json
+.claude/settings.json.bak
+infra/.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+eden.db
+MEMORY/
+
+# Secrets
+*.env
+*.pem
+

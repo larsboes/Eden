@@ -1,0 +1,68 @@
+{
+  "activityID": "2026-01-24T09:23:00-CME-001",
+  "catalog": "M2M_CATALOG",
+  "startTime": "2026-01-24T09:23Z",
+  "instruments": [
+    {
+      "displayName": "SOHO: LASCO/C2"
+    },
+    {
+      "displayName": "SOHO: LASCO/C3"
+    },
+    {
+      "displayName": "STEREO A: SECCHI/COR2"
+    },
+    {
+      "displayName": "GOES: CCOR-1"
+    }
+  ],
+  "sourceLocation": "N15E10",
+  "activeRegionNum": null,
+  "note": "Narrow, faint CME seen to the NE in STEREO A COR2 and N in SOHO LASCO C2/C3 and GOES CCOR-1. Its source could be a relatively minor eruption just N of the northeastern coronal hole, centered ~(N15E10) which is seen starting around 2026-01-24T08:30Z in SDO AIA 193 as dimming and post-eruptive arcades.",
+  "submissionTime": "2026-01-26T13:28Z",
+  "versionId": 2,
+  "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/44175/-1",
+  "cmeAnalyses": [
+    {
+      "isMostAccurate": true,
+      "time21_5": "2026-01-24T11:53Z",
+      "latitude": 35.0,
+      "longitude": -7.0,
+      "halfAngle": 11.0,
+      "speed": 1243.0,
+      "type": "O",
+      "featureCode": "LE",
+      "imageType": "running difference",
+      "measurementTechnique": "SWPC_CAT",
+      "note": "Analysis based on the fit of the narrow front with two coronagraphs (STEREO A COR2 and SOHO LASCO C3). Very well corresponds to the likely source - an eruption from (N15E10), with significant northern deflection, likely due to a large coronal hole being just to the south of the eruption site.",
+      "levelOfData": 0,
+      "tilt": null,
+      "minorHalfWidth": null,
+      "speedMeasuredAtHeight": null,
+      "submissionTime": "2026-01-24T16:12Z",
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/44176/-1",
+      "enlilList": [
+        {
+          "modelCompletionTime": "2026-01-24T16:28Z",
+          "au": 2.0,
+          "estimatedShockArrivalTime": null,
+          "estimatedDuration": null,
+          "rmin_re": null,
+          "kp_18": null,
+          "kp_90": null,
+          "kp_135": null,
+          "kp_180": null,
+          "isEarthGB": false,
+          "isEarthMinorImpact": false,
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/44179/-1",
+          "impactList": null,
+          "cmeIDs": [
+            "2026-01-24T09:23:00-CME-001"
+          ]
+        }
+      ]
+    }
+  ],
+  "linkedEvents": null,
+  "sentNotifications": null
+}

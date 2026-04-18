@@ -1,0 +1,238 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "NASA Mars APIs for EDEN Greenhouse",
+    "description": "InSight weather + DONKI solar events for Mars greenhouse management",
+    "version": "1.0.0"
+  },
+  "servers": [
+    { "url": "https://api.nasa.gov" }
+  ],
+  "paths": {
+    "/insight_weather/": {
+      "get": {
+        "summary": "Get Mars surface weather from InSight lander (Sol 675-681, Oct 2020 — frozen data)",
+        "operationId": "getInsightWeather",
+        "parameters": [
+          {
+            "name": "feedtype",
+            "in": "query",
+            "required": true,
+            "description": "Response format (only 'json' supported)",
+            "schema": { "type": "string", "enum": ["json"] }
+          },
+          {
+            "name": "ver",
+            "in": "query",
+            "required": true,
+            "description": "API version (only '1.0' supported)",
+            "schema": { "type": "string", "enum": ["1.0"] }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Per-sol weather: temperature (AT), pressure (PRE), wind speed (HWS), wind direction (WD), season",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/InsightWeatherResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/DONKI/CME": {
+      "get": {
+        "summary": "Get Coronal Mass Ejection events that could affect Mars solar exposure",
+        "operationId": "getDonkiCME",
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "required": false,
+            "description": "Start date (YYYY-MM-DD). Default: 30 days ago",
+            "schema": { "type": "string", "format": "date" }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "required": false,
+            "description": "End date (YYYY-MM-DD). Default: today",
+            "schema": { "type": "string", "format": "date" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of CME events with time, source location, speed, and analysis",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/CMEEvent" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/DONKI/MPC": {
+      "get": {
+        "summary": "Get Mars Magnetopause Crossing events — indicates solar wind pressure changes",
+        "operationId": "getDonkiMPC",
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "required": false,
+            "description": "Start date (YYYY-MM-DD). Default: 30 days ago",
+            "schema": { "type": "string", "format": "date" }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "required": false,
+            "description": "End date (YYYY-MM-DD). Default: today",
+            "schema": { "type": "string", "format": "date" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of magnetopause crossing events with linked CME activity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/MPCEvent" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "InsightWeatherResponse": {
+        "type": "object",
+        "description": "Weather data keyed by sol number, plus metadata",
+        "properties": {
+          "sol_keys": {
+            "type": "array",
+            "description": "List of sol numbers in this payload",
+            "items": { "type": "string" }
+          },
+          "validity_checks": {
+            "type": "object",
+            "description": "Data quality per sol and sensor",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "AT": { "$ref": "#/components/schemas/SensorValidity" },
+                "HWS": { "$ref": "#/components/schemas/SensorValidity" },
+                "PRE": { "$ref": "#/components/schemas/SensorValidity" },
+                "WD": { "$ref": "#/components/schemas/SensorValidity" }
+              }
+            }
+          }
+        },
+        "additionalProperties": {
+          "oneOf": [{ "$ref": "#/components/schemas/SolWeather" }]
+        }
+      },
+      "SolWeather": {
+        "type": "object",
+        "properties": {
+          "AT": { "$ref": "#/components/schemas/SensorData" },
+          "HWS": { "$ref": "#/components/schemas/SensorData" },
+          "PRE": { "$ref": "#/components/schemas/SensorData" },
+          "WD": {
+            "type": "object",
+            "properties": {
+              "most_common": { "$ref": "#/components/schemas/WindCompassPoint" }
+            },
+            "additionalProperties": { "$ref": "#/components/schemas/WindCompassPoint" }
+          },
+          "Season": { "type": "string", "enum": ["winter", "spring", "summer", "fall"] },
+          "First_UTC": { "type": "string", "format": "date-time" },
+          "Last_UTC": { "type": "string", "format": "date-time" }
+        }
+      },
+      "SensorData": {
+        "type": "object",
+        "properties": {
+          "av": { "type": "number", "description": "Average" },
+          "ct": { "type": "number", "description": "Sample count" },
+          "mn": { "type": "number", "description": "Minimum" },
+          "mx": { "type": "number", "description": "Maximum" }
+        }
+      },
+      "WindCompassPoint": {
+        "type": "object",
+        "properties": {
+          "compass_degrees": { "type": "number" },
+          "compass_point": { "type": "string" },
+          "compass_right": { "type": "number" },
+          "compass_up": { "type": "number" },
+          "ct": { "type": "number" }
+        }
+      },
+      "SensorValidity": {
+        "type": "object",
+        "properties": {
+          "sol_hours_with_data": {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 0, "maximum": 23 }
+          },
+          "valid": { "type": "boolean" }
+        }
+      },
+      "CMEEvent": {
+        "type": "object",
+        "properties": {
+          "activityID": { "type": "string" },
+          "startTime": { "type": "string", "format": "date-time" },
+          "sourceLocation": { "type": "string", "description": "Solar coordinates (e.g., S15W25)" },
+          "note": { "type": "string" },
+          "cmeAnalyses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "speed": { "type": "number", "description": "CME speed in km/s" },
+                "halfAngle": { "type": "number", "description": "Half-angle in degrees" },
+                "type": { "type": "string", "description": "S (slow), C (common), O (other)" },
+                "isMostAccurate": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      },
+      "MPCEvent": {
+        "type": "object",
+        "properties": {
+          "eventTime": { "type": "string", "format": "date-time" },
+          "instruments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "displayName": { "type": "string" }
+              }
+            }
+          },
+          "linkedEvents": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "activityID": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

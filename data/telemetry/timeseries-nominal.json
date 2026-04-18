@@ -1,0 +1,7211 @@
+{
+  "meta": {
+    "generated": "2026-03-19T14:30:00Z",
+    "description": "24-hour nominal operation timeseries \u2014 1 reading per 10 minutes",
+    "mission_sol": 142,
+    "interval_minutes": 10,
+    "total_points": 144
+  },
+  "readings": [
+    {
+      "timestamp": "2026-03-19T06:00:00Z",
+      "sol_hour": 0.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.22,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 932.0,
+          "light_pct": 0,
+          "ph": 6.19,
+          "ec_ms_cm": 1.72,
+          "vpd_kpa": 0.974,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.33,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.55,
+          "vpd_kpa": 1.123,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.7,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 986.0,
+          "light_pct": 0.9,
+          "ph": 6.36,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.907,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 500.0,
+        "battery_pct": 85.0,
+        "solar_output_pct": 0.6,
+        "desal_rate_l_sol": 0.7,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -61.7,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.693,
+        "o2_contribution_pct": 14.22
+      }
+    },
+    {
+      "timestamp": "2026-03-19T06:10:00Z",
+      "sol_hour": 0.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.43,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 931.0,
+          "light_pct": 5.8,
+          "ph": 6.15,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 0.955,
+          "dli_mol": 1.28
+        },
+        "carb": {
+          "temp_c": 18.37,
+          "humidity_pct": 59.6,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 855.0,
+          "light_pct": 4.3,
+          "ph": 5.89,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.128,
+          "dli_mol": 0.85
+        },
+        "vitamin": {
+          "temp_c": 21.86,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 984.0,
+          "light_pct": 5.8,
+          "ph": 6.39,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.894,
+          "dli_mol": 0.88
+        }
+      },
+      "system": {
+        "water_reserve_l": 499.7,
+        "battery_pct": 85.0,
+        "solar_output_pct": 6.3,
+        "desal_rate_l_sol": 0.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.8,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.643,
+        "o2_contribution_pct": 14.23
+      }
+    },
+    {
+      "timestamp": "2026-03-19T06:20:00Z",
+      "sol_hour": 0.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.36,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 72.2,
+          "co2_ppm": 925.0,
+          "light_pct": 7.4,
+          "ph": 6.24,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 0.959,
+          "dli_mol": 1.27
+        },
+        "carb": {
+          "temp_c": 18.36,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 858.0,
+          "light_pct": 6.3,
+          "ph": 5.87,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.144,
+          "dli_mol": 1.16
+        },
+        "vitamin": {
+          "temp_c": 22.01,
+          "humidity_pct": 69.6,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 988.0,
+          "light_pct": 6.1,
+          "ph": 6.36,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.898,
+          "dli_mol": 1.48
+        }
+      },
+      "system": {
+        "water_reserve_l": 499.5,
+        "battery_pct": 85.0,
+        "solar_output_pct": 8.0,
+        "desal_rate_l_sol": 0.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.6,
+        "outside_pressure_pa": 735.0,
+        "radiation_usv_hr": 0.692,
+        "o2_contribution_pct": 14.4
+      }
+    },
+    {
+      "timestamp": "2026-03-19T06:30:00Z",
+      "sol_hour": 0.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.36,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 924.0,
+          "light_pct": 10.0,
+          "ph": 6.18,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 0.977,
+          "dli_mol": 2.65
+        },
+        "carb": {
+          "temp_c": 18.31,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 856.0,
+          "light_pct": 11.0,
+          "ph": 5.93,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.127,
+          "dli_mol": 1.74
+        },
+        "vitamin": {
+          "temp_c": 22.17,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 980.0,
+          "light_pct": 10.6,
+          "ph": 6.43,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.906,
+          "dli_mol": 2.95
+        }
+      },
+      "system": {
+        "water_reserve_l": 498.6,
+        "battery_pct": 85.0,
+        "solar_output_pct": 13.2,
+        "desal_rate_l_sol": 0.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -62.7,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.627,
+        "o2_contribution_pct": 14.52
+      }
+    },
+    {
+      "timestamp": "2026-03-19T06:40:00Z",
+      "sol_hour": 0.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.28,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 926.0,
+          "light_pct": 15.2,
+          "ph": 6.2,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.945,
+          "dli_mol": 2.88
+        },
+        "carb": {
+          "temp_c": 18.32,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 852.0,
+          "light_pct": 15.4,
+          "ph": 5.87,
+          "ec_ms_cm": 1.47,
+          "vpd_kpa": 1.121,
+          "dli_mol": 2.53
+        },
+        "vitamin": {
+          "temp_c": 22.05,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 984.0,
+          "light_pct": 15.7,
+          "ph": 6.44,
+          "ec_ms_cm": 2.13,
+          "vpd_kpa": 0.864,
+          "dli_mol": 4.0
+        }
+      },
+      "system": {
+        "water_reserve_l": 497.7,
+        "battery_pct": 85.0,
+        "solar_output_pct": 18.4,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -62.4,
+        "outside_pressure_pa": 763.0,
+        "radiation_usv_hr": 0.677,
+        "o2_contribution_pct": 14.56
+      }
+    },
+    {
+      "timestamp": "2026-03-19T06:50:00Z",
+      "sol_hour": 0.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.68,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 920.0,
+          "light_pct": 17.9,
+          "ph": 6.22,
+          "ec_ms_cm": 1.88,
+          "vpd_kpa": 0.948,
+          "dli_mol": 4.15
+        },
+        "carb": {
+          "temp_c": 18.26,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 68.2,
+          "co2_ppm": 848.0,
+          "light_pct": 17.4,
+          "ph": 5.89,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.101,
+          "dli_mol": 3.55
+        },
+        "vitamin": {
+          "temp_c": 21.85,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 75.2,
+          "co2_ppm": 981.0,
+          "light_pct": 19.9,
+          "ph": 6.43,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.853,
+          "dli_mol": 4.94
+        }
+      },
+      "system": {
+        "water_reserve_l": 497.0,
+        "battery_pct": 85.1,
+        "solar_output_pct": 22.8,
+        "desal_rate_l_sol": 26.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -61.2,
+        "outside_pressure_pa": 741.0,
+        "radiation_usv_hr": 0.66,
+        "o2_contribution_pct": 14.57
+      }
+    },
+    {
+      "timestamp": "2026-03-19T07:00:00Z",
+      "sol_hour": 1.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.79,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 919.0,
+          "light_pct": 21.4,
+          "ph": 6.21,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.977,
+          "dli_mol": 4.86
+        },
+        "carb": {
+          "temp_c": 18.29,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 850.0,
+          "light_pct": 20.7,
+          "ph": 5.91,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.135,
+          "dli_mol": 3.57
+        },
+        "vitamin": {
+          "temp_c": 22.21,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 977.0,
+          "light_pct": 23.3,
+          "ph": 6.37,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.886,
+          "dli_mol": 5.13
+        }
+      },
+      "system": {
+        "water_reserve_l": 496.2,
+        "battery_pct": 85.0,
+        "solar_output_pct": 25.4,
+        "desal_rate_l_sol": 30.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.6,
+        "outside_pressure_pa": 748.0,
+        "radiation_usv_hr": 0.678,
+        "o2_contribution_pct": 14.71
+      }
+    },
+    {
+      "timestamp": "2026-03-19T07:10:00Z",
+      "sol_hour": 1.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.41,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 919.0,
+          "light_pct": 25.6,
+          "ph": 6.23,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 0.945,
+          "dli_mol": 5.29
+        },
+        "carb": {
+          "temp_c": 18.55,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 844.0,
+          "light_pct": 25.8,
+          "ph": 5.94,
+          "ec_ms_cm": 1.56,
+          "vpd_kpa": 1.112,
+          "dli_mol": 5.46
+        },
+        "vitamin": {
+          "temp_c": 22.02,
+          "humidity_pct": 69.4,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 978.0,
+          "light_pct": 28.7,
+          "ph": 6.35,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.916,
+          "dli_mol": 6.36
+        }
+      },
+      "system": {
+        "water_reserve_l": 495.6,
+        "battery_pct": 85.0,
+        "solar_output_pct": 31.8,
+        "desal_rate_l_sol": 39.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -61.9,
+        "outside_pressure_pa": 738.0,
+        "radiation_usv_hr": 0.631,
+        "o2_contribution_pct": 14.85
+      }
+    },
+    {
+      "timestamp": "2026-03-19T07:20:00Z",
+      "sol_hour": 1.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.74,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 914.0,
+          "light_pct": 26.7,
+          "ph": 6.23,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 0.962,
+          "dli_mol": 6.13
+        },
+        "carb": {
+          "temp_c": 18.61,
+          "humidity_pct": 59.4,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 848.0,
+          "light_pct": 25.0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.119,
+          "dli_mol": 5.5
+        },
+        "vitamin": {
+          "temp_c": 21.9,
+          "humidity_pct": 69.1,
+          "soil_moisture_pct": 75.2,
+          "co2_ppm": 977.0,
+          "light_pct": 30.1,
+          "ph": 6.36,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.913,
+          "dli_mol": 6.57
+        }
+      },
+      "system": {
+        "water_reserve_l": 495.0,
+        "battery_pct": 85.1,
+        "solar_output_pct": 33.3,
+        "desal_rate_l_sol": 41.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.5,
+        "outside_pressure_pa": 762.0,
+        "radiation_usv_hr": 0.641,
+        "o2_contribution_pct": 14.82
+      }
+    },
+    {
+      "timestamp": "2026-03-19T07:30:00Z",
+      "sol_hour": 1.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.93,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 912.0,
+          "light_pct": 29.9,
+          "ph": 6.25,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 0.995,
+          "dli_mol": 6.67
+        },
+        "carb": {
+          "temp_c": 18.96,
+          "humidity_pct": 59.0,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 850.0,
+          "light_pct": 29.1,
+          "ph": 5.93,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.158,
+          "dli_mol": 6.16
+        },
+        "vitamin": {
+          "temp_c": 22.46,
+          "humidity_pct": 68.8,
+          "soil_moisture_pct": 75.2,
+          "co2_ppm": 973.0,
+          "light_pct": 33.0,
+          "ph": 6.38,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.919,
+          "dli_mol": 7.11
+        }
+      },
+      "system": {
+        "water_reserve_l": 494.4,
+        "battery_pct": 85.0,
+        "solar_output_pct": 36.7,
+        "desal_rate_l_sol": 42.8,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -61.0,
+        "outside_pressure_pa": 761.0,
+        "radiation_usv_hr": 0.717,
+        "o2_contribution_pct": 14.89
+      }
+    },
+    {
+      "timestamp": "2026-03-19T07:40:00Z",
+      "sol_hour": 1.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.79,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 72.2,
+          "co2_ppm": 909.0,
+          "light_pct": 35.2,
+          "ph": 6.25,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 1.004,
+          "dli_mol": 7.04
+        },
+        "carb": {
+          "temp_c": 18.58,
+          "humidity_pct": 59.2,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 844.0,
+          "light_pct": 33.9,
+          "ph": 5.91,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.147,
+          "dli_mol": 6.65
+        },
+        "vitamin": {
+          "temp_c": 22.51,
+          "humidity_pct": 68.5,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 975.0,
+          "light_pct": 38.5,
+          "ph": 6.39,
+          "ec_ms_cm": 2.13,
+          "vpd_kpa": 0.921,
+          "dli_mol": 8.52
+        }
+      },
+      "system": {
+        "water_reserve_l": 494.0,
+        "battery_pct": 85.0,
+        "solar_output_pct": 42.8,
+        "desal_rate_l_sol": 50.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.2,
+        "outside_pressure_pa": 757.0,
+        "radiation_usv_hr": 0.65,
+        "o2_contribution_pct": 15.02
+      }
+    },
+    {
+      "timestamp": "2026-03-19T07:50:00Z",
+      "sol_hour": 1.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.87,
+          "humidity_pct": 63.7,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 916.0,
+          "light_pct": 36.8,
+          "ph": 6.21,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 0.993,
+          "dli_mol": 8.28
+        },
+        "carb": {
+          "temp_c": 18.92,
+          "humidity_pct": 58.6,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 842.0,
+          "light_pct": 35.3,
+          "ph": 5.89,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.162,
+          "dli_mol": 7.2
+        },
+        "vitamin": {
+          "temp_c": 22.46,
+          "humidity_pct": 69.1,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 968.0,
+          "light_pct": 40.9,
+          "ph": 6.38,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.913,
+          "dli_mol": 9.07
+        }
+      },
+      "system": {
+        "water_reserve_l": 493.6,
+        "battery_pct": 85.1,
+        "solar_output_pct": 45.8,
+        "desal_rate_l_sol": 53.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -61.0,
+        "outside_pressure_pa": 736.0,
+        "radiation_usv_hr": 0.644,
+        "o2_contribution_pct": 15.11
+      }
+    },
+    {
+      "timestamp": "2026-03-19T08:00:00Z",
+      "sol_hour": 2.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.76,
+          "humidity_pct": 63.6,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 911.0,
+          "light_pct": 42.4,
+          "ph": 6.22,
+          "ec_ms_cm": 1.72,
+          "vpd_kpa": 0.988,
+          "dli_mol": 8.58
+        },
+        "carb": {
+          "temp_c": 19.12,
+          "humidity_pct": 59.2,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 836.0,
+          "light_pct": 39.3,
+          "ph": 5.86,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.186,
+          "dli_mol": 8.14
+        },
+        "vitamin": {
+          "temp_c": 22.78,
+          "humidity_pct": 68.4,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 974.0,
+          "light_pct": 45.8,
+          "ph": 6.44,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.925,
+          "dli_mol": 10.47
+        }
+      },
+      "system": {
+        "water_reserve_l": 493.2,
+        "battery_pct": 85.1,
+        "solar_output_pct": 51.4,
+        "desal_rate_l_sol": 63.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.8,
+        "outside_pressure_pa": 762.0,
+        "radiation_usv_hr": 0.694,
+        "o2_contribution_pct": 15.22
+      }
+    },
+    {
+      "timestamp": "2026-03-19T08:10:00Z",
+      "sol_hour": 2.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.95,
+          "humidity_pct": 63.6,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 910.0,
+          "light_pct": 43.8,
+          "ph": 6.18,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 0.982,
+          "dli_mol": 8.65
+        },
+        "carb": {
+          "temp_c": 18.93,
+          "humidity_pct": 58.8,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 841.0,
+          "light_pct": 40.4,
+          "ph": 5.89,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.177,
+          "dli_mol": 7.9
+        },
+        "vitamin": {
+          "temp_c": 22.61,
+          "humidity_pct": 67.9,
+          "soil_moisture_pct": 75.2,
+          "co2_ppm": 970.0,
+          "light_pct": 46.3,
+          "ph": 6.43,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.937,
+          "dli_mol": 10.65
+        }
+      },
+      "system": {
+        "water_reserve_l": 492.7,
+        "battery_pct": 85.1,
+        "solar_output_pct": 52.8,
+        "desal_rate_l_sol": 64.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.7,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.662,
+        "o2_contribution_pct": 15.3
+      }
+    },
+    {
+      "timestamp": "2026-03-19T08:20:00Z",
+      "sol_hour": 2.33,
+      "zones": {
+        "protein": {
+          "temp_c": 21.25,
+          "humidity_pct": 63.0,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 902.0,
+          "light_pct": 46.6,
+          "ph": 6.19,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.991,
+          "dli_mol": 10.08
+        },
+        "carb": {
+          "temp_c": 19.1,
+          "humidity_pct": 58.3,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 836.0,
+          "light_pct": 45.1,
+          "ph": 5.91,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.175,
+          "dli_mol": 8.62
+        },
+        "vitamin": {
+          "temp_c": 22.73,
+          "humidity_pct": 67.5,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 965.0,
+          "light_pct": 50.4,
+          "ph": 6.43,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.947,
+          "dli_mol": 11.1
+        }
+      },
+      "system": {
+        "water_reserve_l": 492.3,
+        "battery_pct": 85.1,
+        "solar_output_pct": 57.5,
+        "desal_rate_l_sol": 67.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.5,
+        "outside_pressure_pa": 765.0,
+        "radiation_usv_hr": 0.655,
+        "o2_contribution_pct": 15.38
+      }
+    },
+    {
+      "timestamp": "2026-03-19T08:30:00Z",
+      "sol_hour": 2.5,
+      "zones": {
+        "protein": {
+          "temp_c": 21.36,
+          "humidity_pct": 63.3,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 900.0,
+          "light_pct": 51.7,
+          "ph": 6.22,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 0.987,
+          "dli_mol": 10.29
+        },
+        "carb": {
+          "temp_c": 19.02,
+          "humidity_pct": 58.7,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 836.0,
+          "light_pct": 48.9,
+          "ph": 5.93,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.192,
+          "dli_mol": 9.41
+        },
+        "vitamin": {
+          "temp_c": 22.61,
+          "humidity_pct": 67.2,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 970.0,
+          "light_pct": 54.2,
+          "ph": 6.36,
+          "ec_ms_cm": 2.23,
+          "vpd_kpa": 0.931,
+          "dli_mol": 12.31
+        }
+      },
+      "system": {
+        "water_reserve_l": 492.0,
+        "battery_pct": 85.1,
+        "solar_output_pct": 62.0,
+        "desal_rate_l_sol": 75.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.4,
+        "outside_pressure_pa": 753.0,
+        "radiation_usv_hr": 0.632,
+        "o2_contribution_pct": 15.54
+      }
+    },
+    {
+      "timestamp": "2026-03-19T08:40:00Z",
+      "sol_hour": 2.67,
+      "zones": {
+        "protein": {
+          "temp_c": 21.25,
+          "humidity_pct": 62.8,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 902.0,
+          "light_pct": 53.4,
+          "ph": 6.16,
+          "ec_ms_cm": 1.87,
+          "vpd_kpa": 1.034,
+          "dli_mol": 11.57
+        },
+        "carb": {
+          "temp_c": 19.34,
+          "humidity_pct": 58.6,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 836.0,
+          "light_pct": 51.4,
+          "ph": 5.93,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.211,
+          "dli_mol": 10.1
+        },
+        "vitamin": {
+          "temp_c": 22.92,
+          "humidity_pct": 67.4,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 967.0,
+          "light_pct": 58.0,
+          "ph": 6.44,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.963,
+          "dli_mol": 12.34
+        }
+      },
+      "system": {
+        "water_reserve_l": 491.7,
+        "battery_pct": 85.2,
+        "solar_output_pct": 65.4,
+        "desal_rate_l_sol": 78.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.7,
+        "outside_pressure_pa": 761.0,
+        "radiation_usv_hr": 0.638,
+        "o2_contribution_pct": 15.45
+      }
+    },
+    {
+      "timestamp": "2026-03-19T08:50:00Z",
+      "sol_hour": 2.83,
+      "zones": {
+        "protein": {
+          "temp_c": 21.33,
+          "humidity_pct": 63.1,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 898.0,
+          "light_pct": 56.8,
+          "ph": 6.22,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 1.046,
+          "dli_mol": 11.41
+        },
+        "carb": {
+          "temp_c": 19.49,
+          "humidity_pct": 58.3,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 835.0,
+          "light_pct": 53.9,
+          "ph": 5.92,
+          "ec_ms_cm": 1.47,
+          "vpd_kpa": 1.165,
+          "dli_mol": 10.58
+        },
+        "vitamin": {
+          "temp_c": 23.06,
+          "humidity_pct": 67.2,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 965.0,
+          "light_pct": 60.6,
+          "ph": 6.38,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.939,
+          "dli_mol": 13.61
+        }
+      },
+      "system": {
+        "water_reserve_l": 491.4,
+        "battery_pct": 85.2,
+        "solar_output_pct": 68.8,
+        "desal_rate_l_sol": 81.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.0,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.639,
+        "o2_contribution_pct": 15.52
+      }
+    },
+    {
+      "timestamp": "2026-03-19T09:00:00Z",
+      "sol_hour": 3.0,
+      "zones": {
+        "protein": {
+          "temp_c": 21.63,
+          "humidity_pct": 63.0,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 898.0,
+          "light_pct": 58.0,
+          "ph": 6.17,
+          "ec_ms_cm": 1.72,
+          "vpd_kpa": 1.007,
+          "dli_mol": 11.88
+        },
+        "carb": {
+          "temp_c": 19.42,
+          "humidity_pct": 57.8,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 834.0,
+          "light_pct": 56.1,
+          "ph": 5.9,
+          "ec_ms_cm": 1.56,
+          "vpd_kpa": 1.173,
+          "dli_mol": 11.53
+        },
+        "vitamin": {
+          "temp_c": 23.14,
+          "humidity_pct": 67.0,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 957.0,
+          "light_pct": 62.1,
+          "ph": 6.43,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.981,
+          "dli_mol": 13.75
+        }
+      },
+      "system": {
+        "water_reserve_l": 491.1,
+        "battery_pct": 85.3,
+        "solar_output_pct": 70.6,
+        "desal_rate_l_sol": 83.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.0,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.65,
+        "o2_contribution_pct": 15.71
+      }
+    },
+    {
+      "timestamp": "2026-03-19T09:10:00Z",
+      "sol_hour": 3.17,
+      "zones": {
+        "protein": {
+          "temp_c": 21.73,
+          "humidity_pct": 62.4,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 901.0,
+          "light_pct": 59.8,
+          "ph": 6.24,
+          "ec_ms_cm": 1.88,
+          "vpd_kpa": 1.028,
+          "dli_mol": 12.36
+        },
+        "carb": {
+          "temp_c": 19.35,
+          "humidity_pct": 58.0,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 836.0,
+          "light_pct": 56.5,
+          "ph": 5.92,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.183,
+          "dli_mol": 11.12
+        },
+        "vitamin": {
+          "temp_c": 22.99,
+          "humidity_pct": 66.4,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 962.0,
+          "light_pct": 62.5,
+          "ph": 6.42,
+          "ec_ms_cm": 2.23,
+          "vpd_kpa": 0.948,
+          "dli_mol": 13.81
+        }
+      },
+      "system": {
+        "water_reserve_l": 490.9,
+        "battery_pct": 85.4,
+        "solar_output_pct": 72.2,
+        "desal_rate_l_sol": 88.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.9,
+        "outside_pressure_pa": 754.0,
+        "radiation_usv_hr": 0.686,
+        "o2_contribution_pct": 15.73
+      }
+    },
+    {
+      "timestamp": "2026-03-19T09:20:00Z",
+      "sol_hour": 3.33,
+      "zones": {
+        "protein": {
+          "temp_c": 21.67,
+          "humidity_pct": 62.3,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 895.0,
+          "light_pct": 63.4,
+          "ph": 6.22,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 1.016,
+          "dli_mol": 12.93
+        },
+        "carb": {
+          "temp_c": 19.41,
+          "humidity_pct": 57.3,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 834.0,
+          "light_pct": 59.9,
+          "ph": 5.86,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.206,
+          "dli_mol": 12.05
+        },
+        "vitamin": {
+          "temp_c": 23.22,
+          "humidity_pct": 66.4,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 964.0,
+          "light_pct": 66.6,
+          "ph": 6.45,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.986,
+          "dli_mol": 14.95
+        }
+      },
+      "system": {
+        "water_reserve_l": 490.7,
+        "battery_pct": 85.4,
+        "solar_output_pct": 76.3,
+        "desal_rate_l_sol": 89.7,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.9,
+        "outside_pressure_pa": 749.0,
+        "radiation_usv_hr": 0.685,
+        "o2_contribution_pct": 15.81
+      }
+    },
+    {
+      "timestamp": "2026-03-19T09:30:00Z",
+      "sol_hour": 3.5,
+      "zones": {
+        "protein": {
+          "temp_c": 21.77,
+          "humidity_pct": 62.1,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 897.0,
+          "light_pct": 64.0,
+          "ph": 6.24,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 1.031,
+          "dli_mol": 13.6
+        },
+        "carb": {
+          "temp_c": 19.71,
+          "humidity_pct": 57.4,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 829.0,
+          "light_pct": 61.8,
+          "ph": 5.88,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.209,
+          "dli_mol": 12.15
+        },
+        "vitamin": {
+          "temp_c": 23.28,
+          "humidity_pct": 66.4,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 959.0,
+          "light_pct": 69.7,
+          "ph": 6.39,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 0.966,
+          "dli_mol": 14.91
+        }
+      },
+      "system": {
+        "water_reserve_l": 490.5,
+        "battery_pct": 85.5,
+        "solar_output_pct": 78.1,
+        "desal_rate_l_sol": 92.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.3,
+        "outside_pressure_pa": 763.0,
+        "radiation_usv_hr": 0.664,
+        "o2_contribution_pct": 15.8
+      }
+    },
+    {
+      "timestamp": "2026-03-19T09:40:00Z",
+      "sol_hour": 3.67,
+      "zones": {
+        "protein": {
+          "temp_c": 22.07,
+          "humidity_pct": 61.9,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 898.0,
+          "light_pct": 65.4,
+          "ph": 6.25,
+          "ec_ms_cm": 1.87,
+          "vpd_kpa": 1.05,
+          "dli_mol": 13.42
+        },
+        "carb": {
+          "temp_c": 19.63,
+          "humidity_pct": 57.0,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 830.0,
+          "light_pct": 63.4,
+          "ph": 5.93,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.217,
+          "dli_mol": 12.48
+        },
+        "vitamin": {
+          "temp_c": 23.26,
+          "humidity_pct": 66.2,
+          "soil_moisture_pct": 75.2,
+          "co2_ppm": 958.0,
+          "light_pct": 70.5,
+          "ph": 6.38,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.999,
+          "dli_mol": 16.04
+        }
+      },
+      "system": {
+        "water_reserve_l": 490.3,
+        "battery_pct": 85.7,
+        "solar_output_pct": 80.4,
+        "desal_rate_l_sol": 96.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.3,
+        "outside_pressure_pa": 743.0,
+        "radiation_usv_hr": 0.65,
+        "o2_contribution_pct": 15.83
+      }
+    },
+    {
+      "timestamp": "2026-03-19T09:50:00Z",
+      "sol_hour": 3.83,
+      "zones": {
+        "protein": {
+          "temp_c": 21.84,
+          "humidity_pct": 61.3,
+          "soil_moisture_pct": 73.8,
+          "co2_ppm": 896.0,
+          "light_pct": 70.9,
+          "ph": 6.18,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 1.054,
+          "dli_mol": 14.8
+        },
+        "carb": {
+          "temp_c": 19.83,
+          "humidity_pct": 57.4,
+          "soil_moisture_pct": 70.1,
+          "co2_ppm": 821.0,
+          "light_pct": 66.8,
+          "ph": 5.93,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.236,
+          "dli_mol": 13.85
+        },
+        "vitamin": {
+          "temp_c": 23.58,
+          "humidity_pct": 66.3,
+          "soil_moisture_pct": 76.9,
+          "co2_ppm": 951.0,
+          "light_pct": 76.9,
+          "ph": 6.44,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 0.981,
+          "dli_mol": 16.93
+        }
+      },
+      "system": {
+        "water_reserve_l": 490.2,
+        "battery_pct": 85.8,
+        "solar_output_pct": 86.3,
+        "desal_rate_l_sol": 103.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.5,
+        "outside_pressure_pa": 747.0,
+        "radiation_usv_hr": 0.685,
+        "o2_contribution_pct": 15.86
+      }
+    },
+    {
+      "timestamp": "2026-03-19T10:00:00Z",
+      "sol_hour": 4.0,
+      "zones": {
+        "protein": {
+          "temp_c": 22.2,
+          "humidity_pct": 61.3,
+          "soil_moisture_pct": 74.0,
+          "co2_ppm": 899.0,
+          "light_pct": 71.3,
+          "ph": 6.19,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 1.077,
+          "dli_mol": 15.23
+        },
+        "carb": {
+          "temp_c": 19.9,
+          "humidity_pct": 57.4,
+          "soil_moisture_pct": 69.6,
+          "co2_ppm": 821.0,
+          "light_pct": 68.2,
+          "ph": 5.95,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.234,
+          "dli_mol": 14.08
+        },
+        "vitamin": {
+          "temp_c": 23.52,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 77.1,
+          "co2_ppm": 955.0,
+          "light_pct": 76.4,
+          "ph": 6.35,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.998,
+          "dli_mol": 17.27
+        }
+      },
+      "system": {
+        "water_reserve_l": 490.0,
+        "battery_pct": 85.9,
+        "solar_output_pct": 86.5,
+        "desal_rate_l_sol": 102.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.9,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.699,
+        "o2_contribution_pct": 15.86
+      }
+    },
+    {
+      "timestamp": "2026-03-19T10:10:00Z",
+      "sol_hour": 4.17,
+      "zones": {
+        "protein": {
+          "temp_c": 22.2,
+          "humidity_pct": 61.4,
+          "soil_moisture_pct": 74.2,
+          "co2_ppm": 892.0,
+          "light_pct": 70.8,
+          "ph": 6.18,
+          "ec_ms_cm": 1.72,
+          "vpd_kpa": 1.058,
+          "dli_mol": 14.72
+        },
+        "carb": {
+          "temp_c": 20.01,
+          "humidity_pct": 57.5,
+          "soil_moisture_pct": 69.7,
+          "co2_ppm": 825.0,
+          "light_pct": 68.2,
+          "ph": 5.91,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.221,
+          "dli_mol": 13.84
+        },
+        "vitamin": {
+          "temp_c": 23.47,
+          "humidity_pct": 65.9,
+          "soil_moisture_pct": 76.8,
+          "co2_ppm": 955.0,
+          "light_pct": 76.0,
+          "ph": 6.41,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.975,
+          "dli_mol": 17.04
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.9,
+        "battery_pct": 86.1,
+        "solar_output_pct": 87.0,
+        "desal_rate_l_sol": 105.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.5,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.689,
+        "o2_contribution_pct": 15.99
+      }
+    },
+    {
+      "timestamp": "2026-03-19T10:20:00Z",
+      "sol_hour": 4.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.1,
+          "humidity_pct": 61.2,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 897.0,
+          "light_pct": 73.6,
+          "ph": 6.21,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 1.071,
+          "dli_mol": 15.13
+        },
+        "carb": {
+          "temp_c": 19.99,
+          "humidity_pct": 57.2,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 826.0,
+          "light_pct": 69.6,
+          "ph": 5.88,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.259,
+          "dli_mol": 14.18
+        },
+        "vitamin": {
+          "temp_c": 23.73,
+          "humidity_pct": 65.6,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 957.0,
+          "light_pct": 77.3,
+          "ph": 6.4,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.975,
+          "dli_mol": 16.95
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.8,
+        "battery_pct": 86.3,
+        "solar_output_pct": 88.8,
+        "desal_rate_l_sol": 107.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.4,
+        "outside_pressure_pa": 760.0,
+        "radiation_usv_hr": 0.668,
+        "o2_contribution_pct": 16.04
+      }
+    },
+    {
+      "timestamp": "2026-03-19T10:30:00Z",
+      "sol_hour": 4.5,
+      "zones": {
+        "protein": {
+          "temp_c": 21.99,
+          "humidity_pct": 60.6,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 897.0,
+          "light_pct": 77.5,
+          "ph": 6.25,
+          "ec_ms_cm": 1.87,
+          "vpd_kpa": 1.091,
+          "dli_mol": 16.28
+        },
+        "carb": {
+          "temp_c": 20.11,
+          "humidity_pct": 56.7,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 823.0,
+          "light_pct": 73.4,
+          "ph": 5.92,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.236,
+          "dli_mol": 14.93
+        },
+        "vitamin": {
+          "temp_c": 23.94,
+          "humidity_pct": 65.7,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 948.0,
+          "light_pct": 81.4,
+          "ph": 6.44,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 1.022,
+          "dli_mol": 18.27
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.7,
+        "battery_pct": 86.5,
+        "solar_output_pct": 93.4,
+        "desal_rate_l_sol": 113.7,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.1,
+        "outside_pressure_pa": 747.0,
+        "radiation_usv_hr": 0.634,
+        "o2_contribution_pct": 16.16
+      }
+    },
+    {
+      "timestamp": "2026-03-19T10:40:00Z",
+      "sol_hour": 4.67,
+      "zones": {
+        "protein": {
+          "temp_c": 22.13,
+          "humidity_pct": 60.5,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 892.0,
+          "light_pct": 77.2,
+          "ph": 6.24,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 1.083,
+          "dli_mol": 16.27
+        },
+        "carb": {
+          "temp_c": 20.12,
+          "humidity_pct": 56.4,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 823.0,
+          "light_pct": 72.5,
+          "ph": 5.85,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.237,
+          "dli_mol": 15.18
+        },
+        "vitamin": {
+          "temp_c": 23.77,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 955.0,
+          "light_pct": 82.7,
+          "ph": 6.39,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 1.006,
+          "dli_mol": 18.65
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 86.5,
+        "solar_output_pct": 93.2,
+        "desal_rate_l_sol": 113.2,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.5,
+        "outside_pressure_pa": 755.0,
+        "radiation_usv_hr": 0.684,
+        "o2_contribution_pct": 16.08
+      }
+    },
+    {
+      "timestamp": "2026-03-19T10:50:00Z",
+      "sol_hour": 4.83,
+      "zones": {
+        "protein": {
+          "temp_c": 22.36,
+          "humidity_pct": 60.5,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 888.0,
+          "light_pct": 75.9,
+          "ph": 6.17,
+          "ec_ms_cm": 1.86,
+          "vpd_kpa": 1.092,
+          "dli_mol": 15.78
+        },
+        "carb": {
+          "temp_c": 19.92,
+          "humidity_pct": 56.3,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 826.0,
+          "light_pct": 73.7,
+          "ph": 5.88,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.225,
+          "dli_mol": 14.4
+        },
+        "vitamin": {
+          "temp_c": 23.95,
+          "humidity_pct": 64.5,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 950.0,
+          "light_pct": 81.3,
+          "ph": 6.36,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 0.996,
+          "dli_mol": 17.9
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 86.6,
+        "solar_output_pct": 93.5,
+        "desal_rate_l_sol": 112.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.4,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.631,
+        "o2_contribution_pct": 16.07
+      }
+    },
+    {
+      "timestamp": "2026-03-19T11:00:00Z",
+      "sol_hour": 5.0,
+      "zones": {
+        "protein": {
+          "temp_c": 21.96,
+          "humidity_pct": 61.0,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 890.0,
+          "light_pct": 81.4,
+          "ph": 6.2,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 1.108,
+          "dli_mol": 16.48
+        },
+        "carb": {
+          "temp_c": 20.17,
+          "humidity_pct": 56.5,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 816.0,
+          "light_pct": 77.6,
+          "ph": 5.88,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.256,
+          "dli_mol": 15.11
+        },
+        "vitamin": {
+          "temp_c": 23.93,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 950.0,
+          "light_pct": 87.6,
+          "ph": 6.42,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 1.016,
+          "dli_mol": 18.78
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 86.8,
+        "solar_output_pct": 98.4,
+        "desal_rate_l_sol": 118.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.0,
+        "outside_pressure_pa": 749.0,
+        "radiation_usv_hr": 0.643,
+        "o2_contribution_pct": 16.14
+      }
+    },
+    {
+      "timestamp": "2026-03-19T11:10:00Z",
+      "sol_hour": 5.17,
+      "zones": {
+        "protein": {
+          "temp_c": 22.22,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 890.0,
+          "light_pct": 79.8,
+          "ph": 6.16,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.062,
+          "dli_mol": 17.18
+        },
+        "carb": {
+          "temp_c": 19.85,
+          "humidity_pct": 56.0,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 822.0,
+          "light_pct": 76.5,
+          "ph": 5.88,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.258,
+          "dli_mol": 15.46
+        },
+        "vitamin": {
+          "temp_c": 23.86,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 953.0,
+          "light_pct": 86.3,
+          "ph": 6.39,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 1.041,
+          "dli_mol": 19.1
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.5,
+        "battery_pct": 86.9,
+        "solar_output_pct": 97.4,
+        "desal_rate_l_sol": 115.8,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.2,
+        "outside_pressure_pa": 760.0,
+        "radiation_usv_hr": 0.657,
+        "o2_contribution_pct": 16.2
+      }
+    },
+    {
+      "timestamp": "2026-03-19T11:20:00Z",
+      "sol_hour": 5.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.5,
+          "humidity_pct": 60.8,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 892.0,
+          "light_pct": 81.9,
+          "ph": 6.24,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.095,
+          "dli_mol": 16.52
+        },
+        "carb": {
+          "temp_c": 19.99,
+          "humidity_pct": 56.1,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 819.0,
+          "light_pct": 77.5,
+          "ph": 5.91,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.226,
+          "dli_mol": 15.98
+        },
+        "vitamin": {
+          "temp_c": 23.78,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 948.0,
+          "light_pct": 86.0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 1.011,
+          "dli_mol": 19.1
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.5,
+        "battery_pct": 87.0,
+        "solar_output_pct": 98.8,
+        "desal_rate_l_sol": 116.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.2,
+        "outside_pressure_pa": 740.0,
+        "radiation_usv_hr": 0.682,
+        "o2_contribution_pct": 16.21
+      }
+    },
+    {
+      "timestamp": "2026-03-19T11:30:00Z",
+      "sol_hour": 5.5,
+      "zones": {
+        "protein": {
+          "temp_c": 22.44,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 893.0,
+          "light_pct": 80.4,
+          "ph": 6.18,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 1.065,
+          "dli_mol": 16.83
+        },
+        "carb": {
+          "temp_c": 20.15,
+          "humidity_pct": 56.5,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 822.0,
+          "light_pct": 75.7,
+          "ph": 5.87,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.229,
+          "dli_mol": 15.32
+        },
+        "vitamin": {
+          "temp_c": 23.89,
+          "humidity_pct": 64.3,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 947.0,
+          "light_pct": 85.5,
+          "ph": 6.4,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 1.011,
+          "dli_mol": 19.36
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.5,
+        "battery_pct": 87.0,
+        "solar_output_pct": 98.2,
+        "desal_rate_l_sol": 119.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.1,
+        "outside_pressure_pa": 736.0,
+        "radiation_usv_hr": 0.712,
+        "o2_contribution_pct": 16.24
+      }
+    },
+    {
+      "timestamp": "2026-03-19T11:40:00Z",
+      "sol_hour": 5.67,
+      "zones": {
+        "protein": {
+          "temp_c": 22.42,
+          "humidity_pct": 60.5,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 885.0,
+          "light_pct": 81.8,
+          "ph": 6.21,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.08,
+          "dli_mol": 17.49
+        },
+        "carb": {
+          "temp_c": 20.44,
+          "humidity_pct": 55.8,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 821.0,
+          "light_pct": 78.6,
+          "ph": 5.88,
+          "ec_ms_cm": 1.47,
+          "vpd_kpa": 1.262,
+          "dli_mol": 15.68
+        },
+        "vitamin": {
+          "temp_c": 23.97,
+          "humidity_pct": 64.0,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 950.0,
+          "light_pct": 88.0,
+          "ph": 6.42,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 1.045,
+          "dli_mol": 19.33
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 87.0,
+        "solar_output_pct": 99.9,
+        "desal_rate_l_sol": 118.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.5,
+        "outside_pressure_pa": 753.0,
+        "radiation_usv_hr": 0.696,
+        "o2_contribution_pct": 16.23
+      }
+    },
+    {
+      "timestamp": "2026-03-19T11:50:00Z",
+      "sol_hour": 5.83,
+      "zones": {
+        "protein": {
+          "temp_c": 22.57,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 890.0,
+          "light_pct": 81.4,
+          "ph": 6.21,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 1.119,
+          "dli_mol": 17.03
+        },
+        "carb": {
+          "temp_c": 20.44,
+          "humidity_pct": 56.3,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 820.0,
+          "light_pct": 76.2,
+          "ph": 5.86,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.251,
+          "dli_mol": 15.36
+        },
+        "vitamin": {
+          "temp_c": 23.98,
+          "humidity_pct": 64.2,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 946.0,
+          "light_pct": 85.9,
+          "ph": 6.41,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 1.045,
+          "dli_mol": 19.58
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 87.1,
+        "solar_output_pct": 98.6,
+        "desal_rate_l_sol": 119.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.3,
+        "outside_pressure_pa": 748.0,
+        "radiation_usv_hr": 0.701,
+        "o2_contribution_pct": 16.2
+      }
+    },
+    {
+      "timestamp": "2026-03-19T12:00:00Z",
+      "sol_hour": 6.0,
+      "zones": {
+        "protein": {
+          "temp_c": 22.42,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 894.0,
+          "light_pct": 80.5,
+          "ph": 6.2,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 1.085,
+          "dli_mol": 17.29
+        },
+        "carb": {
+          "temp_c": 20.09,
+          "humidity_pct": 56.1,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 817.0,
+          "light_pct": 77.3,
+          "ph": 5.89,
+          "ec_ms_cm": 1.47,
+          "vpd_kpa": 1.257,
+          "dli_mol": 15.47
+        },
+        "vitamin": {
+          "temp_c": 24.18,
+          "humidity_pct": 64.5,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 946.0,
+          "light_pct": 87.7,
+          "ph": 6.42,
+          "ec_ms_cm": 2.23,
+          "vpd_kpa": 1.036,
+          "dli_mol": 19.14
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.7,
+        "battery_pct": 87.3,
+        "solar_output_pct": 99.3,
+        "desal_rate_l_sol": 118.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.1,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.655,
+        "o2_contribution_pct": 16.28
+      }
+    },
+    {
+      "timestamp": "2026-03-19T12:10:00Z",
+      "sol_hour": 6.17,
+      "zones": {
+        "protein": {
+          "temp_c": 22.39,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 889.0,
+          "light_pct": 82.9,
+          "ph": 6.22,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.114,
+          "dli_mol": 17.51
+        },
+        "carb": {
+          "temp_c": 20.4,
+          "humidity_pct": 56.3,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 819.0,
+          "light_pct": 78.1,
+          "ph": 5.87,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.258,
+          "dli_mol": 15.66
+        },
+        "vitamin": {
+          "temp_c": 24.42,
+          "humidity_pct": 64.1,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 946.0,
+          "light_pct": 87.5,
+          "ph": 6.43,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 1.047,
+          "dli_mol": 19.1
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.8,
+        "battery_pct": 87.3,
+        "solar_output_pct": 100,
+        "desal_rate_l_sol": 119.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.4,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.658,
+        "o2_contribution_pct": 16.13
+      }
+    },
+    {
+      "timestamp": "2026-03-19T12:20:00Z",
+      "sol_hour": 6.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.63,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 889.0,
+          "light_pct": 81.3,
+          "ph": 6.19,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 1.108,
+          "dli_mol": 16.94
+        },
+        "carb": {
+          "temp_c": 20.42,
+          "humidity_pct": 56.0,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 823.0,
+          "light_pct": 78.1,
+          "ph": 5.89,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.266,
+          "dli_mol": 16.14
+        },
+        "vitamin": {
+          "temp_c": 24.46,
+          "humidity_pct": 64.1,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 950.0,
+          "light_pct": 87.6,
+          "ph": 6.43,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 1.056,
+          "dli_mol": 19.82
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.8,
+        "battery_pct": 87.4,
+        "solar_output_pct": 100,
+        "desal_rate_l_sol": 121.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.9,
+        "outside_pressure_pa": 738.0,
+        "radiation_usv_hr": 0.705,
+        "o2_contribution_pct": 16.27
+      }
+    },
+    {
+      "timestamp": "2026-03-19T12:30:00Z",
+      "sol_hour": 6.5,
+      "zones": {
+        "protein": {
+          "temp_c": 22.64,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 890.0,
+          "light_pct": 81.4,
+          "ph": 6.2,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 1.126,
+          "dli_mol": 16.63
+        },
+        "carb": {
+          "temp_c": 20.0,
+          "humidity_pct": 55.6,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 826.0,
+          "light_pct": 76.7,
+          "ph": 5.94,
+          "ec_ms_cm": 1.55,
+          "vpd_kpa": 1.261,
+          "dli_mol": 15.06
+        },
+        "vitamin": {
+          "temp_c": 24.27,
+          "humidity_pct": 64.3,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 954.0,
+          "light_pct": 85.8,
+          "ph": 6.42,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 1.04,
+          "dli_mol": 18.8
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.7,
+        "battery_pct": 87.4,
+        "solar_output_pct": 98.3,
+        "desal_rate_l_sol": 117.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.0,
+        "outside_pressure_pa": 751.0,
+        "radiation_usv_hr": 0.693,
+        "o2_contribution_pct": 16.17
+      }
+    },
+    {
+      "timestamp": "2026-03-19T12:40:00Z",
+      "sol_hour": 6.67,
+      "zones": {
+        "protein": {
+          "temp_c": 22.37,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 894.0,
+          "light_pct": 78.6,
+          "ph": 6.24,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 1.097,
+          "dli_mol": 16.28
+        },
+        "carb": {
+          "temp_c": 20.0,
+          "humidity_pct": 56.0,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 821.0,
+          "light_pct": 75.1,
+          "ph": 5.89,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.276,
+          "dli_mol": 15.05
+        },
+        "vitamin": {
+          "temp_c": 23.94,
+          "humidity_pct": 64.5,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 951.0,
+          "light_pct": 84.4,
+          "ph": 6.39,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 1.059,
+          "dli_mol": 18.95
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.7,
+        "battery_pct": 87.6,
+        "solar_output_pct": 96.9,
+        "desal_rate_l_sol": 115.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.3,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.654,
+        "o2_contribution_pct": 16.19
+      }
+    },
+    {
+      "timestamp": "2026-03-19T12:50:00Z",
+      "sol_hour": 6.83,
+      "zones": {
+        "protein": {
+          "temp_c": 22.66,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 891.0,
+          "light_pct": 80.1,
+          "ph": 6.23,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 1.119,
+          "dli_mol": 16.56
+        },
+        "carb": {
+          "temp_c": 20.42,
+          "humidity_pct": 56.1,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 824.0,
+          "light_pct": 77.2,
+          "ph": 5.85,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.267,
+          "dli_mol": 15.3
+        },
+        "vitamin": {
+          "temp_c": 23.92,
+          "humidity_pct": 64.4,
+          "soil_moisture_pct": 75.2,
+          "co2_ppm": 951.0,
+          "light_pct": 86.4,
+          "ph": 6.37,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 1.015,
+          "dli_mol": 19.39
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.7,
+        "battery_pct": 87.8,
+        "solar_output_pct": 98.1,
+        "desal_rate_l_sol": 117.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.9,
+        "outside_pressure_pa": 746.0,
+        "radiation_usv_hr": 0.709,
+        "o2_contribution_pct": 16.21
+      }
+    },
+    {
+      "timestamp": "2026-03-19T13:00:00Z",
+      "sol_hour": 7.0,
+      "zones": {
+        "protein": {
+          "temp_c": 22.43,
+          "humidity_pct": 60.5,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 895.0,
+          "light_pct": 80.5,
+          "ph": 6.22,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 1.101,
+          "dli_mol": 17.19
+        },
+        "carb": {
+          "temp_c": 20.36,
+          "humidity_pct": 56.3,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 817.0,
+          "light_pct": 76.7,
+          "ph": 5.91,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.28,
+          "dli_mol": 15.32
+        },
+        "vitamin": {
+          "temp_c": 24.31,
+          "humidity_pct": 63.9,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 949.0,
+          "light_pct": 85.5,
+          "ph": 6.45,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 1.06,
+          "dli_mol": 18.92
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 87.9,
+        "solar_output_pct": 98.2,
+        "desal_rate_l_sol": 117.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.7,
+        "outside_pressure_pa": 755.0,
+        "radiation_usv_hr": 0.715,
+        "o2_contribution_pct": 16.09
+      }
+    },
+    {
+      "timestamp": "2026-03-19T13:10:00Z",
+      "sol_hour": 7.17,
+      "zones": {
+        "protein": {
+          "temp_c": 22.67,
+          "humidity_pct": 59.5,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 890.0,
+          "light_pct": 77.7,
+          "ph": 6.21,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 1.093,
+          "dli_mol": 16.55
+        },
+        "carb": {
+          "temp_c": 20.57,
+          "humidity_pct": 55.9,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 822.0,
+          "light_pct": 75.3,
+          "ph": 5.87,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.264,
+          "dli_mol": 15.29
+        },
+        "vitamin": {
+          "temp_c": 24.34,
+          "humidity_pct": 64.0,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 949.0,
+          "light_pct": 84.1,
+          "ph": 6.45,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 1.015,
+          "dli_mol": 18.63
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.6,
+        "battery_pct": 88.0,
+        "solar_output_pct": 95.8,
+        "desal_rate_l_sol": 113.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.5,
+        "outside_pressure_pa": 749.0,
+        "radiation_usv_hr": 0.71,
+        "o2_contribution_pct": 16.11
+      }
+    },
+    {
+      "timestamp": "2026-03-19T13:20:00Z",
+      "sol_hour": 7.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.6,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 889.0,
+          "light_pct": 75.3,
+          "ph": 6.24,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 1.102,
+          "dli_mol": 16.27
+        },
+        "carb": {
+          "temp_c": 20.55,
+          "humidity_pct": 56.2,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 819.0,
+          "light_pct": 72.6,
+          "ph": 5.93,
+          "ec_ms_cm": 1.42,
+          "vpd_kpa": 1.251,
+          "dli_mol": 14.23
+        },
+        "vitamin": {
+          "temp_c": 24.22,
+          "humidity_pct": 63.9,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 954.0,
+          "light_pct": 81.8,
+          "ph": 6.45,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 1.005,
+          "dli_mol": 17.81
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.5,
+        "battery_pct": 88.1,
+        "solar_output_pct": 92.3,
+        "desal_rate_l_sol": 112.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.7,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.684,
+        "o2_contribution_pct": 16.04
+      }
+    },
+    {
+      "timestamp": "2026-03-19T13:30:00Z",
+      "sol_hour": 7.5,
+      "zones": {
+        "protein": {
+          "temp_c": 22.39,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 890.0,
+          "light_pct": 76.9,
+          "ph": 6.24,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 1.127,
+          "dli_mol": 15.95
+        },
+        "carb": {
+          "temp_c": 20.06,
+          "humidity_pct": 55.7,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 825.0,
+          "light_pct": 72.0,
+          "ph": 5.94,
+          "ec_ms_cm": 1.56,
+          "vpd_kpa": 1.259,
+          "dli_mol": 15.15
+        },
+        "vitamin": {
+          "temp_c": 24.03,
+          "humidity_pct": 64.2,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 951.0,
+          "light_pct": 82.0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 1.031,
+          "dli_mol": 18.16
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.4,
+        "battery_pct": 88.2,
+        "solar_output_pct": 93.1,
+        "desal_rate_l_sol": 112.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.0,
+        "outside_pressure_pa": 760.0,
+        "radiation_usv_hr": 0.676,
+        "o2_contribution_pct": 16.13
+      }
+    },
+    {
+      "timestamp": "2026-03-19T13:40:00Z",
+      "sol_hour": 7.67,
+      "zones": {
+        "protein": {
+          "temp_c": 22.2,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 897.0,
+          "light_pct": 72.9,
+          "ph": 6.2,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 1.093,
+          "dli_mol": 15.4
+        },
+        "carb": {
+          "temp_c": 20.15,
+          "humidity_pct": 56.5,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 826.0,
+          "light_pct": 69.2,
+          "ph": 5.86,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.256,
+          "dli_mol": 13.59
+        },
+        "vitamin": {
+          "temp_c": 24.16,
+          "humidity_pct": 63.8,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 957.0,
+          "light_pct": 78.3,
+          "ph": 6.45,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 1.042,
+          "dli_mol": 17.67
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.3,
+        "battery_pct": 88.3,
+        "solar_output_pct": 88.7,
+        "desal_rate_l_sol": 105.8,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.4,
+        "outside_pressure_pa": 743.0,
+        "radiation_usv_hr": 0.645,
+        "o2_contribution_pct": 15.89
+      }
+    },
+    {
+      "timestamp": "2026-03-19T13:50:00Z",
+      "sol_hour": 7.83,
+      "zones": {
+        "protein": {
+          "temp_c": 22.38,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 891.0,
+          "light_pct": 71.5,
+          "ph": 6.18,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 1.086,
+          "dli_mol": 15.19
+        },
+        "carb": {
+          "temp_c": 20.26,
+          "humidity_pct": 56.1,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 820.0,
+          "light_pct": 68.5,
+          "ph": 5.95,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.293,
+          "dli_mol": 13.89
+        },
+        "vitamin": {
+          "temp_c": 24.06,
+          "humidity_pct": 63.7,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 956.0,
+          "light_pct": 77.3,
+          "ph": 6.43,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 1.025,
+          "dli_mol": 17.17
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.3,
+        "battery_pct": 88.4,
+        "solar_output_pct": 87.9,
+        "desal_rate_l_sol": 106.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.6,
+        "outside_pressure_pa": 747.0,
+        "radiation_usv_hr": 0.677,
+        "o2_contribution_pct": 15.9
+      }
+    },
+    {
+      "timestamp": "2026-03-19T14:00:00Z",
+      "sol_hour": 8.0,
+      "zones": {
+        "protein": {
+          "temp_c": 22.18,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 900.0,
+          "light_pct": 71.7,
+          "ph": 6.25,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 1.106,
+          "dli_mol": 14.55
+        },
+        "carb": {
+          "temp_c": 20.42,
+          "humidity_pct": 56.0,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 822.0,
+          "light_pct": 68.6,
+          "ph": 5.85,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.265,
+          "dli_mol": 13.72
+        },
+        "vitamin": {
+          "temp_c": 24.02,
+          "humidity_pct": 64.2,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 955.0,
+          "light_pct": 76.3,
+          "ph": 6.37,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 1.015,
+          "dli_mol": 17.04
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.2,
+        "battery_pct": 88.4,
+        "solar_output_pct": 86.8,
+        "desal_rate_l_sol": 103.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.1,
+        "outside_pressure_pa": 751.0,
+        "radiation_usv_hr": 0.691,
+        "o2_contribution_pct": 15.9
+      }
+    },
+    {
+      "timestamp": "2026-03-19T14:10:00Z",
+      "sol_hour": 8.17,
+      "zones": {
+        "protein": {
+          "temp_c": 22.33,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 899.0,
+          "light_pct": 71.2,
+          "ph": 6.15,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 1.107,
+          "dli_mol": 14.91
+        },
+        "carb": {
+          "temp_c": 20.5,
+          "humidity_pct": 56.5,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 828.0,
+          "light_pct": 67.3,
+          "ph": 5.91,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.268,
+          "dli_mol": 13.2
+        },
+        "vitamin": {
+          "temp_c": 24.3,
+          "humidity_pct": 63.9,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 960.0,
+          "light_pct": 75.7,
+          "ph": 6.38,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 1.0,
+          "dli_mol": 16.21
+        }
+      },
+      "system": {
+        "water_reserve_l": 489.1,
+        "battery_pct": 88.5,
+        "solar_output_pct": 85.6,
+        "desal_rate_l_sol": 103.8,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.7,
+        "outside_pressure_pa": 761.0,
+        "radiation_usv_hr": 0.694,
+        "o2_contribution_pct": 15.82
+      }
+    },
+    {
+      "timestamp": "2026-03-19T14:20:00Z",
+      "sol_hour": 8.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.2,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 896.0,
+          "light_pct": 66.3,
+          "ph": 6.18,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 1.071,
+          "dli_mol": 14.25
+        },
+        "carb": {
+          "temp_c": 20.35,
+          "humidity_pct": 56.5,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 829.0,
+          "light_pct": 63.1,
+          "ph": 5.91,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.242,
+          "dli_mol": 12.46
+        },
+        "vitamin": {
+          "temp_c": 24.35,
+          "humidity_pct": 64.2,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 960.0,
+          "light_pct": 70.4,
+          "ph": 6.44,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 1.01,
+          "dli_mol": 15.54
+        }
+      },
+      "system": {
+        "water_reserve_l": 488.9,
+        "battery_pct": 88.5,
+        "solar_output_pct": 80.5,
+        "desal_rate_l_sol": 97.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.3,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.702,
+        "o2_contribution_pct": 15.9
+      }
+    },
+    {
+      "timestamp": "2026-03-19T14:30:00Z",
+      "sol_hour": 8.5,
+      "zones": {
+        "protein": {
+          "temp_c": 22.22,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 897.0,
+          "light_pct": 66.5,
+          "ph": 6.17,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 1.074,
+          "dli_mol": 13.83
+        },
+        "carb": {
+          "temp_c": 20.42,
+          "humidity_pct": 56.5,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 829.0,
+          "light_pct": 62.1,
+          "ph": 5.9,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.243,
+          "dli_mol": 12.9
+        },
+        "vitamin": {
+          "temp_c": 23.76,
+          "humidity_pct": 64.4,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 960.0,
+          "light_pct": 71.3,
+          "ph": 6.44,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 0.989,
+          "dli_mol": 15.76
+        }
+      },
+      "system": {
+        "water_reserve_l": 488.8,
+        "battery_pct": 88.6,
+        "solar_output_pct": 80.6,
+        "desal_rate_l_sol": 96.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.7,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.652,
+        "o2_contribution_pct": 15.84
+      }
+    },
+    {
+      "timestamp": "2026-03-19T14:40:00Z",
+      "sol_hour": 8.67,
+      "zones": {
+        "protein": {
+          "temp_c": 22.07,
+          "humidity_pct": 60.5,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 903.0,
+          "light_pct": 64.2,
+          "ph": 6.24,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 1.111,
+          "dli_mol": 13.13
+        },
+        "carb": {
+          "temp_c": 20.38,
+          "humidity_pct": 56.9,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 833.0,
+          "light_pct": 60.8,
+          "ph": 5.94,
+          "ec_ms_cm": 1.42,
+          "vpd_kpa": 1.284,
+          "dli_mol": 12.79
+        },
+        "vitamin": {
+          "temp_c": 24.03,
+          "humidity_pct": 64.2,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 964.0,
+          "light_pct": 69.8,
+          "ph": 6.44,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 1.019,
+          "dli_mol": 15.25
+        }
+      },
+      "system": {
+        "water_reserve_l": 488.6,
+        "battery_pct": 88.6,
+        "solar_output_pct": 78.2,
+        "desal_rate_l_sol": 92.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.8,
+        "outside_pressure_pa": 749.0,
+        "radiation_usv_hr": 0.646,
+        "o2_contribution_pct": 15.7
+      }
+    },
+    {
+      "timestamp": "2026-03-19T14:50:00Z",
+      "sol_hour": 8.83,
+      "zones": {
+        "protein": {
+          "temp_c": 22.45,
+          "humidity_pct": 60.6,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 904.0,
+          "light_pct": 61.7,
+          "ph": 6.2,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 1.107,
+          "dli_mol": 13.17
+        },
+        "carb": {
+          "temp_c": 20.2,
+          "humidity_pct": 56.1,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 828.0,
+          "light_pct": 57.5,
+          "ph": 5.93,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.239,
+          "dli_mol": 11.53
+        },
+        "vitamin": {
+          "temp_c": 23.83,
+          "humidity_pct": 64.9,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 962.0,
+          "light_pct": 64.7,
+          "ph": 6.38,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.987,
+          "dli_mol": 14.18
+        }
+      },
+      "system": {
+        "water_reserve_l": 488.4,
+        "battery_pct": 88.7,
+        "solar_output_pct": 74.7,
+        "desal_rate_l_sol": 90.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.2,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.712,
+        "o2_contribution_pct": 15.65
+      }
+    },
+    {
+      "timestamp": "2026-03-19T15:00:00Z",
+      "sol_hour": 9.0,
+      "zones": {
+        "protein": {
+          "temp_c": 22.06,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 903.0,
+          "light_pct": 57.7,
+          "ph": 6.2,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 1.075,
+          "dli_mol": 12.29
+        },
+        "carb": {
+          "temp_c": 20.16,
+          "humidity_pct": 56.3,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 835.0,
+          "light_pct": 55.0,
+          "ph": 5.92,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.225,
+          "dli_mol": 11.19
+        },
+        "vitamin": {
+          "temp_c": 23.94,
+          "humidity_pct": 64.4,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 962.0,
+          "light_pct": 62.7,
+          "ph": 6.4,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.989,
+          "dli_mol": 13.71
+        }
+      },
+      "system": {
+        "water_reserve_l": 488.1,
+        "battery_pct": 88.8,
+        "solar_output_pct": 71.2,
+        "desal_rate_l_sol": 83.8,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.6,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.665,
+        "o2_contribution_pct": 15.63
+      }
+    },
+    {
+      "timestamp": "2026-03-19T15:10:00Z",
+      "sol_hour": 9.17,
+      "zones": {
+        "protein": {
+          "temp_c": 21.92,
+          "humidity_pct": 60.7,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 902.0,
+          "light_pct": 55.9,
+          "ph": 6.21,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 1.095,
+          "dli_mol": 11.84
+        },
+        "carb": {
+          "temp_c": 19.92,
+          "humidity_pct": 56.2,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 829.0,
+          "light_pct": 53.5,
+          "ph": 5.89,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.273,
+          "dli_mol": 10.18
+        },
+        "vitamin": {
+          "temp_c": 24.01,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 968.0,
+          "light_pct": 59.6,
+          "ph": 6.44,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.999,
+          "dli_mol": 13.51
+        }
+      },
+      "system": {
+        "water_reserve_l": 487.9,
+        "battery_pct": 88.9,
+        "solar_output_pct": 67.4,
+        "desal_rate_l_sol": 81.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.1,
+        "outside_pressure_pa": 745.0,
+        "radiation_usv_hr": 0.638,
+        "o2_contribution_pct": 15.56
+      }
+    },
+    {
+      "timestamp": "2026-03-19T15:20:00Z",
+      "sol_hour": 9.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.28,
+          "humidity_pct": 60.6,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 902.0,
+          "light_pct": 51.8,
+          "ph": 6.2,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.083,
+          "dli_mol": 11.12
+        },
+        "carb": {
+          "temp_c": 19.82,
+          "humidity_pct": 56.6,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 836.0,
+          "light_pct": 49.8,
+          "ph": 5.89,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.22,
+          "dli_mol": 10.48
+        },
+        "vitamin": {
+          "temp_c": 24.03,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 960.0,
+          "light_pct": 56.1,
+          "ph": 6.35,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 1.009,
+          "dli_mol": 12.76
+        }
+      },
+      "system": {
+        "water_reserve_l": 487.6,
+        "battery_pct": 88.9,
+        "solar_output_pct": 64.4,
+        "desal_rate_l_sol": 76.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.4,
+        "outside_pressure_pa": 737.0,
+        "radiation_usv_hr": 0.67,
+        "o2_contribution_pct": 15.45
+      }
+    },
+    {
+      "timestamp": "2026-03-19T15:30:00Z",
+      "sol_hour": 9.5,
+      "zones": {
+        "protein": {
+          "temp_c": 22.23,
+          "humidity_pct": 60.9,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 903.0,
+          "light_pct": 51.2,
+          "ph": 6.22,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 1.057,
+          "dli_mol": 10.33
+        },
+        "carb": {
+          "temp_c": 19.81,
+          "humidity_pct": 56.4,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 839.0,
+          "light_pct": 49.4,
+          "ph": 5.9,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.247,
+          "dli_mol": 9.75
+        },
+        "vitamin": {
+          "temp_c": 24.01,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 964.0,
+          "light_pct": 55.3,
+          "ph": 6.43,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 0.978,
+          "dli_mol": 11.99
+        }
+      },
+      "system": {
+        "water_reserve_l": 487.4,
+        "battery_pct": 88.9,
+        "solar_output_pct": 62.1,
+        "desal_rate_l_sol": 75.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.5,
+        "outside_pressure_pa": 762.0,
+        "radiation_usv_hr": 0.676,
+        "o2_contribution_pct": 15.54
+      }
+    },
+    {
+      "timestamp": "2026-03-19T15:40:00Z",
+      "sol_hour": 9.67,
+      "zones": {
+        "protein": {
+          "temp_c": 21.81,
+          "humidity_pct": 60.9,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 911.0,
+          "light_pct": 46.6,
+          "ph": 6.22,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 1.086,
+          "dli_mol": 9.5
+        },
+        "carb": {
+          "temp_c": 19.74,
+          "humidity_pct": 57.1,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 834.0,
+          "light_pct": 45.1,
+          "ph": 5.91,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.251,
+          "dli_mol": 9.32
+        },
+        "vitamin": {
+          "temp_c": 23.91,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 971.0,
+          "light_pct": 51.6,
+          "ph": 6.45,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 1.023,
+          "dli_mol": 10.85
+        }
+      },
+      "system": {
+        "water_reserve_l": 487.0,
+        "battery_pct": 89.0,
+        "solar_output_pct": 57.6,
+        "desal_rate_l_sol": 67.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.1,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.698,
+        "o2_contribution_pct": 15.33
+      }
+    },
+    {
+      "timestamp": "2026-03-19T15:50:00Z",
+      "sol_hour": 9.83,
+      "zones": {
+        "protein": {
+          "temp_c": 21.89,
+          "humidity_pct": 61.1,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 904.0,
+          "light_pct": 44.2,
+          "ph": 6.23,
+          "ec_ms_cm": 1.87,
+          "vpd_kpa": 1.089,
+          "dli_mol": 9.23
+        },
+        "carb": {
+          "temp_c": 19.75,
+          "humidity_pct": 57.0,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 835.0,
+          "light_pct": 42.1,
+          "ph": 5.91,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.216,
+          "dli_mol": 8.95
+        },
+        "vitamin": {
+          "temp_c": 23.41,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 968.0,
+          "light_pct": 47.2,
+          "ph": 6.38,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 1.0,
+          "dli_mol": 10.69
+        }
+      },
+      "system": {
+        "water_reserve_l": 486.7,
+        "battery_pct": 89.1,
+        "solar_output_pct": 53.9,
+        "desal_rate_l_sol": 64.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.3,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.637,
+        "o2_contribution_pct": 15.32
+      }
+    },
+    {
+      "timestamp": "2026-03-19T16:00:00Z",
+      "sol_hour": 10.0,
+      "zones": {
+        "protein": {
+          "temp_c": 22.16,
+          "humidity_pct": 61.5,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 905.0,
+          "light_pct": 41.2,
+          "ph": 6.22,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 1.077,
+          "dli_mol": 9.04
+        },
+        "carb": {
+          "temp_c": 19.72,
+          "humidity_pct": 57.5,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 835.0,
+          "light_pct": 38.4,
+          "ph": 5.91,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.226,
+          "dli_mol": 7.77
+        },
+        "vitamin": {
+          "temp_c": 23.63,
+          "humidity_pct": 65.7,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 971.0,
+          "light_pct": 43.9,
+          "ph": 6.38,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.957,
+          "dli_mol": 9.77
+        }
+      },
+      "system": {
+        "water_reserve_l": 486.2,
+        "battery_pct": 89.2,
+        "solar_output_pct": 50.0,
+        "desal_rate_l_sol": 60.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.4,
+        "outside_pressure_pa": 762.0,
+        "radiation_usv_hr": 0.631,
+        "o2_contribution_pct": 15.12
+      }
+    },
+    {
+      "timestamp": "2026-03-19T16:10:00Z",
+      "sol_hour": 10.17,
+      "zones": {
+        "protein": {
+          "temp_c": 21.67,
+          "humidity_pct": 61.6,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 911.0,
+          "light_pct": 37.3,
+          "ph": 6.21,
+          "ec_ms_cm": 1.88,
+          "vpd_kpa": 1.044,
+          "dli_mol": 7.61
+        },
+        "carb": {
+          "temp_c": 19.55,
+          "humidity_pct": 57.5,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 846.0,
+          "light_pct": 35.6,
+          "ph": 5.89,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.237,
+          "dli_mol": 6.67
+        },
+        "vitamin": {
+          "temp_c": 23.22,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 971.0,
+          "light_pct": 38.7,
+          "ph": 6.44,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.998,
+          "dli_mol": 8.8
+        }
+      },
+      "system": {
+        "water_reserve_l": 485.7,
+        "battery_pct": 89.1,
+        "solar_output_pct": 44.8,
+        "desal_rate_l_sol": 52.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.1,
+        "outside_pressure_pa": 762.0,
+        "radiation_usv_hr": 0.668,
+        "o2_contribution_pct": 15.0
+      }
+    },
+    {
+      "timestamp": "2026-03-19T16:20:00Z",
+      "sol_hour": 10.33,
+      "zones": {
+        "protein": {
+          "temp_c": 22.04,
+          "humidity_pct": 62.2,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 918.0,
+          "light_pct": 33.4,
+          "ph": 6.21,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 1.035,
+          "dli_mol": 7.44
+        },
+        "carb": {
+          "temp_c": 19.78,
+          "humidity_pct": 57.3,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 841.0,
+          "light_pct": 30.8,
+          "ph": 5.94,
+          "ec_ms_cm": 1.47,
+          "vpd_kpa": 1.236,
+          "dli_mol": 6.3
+        },
+        "vitamin": {
+          "temp_c": 23.57,
+          "humidity_pct": 65.8,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 974.0,
+          "light_pct": 36.7,
+          "ph": 6.39,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 1.005,
+          "dli_mol": 7.46
+        }
+      },
+      "system": {
+        "water_reserve_l": 485.2,
+        "battery_pct": 89.2,
+        "solar_output_pct": 40.6,
+        "desal_rate_l_sol": 50.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.5,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.623,
+        "o2_contribution_pct": 14.97
+      }
+    },
+    {
+      "timestamp": "2026-03-19T16:30:00Z",
+      "sol_hour": 10.5,
+      "zones": {
+        "protein": {
+          "temp_c": 21.71,
+          "humidity_pct": 61.8,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 916.0,
+          "light_pct": 33.9,
+          "ph": 6.21,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.051,
+          "dli_mol": 6.51
+        },
+        "carb": {
+          "temp_c": 19.72,
+          "humidity_pct": 57.1,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 845.0,
+          "light_pct": 30.7,
+          "ph": 5.86,
+          "ec_ms_cm": 1.42,
+          "vpd_kpa": 1.226,
+          "dli_mol": 6.17
+        },
+        "vitamin": {
+          "temp_c": 23.22,
+          "humidity_pct": 66.2,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 971.0,
+          "light_pct": 34.9,
+          "ph": 6.39,
+          "ec_ms_cm": 2.12,
+          "vpd_kpa": 0.968,
+          "dli_mol": 7.9
+        }
+      },
+      "system": {
+        "water_reserve_l": 484.7,
+        "battery_pct": 89.1,
+        "solar_output_pct": 40.2,
+        "desal_rate_l_sol": 48.7,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.7,
+        "outside_pressure_pa": 747.0,
+        "radiation_usv_hr": 0.649,
+        "o2_contribution_pct": 14.98
+      }
+    },
+    {
+      "timestamp": "2026-03-19T16:40:00Z",
+      "sol_hour": 10.67,
+      "zones": {
+        "protein": {
+          "temp_c": 21.89,
+          "humidity_pct": 62.5,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 914.0,
+          "light_pct": 27.6,
+          "ph": 6.18,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 1.029,
+          "dli_mol": 5.24
+        },
+        "carb": {
+          "temp_c": 19.27,
+          "humidity_pct": 57.6,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 843.0,
+          "light_pct": 25.2,
+          "ph": 5.91,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.191,
+          "dli_mol": 4.89
+        },
+        "vitamin": {
+          "temp_c": 23.08,
+          "humidity_pct": 66.2,
+          "soil_moisture_pct": 75.1,
+          "co2_ppm": 975.0,
+          "light_pct": 28.2,
+          "ph": 6.38,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.973,
+          "dli_mol": 6.65
+        }
+      },
+      "system": {
+        "water_reserve_l": 484.2,
+        "battery_pct": 89.2,
+        "solar_output_pct": 32.5,
+        "desal_rate_l_sol": 40.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.2,
+        "outside_pressure_pa": 745.0,
+        "radiation_usv_hr": 0.715,
+        "o2_contribution_pct": 14.79
+      }
+    },
+    {
+      "timestamp": "2026-03-19T16:50:00Z",
+      "sol_hour": 10.83,
+      "zones": {
+        "protein": {
+          "temp_c": 21.85,
+          "humidity_pct": 62.8,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 918.0,
+          "light_pct": 23.6,
+          "ph": 6.19,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 1.035,
+          "dli_mol": 4.79
+        },
+        "carb": {
+          "temp_c": 19.4,
+          "humidity_pct": 57.5,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 849.0,
+          "light_pct": 23.0,
+          "ph": 5.95,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.211,
+          "dli_mol": 4.68
+        },
+        "vitamin": {
+          "temp_c": 23.31,
+          "humidity_pct": 66.7,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 981.0,
+          "light_pct": 25.4,
+          "ph": 6.4,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.978,
+          "dli_mol": 5.63
+        }
+      },
+      "system": {
+        "water_reserve_l": 483.3,
+        "battery_pct": 89.2,
+        "solar_output_pct": 29.3,
+        "desal_rate_l_sol": 36.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.2,
+        "outside_pressure_pa": 737.0,
+        "radiation_usv_hr": 0.719,
+        "o2_contribution_pct": 14.78
+      }
+    },
+    {
+      "timestamp": "2026-03-19T17:00:00Z",
+      "sol_hour": 11.0,
+      "zones": {
+        "protein": {
+          "temp_c": 21.5,
+          "humidity_pct": 62.9,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 923.0,
+          "light_pct": 21.3,
+          "ph": 6.2,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 1.017,
+          "dli_mol": 4.78
+        },
+        "carb": {
+          "temp_c": 19.15,
+          "humidity_pct": 58.3,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 851.0,
+          "light_pct": 20.2,
+          "ph": 5.92,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.168,
+          "dli_mol": 4.51
+        },
+        "vitamin": {
+          "temp_c": 23.25,
+          "humidity_pct": 67.5,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 977.0,
+          "light_pct": 22.3,
+          "ph": 6.41,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.956,
+          "dli_mol": 4.99
+        }
+      },
+      "system": {
+        "water_reserve_l": 482.5,
+        "battery_pct": 89.2,
+        "solar_output_pct": 25.5,
+        "desal_rate_l_sol": 31.7,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.8,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.654,
+        "o2_contribution_pct": 14.61
+      }
+    },
+    {
+      "timestamp": "2026-03-19T17:10:00Z",
+      "sol_hour": 11.17,
+      "zones": {
+        "protein": {
+          "temp_c": 21.37,
+          "humidity_pct": 63.2,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 918.0,
+          "light_pct": 15.7,
+          "ph": 6.17,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 1.008,
+          "dli_mol": 3.41
+        },
+        "carb": {
+          "temp_c": 19.32,
+          "humidity_pct": 58.1,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 850.0,
+          "light_pct": 16.0,
+          "ph": 5.93,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.208,
+          "dli_mol": 2.78
+        },
+        "vitamin": {
+          "temp_c": 23.12,
+          "humidity_pct": 66.9,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 979.0,
+          "light_pct": 18.6,
+          "ph": 6.45,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.929,
+          "dli_mol": 3.97
+        }
+      },
+      "system": {
+        "water_reserve_l": 481.6,
+        "battery_pct": 89.1,
+        "solar_output_pct": 20.1,
+        "desal_rate_l_sol": 24.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.3,
+        "outside_pressure_pa": 736.0,
+        "radiation_usv_hr": 0.681,
+        "o2_contribution_pct": 14.54
+      }
+    },
+    {
+      "timestamp": "2026-03-19T17:20:00Z",
+      "sol_hour": 11.33,
+      "zones": {
+        "protein": {
+          "temp_c": 21.28,
+          "humidity_pct": 63.1,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 926.0,
+          "light_pct": 14.0,
+          "ph": 6.24,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.987,
+          "dli_mol": 2.65
+        },
+        "carb": {
+          "temp_c": 19.16,
+          "humidity_pct": 58.3,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 853.0,
+          "light_pct": 13.4,
+          "ph": 5.91,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.192,
+          "dli_mol": 2.9
+        },
+        "vitamin": {
+          "temp_c": 22.84,
+          "humidity_pct": 67.8,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 985.0,
+          "light_pct": 15.8,
+          "ph": 6.36,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.931,
+          "dli_mol": 3.57
+        }
+      },
+      "system": {
+        "water_reserve_l": 480.7,
+        "battery_pct": 89.0,
+        "solar_output_pct": 17.7,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.5,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.662,
+        "o2_contribution_pct": 14.48
+      }
+    },
+    {
+      "timestamp": "2026-03-19T17:30:00Z",
+      "sol_hour": 11.5,
+      "zones": {
+        "protein": {
+          "temp_c": 21.08,
+          "humidity_pct": 63.2,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 930.0,
+          "light_pct": 10.7,
+          "ph": 6.16,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 1.011,
+          "dli_mol": 2.15
+        },
+        "carb": {
+          "temp_c": 19.16,
+          "humidity_pct": 58.0,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 851.0,
+          "light_pct": 9.5,
+          "ph": 5.9,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.196,
+          "dli_mol": 2.45
+        },
+        "vitamin": {
+          "temp_c": 22.95,
+          "humidity_pct": 67.6,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 981.0,
+          "light_pct": 11.8,
+          "ph": 6.38,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.909,
+          "dli_mol": 2.72
+        }
+      },
+      "system": {
+        "water_reserve_l": 479.9,
+        "battery_pct": 88.9,
+        "solar_output_pct": 12.6,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.3,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.675,
+        "o2_contribution_pct": 14.37
+      }
+    },
+    {
+      "timestamp": "2026-03-19T17:40:00Z",
+      "sol_hour": 11.67,
+      "zones": {
+        "protein": {
+          "temp_c": 21.35,
+          "humidity_pct": 63.6,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 923.0,
+          "light_pct": 5.6,
+          "ph": 6.25,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 1.014,
+          "dli_mol": 1.28
+        },
+        "carb": {
+          "temp_c": 19.31,
+          "humidity_pct": 58.9,
+          "soil_moisture_pct": 68.1,
+          "co2_ppm": 857.0,
+          "light_pct": 5.2,
+          "ph": 5.89,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.162,
+          "dli_mol": 1.45
+        },
+        "vitamin": {
+          "temp_c": 22.92,
+          "humidity_pct": 67.7,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 986.0,
+          "light_pct": 6.9,
+          "ph": 6.37,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.944,
+          "dli_mol": 1.53
+        }
+      },
+      "system": {
+        "water_reserve_l": 479.5,
+        "battery_pct": 88.8,
+        "solar_output_pct": 7.2,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.5,
+        "outside_pressure_pa": 743.0,
+        "radiation_usv_hr": 0.674,
+        "o2_contribution_pct": 14.31
+      }
+    },
+    {
+      "timestamp": "2026-03-19T17:50:00Z",
+      "sol_hour": 11.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.98,
+          "humidity_pct": 63.3,
+          "soil_moisture_pct": 72.1,
+          "co2_ppm": 930.0,
+          "light_pct": 5.0,
+          "ph": 6.23,
+          "ec_ms_cm": 1.87,
+          "vpd_kpa": 0.971,
+          "dli_mol": 1.35
+        },
+        "carb": {
+          "temp_c": 19.34,
+          "humidity_pct": 59.2,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 855.0,
+          "light_pct": 3.3,
+          "ph": 5.93,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.178,
+          "dli_mol": 1.15
+        },
+        "vitamin": {
+          "temp_c": 22.66,
+          "humidity_pct": 68.3,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 987.0,
+          "light_pct": 4.1,
+          "ph": 6.36,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 0.933,
+          "dli_mol": 1.39
+        }
+      },
+      "system": {
+        "water_reserve_l": 479.1,
+        "battery_pct": 88.8,
+        "solar_output_pct": 5.2,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -52.7,
+        "outside_pressure_pa": 745.0,
+        "radiation_usv_hr": 0.62,
+        "o2_contribution_pct": 14.36
+      }
+    },
+    {
+      "timestamp": "2026-03-19T18:00:00Z",
+      "sol_hour": 12.0,
+      "zones": {
+        "protein": {
+          "temp_c": 21.16,
+          "humidity_pct": 63.7,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 925.0,
+          "light_pct": 1.1,
+          "ph": 6.19,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.991,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.83,
+          "humidity_pct": 59.3,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 860.0,
+          "light_pct": 0.4,
+          "ph": 5.92,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.158,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.33,
+          "humidity_pct": 68.7,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 993.0,
+          "light_pct": 0.7,
+          "ph": 6.45,
+          "ec_ms_cm": 2.15,
+          "vpd_kpa": 0.915,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 478.8,
+        "battery_pct": 88.7,
+        "solar_output_pct": 0.9,
+        "desal_rate_l_sol": 0.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.0,
+        "outside_pressure_pa": 763.0,
+        "radiation_usv_hr": 0.647,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-19T18:10:00Z",
+      "sol_hour": 12.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.86,
+          "humidity_pct": 64.3,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 928.0,
+          "light_pct": 0,
+          "ph": 6.22,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.994,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.59,
+          "humidity_pct": 59.1,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.93,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.123,
+          "dli_mol": 0.2
+        },
+        "vitamin": {
+          "temp_c": 22.43,
+          "humidity_pct": 68.3,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 992.0,
+          "light_pct": 0,
+          "ph": 6.44,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.889,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 478.5,
+        "battery_pct": 88.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -52.5,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.673,
+        "o2_contribution_pct": 14.1
+      }
+    },
+    {
+      "timestamp": "2026-03-19T18:20:00Z",
+      "sol_hour": 12.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.81,
+          "humidity_pct": 64.4,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 929.0,
+          "light_pct": 0.4,
+          "ph": 6.16,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.987,
+          "dli_mol": 0.39
+        },
+        "carb": {
+          "temp_c": 18.96,
+          "humidity_pct": 59.4,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 858.0,
+          "light_pct": 0,
+          "ph": 5.86,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.124,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.44,
+          "humidity_pct": 69.1,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 993.0,
+          "light_pct": 0.7,
+          "ph": 6.4,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 0.916,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 478.2,
+        "battery_pct": 88.6,
+        "solar_output_pct": 0.2,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -52.8,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.669,
+        "o2_contribution_pct": 14.13
+      }
+    },
+    {
+      "timestamp": "2026-03-19T18:30:00Z",
+      "sol_hour": 12.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.82,
+          "humidity_pct": 64.4,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 934.0,
+          "light_pct": 1.0,
+          "ph": 6.21,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 0.947,
+          "dli_mol": 0.36
+        },
+        "carb": {
+          "temp_c": 18.84,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 855.0,
+          "light_pct": 0.9,
+          "ph": 5.85,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.114,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.46,
+          "humidity_pct": 69.2,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 989.0,
+          "light_pct": 0.3,
+          "ph": 6.4,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.912,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 477.8,
+        "battery_pct": 88.5,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.9,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.674,
+        "o2_contribution_pct": 14.18
+      }
+    },
+    {
+      "timestamp": "2026-03-19T18:40:00Z",
+      "sol_hour": 12.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.88,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 932.0,
+          "light_pct": 0,
+          "ph": 6.16,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 0.984,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.63,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.92,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.11,
+          "dli_mol": 0.23
+        },
+        "vitamin": {
+          "temp_c": 22.46,
+          "humidity_pct": 69.5,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 987.0,
+          "light_pct": 0.7,
+          "ph": 6.38,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 0.871,
+          "dli_mol": 0.31
+        }
+      },
+      "system": {
+        "water_reserve_l": 477.5,
+        "battery_pct": 88.4,
+        "solar_output_pct": 0.1,
+        "desal_rate_l_sol": 0.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.7,
+        "outside_pressure_pa": 737.0,
+        "radiation_usv_hr": 0.691,
+        "o2_contribution_pct": 14.22
+      }
+    },
+    {
+      "timestamp": "2026-03-19T18:50:00Z",
+      "sol_hour": 12.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.56,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 929.0,
+          "light_pct": 0,
+          "ph": 6.21,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.942,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.42,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 857.0,
+          "light_pct": 0,
+          "ph": 5.87,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.125,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.31,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 989.0,
+          "light_pct": 0.8,
+          "ph": 6.42,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.876,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 477.1,
+        "battery_pct": 88.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -52.8,
+        "outside_pressure_pa": 740.0,
+        "radiation_usv_hr": 0.7,
+        "o2_contribution_pct": 14.3
+      }
+    },
+    {
+      "timestamp": "2026-03-19T19:00:00Z",
+      "sol_hour": 13.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.24,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 928.0,
+          "light_pct": 0,
+          "ph": 6.17,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 0.953,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.38,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 860.0,
+          "light_pct": 0.3,
+          "ph": 5.94,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.136,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.85,
+          "humidity_pct": 69.5,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 988.0,
+          "light_pct": 0.2,
+          "ph": 6.45,
+          "ec_ms_cm": 2.12,
+          "vpd_kpa": 0.9,
+          "dli_mol": 0.47
+        }
+      },
+      "system": {
+        "water_reserve_l": 476.8,
+        "battery_pct": 88.3,
+        "solar_output_pct": 0.5,
+        "desal_rate_l_sol": 0.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.3,
+        "outside_pressure_pa": 751.0,
+        "radiation_usv_hr": 0.644,
+        "o2_contribution_pct": 14.21
+      }
+    },
+    {
+      "timestamp": "2026-03-19T19:10:00Z",
+      "sol_hour": 13.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.8,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 934.0,
+          "light_pct": 0,
+          "ph": 6.19,
+          "ec_ms_cm": 1.88,
+          "vpd_kpa": 0.951,
+          "dli_mol": 0.2
+        },
+        "carb": {
+          "temp_c": 18.25,
+          "humidity_pct": 59.6,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 856.0,
+          "light_pct": 0,
+          "ph": 5.95,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.124,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.86,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 992.0,
+          "light_pct": 0.6,
+          "ph": 6.36,
+          "ec_ms_cm": 2.15,
+          "vpd_kpa": 0.869,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 476.5,
+        "battery_pct": 88.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.1,
+        "outside_pressure_pa": 749.0,
+        "radiation_usv_hr": 0.661,
+        "o2_contribution_pct": 14.21
+      }
+    },
+    {
+      "timestamp": "2026-03-19T19:20:00Z",
+      "sol_hour": 13.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.32,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 926.0,
+          "light_pct": 0,
+          "ph": 6.22,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 0.961,
+          "dli_mol": 0.41
+        },
+        "carb": {
+          "temp_c": 18.7,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 858.0,
+          "light_pct": 0,
+          "ph": 5.88,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.121,
+          "dli_mol": 0.25
+        },
+        "vitamin": {
+          "temp_c": 21.72,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 987.0,
+          "light_pct": 0.3,
+          "ph": 6.36,
+          "ec_ms_cm": 2.12,
+          "vpd_kpa": 0.878,
+          "dli_mol": 0.39
+        }
+      },
+      "system": {
+        "water_reserve_l": 476.2,
+        "battery_pct": 88.3,
+        "solar_output_pct": 0.5,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.2,
+        "outside_pressure_pa": 746.0,
+        "radiation_usv_hr": 0.683,
+        "o2_contribution_pct": 14.24
+      }
+    },
+    {
+      "timestamp": "2026-03-19T19:30:00Z",
+      "sol_hour": 13.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.36,
+          "humidity_pct": 65.3,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 934.0,
+          "light_pct": 0,
+          "ph": 6.24,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 0.947,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.4,
+          "humidity_pct": 59.5,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.85,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.139,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.8,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 994.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.852,
+          "dli_mol": 0.14
+        }
+      },
+      "system": {
+        "water_reserve_l": 475.8,
+        "battery_pct": 88.3,
+        "solar_output_pct": 0.1,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.8,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.64,
+        "o2_contribution_pct": 14.28
+      }
+    },
+    {
+      "timestamp": "2026-03-19T19:40:00Z",
+      "sol_hour": 13.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.58,
+          "humidity_pct": 65.3,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 933.0,
+          "light_pct": 0.6,
+          "ph": 6.2,
+          "ec_ms_cm": 1.87,
+          "vpd_kpa": 0.942,
+          "dli_mol": 0.05
+        },
+        "carb": {
+          "temp_c": 18.5,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 857.0,
+          "light_pct": 0,
+          "ph": 5.86,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.144,
+          "dli_mol": 0.28
+        },
+        "vitamin": {
+          "temp_c": 22.02,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 986.0,
+          "light_pct": 1.0,
+          "ph": 6.43,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 0.889,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 475.4,
+        "battery_pct": 88.3,
+        "solar_output_pct": 0.0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.2,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.655,
+        "o2_contribution_pct": 14.27
+      }
+    },
+    {
+      "timestamp": "2026-03-19T19:50:00Z",
+      "sol_hour": 13.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.31,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 934.0,
+          "light_pct": 0.9,
+          "ph": 6.24,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 0.922,
+          "dli_mol": 0.26
+        },
+        "carb": {
+          "temp_c": 18.54,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 860.0,
+          "light_pct": 1.2,
+          "ph": 5.86,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.109,
+          "dli_mol": 0.04
+        },
+        "vitamin": {
+          "temp_c": 21.83,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 75.0,
+          "co2_ppm": 987.0,
+          "light_pct": 0,
+          "ph": 6.44,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 0.858,
+          "dli_mol": 0.28
+        }
+      },
+      "system": {
+        "water_reserve_l": 475.0,
+        "battery_pct": 88.2,
+        "solar_output_pct": 0.3,
+        "desal_rate_l_sol": 0.2,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.0,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.705,
+        "o2_contribution_pct": 14.28
+      }
+    },
+    {
+      "timestamp": "2026-03-19T20:00:00Z",
+      "sol_hour": 14.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.42,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 928.0,
+          "light_pct": 0.2,
+          "ph": 6.24,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 0.928,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.78,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.87,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.146,
+          "dli_mol": 0.36
+        },
+        "vitamin": {
+          "temp_c": 21.81,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 992.0,
+          "light_pct": 0.8,
+          "ph": 6.39,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.907,
+          "dli_mol": 0.54
+        }
+      },
+      "system": {
+        "water_reserve_l": 474.8,
+        "battery_pct": 88.1,
+        "solar_output_pct": 0.5,
+        "desal_rate_l_sol": 0.2,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.0,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.642,
+        "o2_contribution_pct": 14.22
+      }
+    },
+    {
+      "timestamp": "2026-03-19T20:10:00Z",
+      "sol_hour": 14.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.28,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 72.0,
+          "co2_ppm": 927.0,
+          "light_pct": 0,
+          "ph": 6.22,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 0.973,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.73,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 856.0,
+          "light_pct": 0,
+          "ph": 5.85,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.105,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.14,
+          "humidity_pct": 70.5,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 989.0,
+          "light_pct": 1.2,
+          "ph": 6.4,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 0.883,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 474.5,
+        "battery_pct": 88.1,
+        "solar_output_pct": 0.4,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.6,
+        "outside_pressure_pa": 760.0,
+        "radiation_usv_hr": 0.649,
+        "o2_contribution_pct": 14.17
+      }
+    },
+    {
+      "timestamp": "2026-03-19T20:20:00Z",
+      "sol_hour": 14.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.24,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 930.0,
+          "light_pct": 0.1,
+          "ph": 6.21,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 0.974,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.49,
+          "humidity_pct": 59.5,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 864.0,
+          "light_pct": 1.2,
+          "ph": 5.87,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.099,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.12,
+          "humidity_pct": 70.2,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 988.0,
+          "light_pct": 0.9,
+          "ph": 6.41,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.864,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 474.1,
+        "battery_pct": 88.0,
+        "solar_output_pct": 0.5,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.0,
+        "outside_pressure_pa": 755.0,
+        "radiation_usv_hr": 0.68,
+        "o2_contribution_pct": 14.15
+      }
+    },
+    {
+      "timestamp": "2026-03-19T20:30:00Z",
+      "sol_hour": 14.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.3,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 928.0,
+          "light_pct": 0,
+          "ph": 6.22,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 0.944,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.53,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 859.0,
+          "light_pct": 0.8,
+          "ph": 5.87,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.106,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.74,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 988.0,
+          "light_pct": 0.3,
+          "ph": 6.41,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.882,
+          "dli_mol": 0.47
+        }
+      },
+      "system": {
+        "water_reserve_l": 473.8,
+        "battery_pct": 88.0,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.3,
+        "outside_pressure_pa": 761.0,
+        "radiation_usv_hr": 0.667,
+        "o2_contribution_pct": 14.28
+      }
+    },
+    {
+      "timestamp": "2026-03-19T20:40:00Z",
+      "sol_hour": 14.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.25,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 934.0,
+          "light_pct": 0.4,
+          "ph": 6.21,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.968,
+          "dli_mol": 0.18
+        },
+        "carb": {
+          "temp_c": 18.65,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 68.0,
+          "co2_ppm": 863.0,
+          "light_pct": 1.0,
+          "ph": 5.95,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.098,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.3,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 994.0,
+          "light_pct": 0.7,
+          "ph": 6.39,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.905,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 473.4,
+        "battery_pct": 87.9,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.4,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.682,
+        "o2_contribution_pct": 14.2
+      }
+    },
+    {
+      "timestamp": "2026-03-19T20:50:00Z",
+      "sol_hour": 14.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.45,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 934.0,
+          "light_pct": 0.2,
+          "ph": 6.16,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 0.975,
+          "dli_mol": 0.06
+        },
+        "carb": {
+          "temp_c": 18.52,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 860.0,
+          "light_pct": 0,
+          "ph": 5.88,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.127,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.07,
+          "humidity_pct": 70.2,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 988.0,
+          "light_pct": 0,
+          "ph": 6.44,
+          "ec_ms_cm": 2.26,
+          "vpd_kpa": 0.864,
+          "dli_mol": 0.25
+        }
+      },
+      "system": {
+        "water_reserve_l": 473.0,
+        "battery_pct": 87.9,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.2,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.69,
+        "o2_contribution_pct": 14.12
+      }
+    },
+    {
+      "timestamp": "2026-03-19T21:00:00Z",
+      "sol_hour": 15.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.28,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 928.0,
+          "light_pct": 0.2,
+          "ph": 6.17,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.945,
+          "dli_mol": 0.21
+        },
+        "carb": {
+          "temp_c": 18.69,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 863.0,
+          "light_pct": 0.8,
+          "ph": 5.88,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.121,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.78,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 74.4,
+          "co2_ppm": 987.0,
+          "light_pct": 1.1,
+          "ph": 6.37,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 0.9,
+          "dli_mol": 0.41
+        }
+      },
+      "system": {
+        "water_reserve_l": 472.8,
+        "battery_pct": 87.9,
+        "solar_output_pct": 0.4,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.6,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.684,
+        "o2_contribution_pct": 14.13
+      }
+    },
+    {
+      "timestamp": "2026-03-19T21:10:00Z",
+      "sol_hour": 15.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.42,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 931.0,
+          "light_pct": 0,
+          "ph": 6.24,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.941,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.61,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.148,
+          "dli_mol": 0.36
+        },
+        "vitamin": {
+          "temp_c": 21.86,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 993.0,
+          "light_pct": 0,
+          "ph": 6.41,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.851,
+          "dli_mol": 0.41
+        }
+      },
+      "system": {
+        "water_reserve_l": 472.4,
+        "battery_pct": 87.8,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.3,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.684,
+        "o2_contribution_pct": 14.18
+      }
+    },
+    {
+      "timestamp": "2026-03-19T21:20:00Z",
+      "sol_hour": 15.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.41,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 933.0,
+          "light_pct": 0,
+          "ph": 6.2,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.944,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.71,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 858.0,
+          "light_pct": 0.3,
+          "ph": 5.95,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.096,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.22,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 988.0,
+          "light_pct": 0.4,
+          "ph": 6.44,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.859,
+          "dli_mol": 0.27
+        }
+      },
+      "system": {
+        "water_reserve_l": 472.1,
+        "battery_pct": 87.8,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.2,
+        "outside_pressure_pa": 757.0,
+        "radiation_usv_hr": 0.686,
+        "o2_contribution_pct": 14.3
+      }
+    },
+    {
+      "timestamp": "2026-03-19T21:30:00Z",
+      "sol_hour": 15.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.45,
+          "humidity_pct": 64.9,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 931.0,
+          "light_pct": 0,
+          "ph": 6.17,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 0.931,
+          "dli_mol": 0.23
+        },
+        "carb": {
+          "temp_c": 18.67,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 863.0,
+          "light_pct": 0.3,
+          "ph": 5.87,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.14,
+          "dli_mol": 0.38
+        },
+        "vitamin": {
+          "temp_c": 21.78,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 987.0,
+          "light_pct": 0.6,
+          "ph": 6.36,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.891,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 471.8,
+        "battery_pct": 87.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.3,
+        "outside_pressure_pa": 743.0,
+        "radiation_usv_hr": 0.649,
+        "o2_contribution_pct": 14.27
+      }
+    },
+    {
+      "timestamp": "2026-03-19T21:40:00Z",
+      "sol_hour": 15.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.72,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 934.0,
+          "light_pct": 0.9,
+          "ph": 6.19,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 0.95,
+          "dli_mol": 0.37
+        },
+        "carb": {
+          "temp_c": 18.23,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 859.0,
+          "light_pct": 0,
+          "ph": 5.9,
+          "ec_ms_cm": 1.47,
+          "vpd_kpa": 1.124,
+          "dli_mol": 0.41
+        },
+        "vitamin": {
+          "temp_c": 22.13,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 987.0,
+          "light_pct": 0,
+          "ph": 6.38,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 0.888,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 471.4,
+        "battery_pct": 87.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.1,
+        "outside_pressure_pa": 738.0,
+        "radiation_usv_hr": 0.681,
+        "o2_contribution_pct": 14.23
+      }
+    },
+    {
+      "timestamp": "2026-03-19T21:50:00Z",
+      "sol_hour": 15.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.78,
+          "humidity_pct": 64.9,
+          "soil_moisture_pct": 73.5,
+          "co2_ppm": 929.0,
+          "light_pct": 0,
+          "ph": 6.23,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.921,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.61,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 69.8,
+          "co2_ppm": 858.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.098,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.19,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 76.8,
+          "co2_ppm": 991.0,
+          "light_pct": 0,
+          "ph": 6.45,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.87,
+          "dli_mol": 0.39
+        }
+      },
+      "system": {
+        "water_reserve_l": 471.1,
+        "battery_pct": 87.6,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -53.6,
+        "outside_pressure_pa": 763.0,
+        "radiation_usv_hr": 0.66,
+        "o2_contribution_pct": 14.15
+      }
+    },
+    {
+      "timestamp": "2026-03-19T22:00:00Z",
+      "sol_hour": 16.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.28,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 73.5,
+          "co2_ppm": 929.0,
+          "light_pct": 0.4,
+          "ph": 6.24,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 0.959,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.52,
+          "humidity_pct": 59.5,
+          "soil_moisture_pct": 69.8,
+          "co2_ppm": 861.0,
+          "light_pct": 1.2,
+          "ph": 5.89,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.091,
+          "dli_mol": 0.23
+        },
+        "vitamin": {
+          "temp_c": 22.03,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 76.8,
+          "co2_ppm": 991.0,
+          "light_pct": 0,
+          "ph": 6.42,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.868,
+          "dli_mol": 0.21
+        }
+      },
+      "system": {
+        "water_reserve_l": 470.8,
+        "battery_pct": 87.5,
+        "solar_output_pct": 0.2,
+        "desal_rate_l_sol": 0.7,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.3,
+        "outside_pressure_pa": 757.0,
+        "radiation_usv_hr": 0.632,
+        "o2_contribution_pct": 14.13
+      }
+    },
+    {
+      "timestamp": "2026-03-19T22:10:00Z",
+      "sol_hour": 16.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.32,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 73.7,
+          "co2_ppm": 927.0,
+          "light_pct": 0,
+          "ph": 6.15,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 0.962,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.32,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 69.4,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.92,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.144,
+          "dli_mol": 0.34
+        },
+        "vitamin": {
+          "temp_c": 21.75,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 76.4,
+          "co2_ppm": 988.0,
+          "light_pct": 0.4,
+          "ph": 6.38,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 0.864,
+          "dli_mol": 0.49
+        }
+      },
+      "system": {
+        "water_reserve_l": 470.4,
+        "battery_pct": 87.4,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.8,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.651,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-19T22:20:00Z",
+      "sol_hour": 16.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.65,
+          "humidity_pct": 64.5,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 927.0,
+          "light_pct": 0.7,
+          "ph": 6.21,
+          "ec_ms_cm": 1.86,
+          "vpd_kpa": 0.941,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.26,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 865.0,
+          "light_pct": 0,
+          "ph": 5.94,
+          "ec_ms_cm": 1.55,
+          "vpd_kpa": 1.106,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.09,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 986.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.907,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 470.1,
+        "battery_pct": 87.4,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.6,
+        "outside_pressure_pa": 746.0,
+        "radiation_usv_hr": 0.623,
+        "o2_contribution_pct": 14.24
+      }
+    },
+    {
+      "timestamp": "2026-03-19T22:30:00Z",
+      "sol_hour": 16.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.78,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 929.0,
+          "light_pct": 1.1,
+          "ph": 6.18,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.923,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.61,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 865.0,
+          "light_pct": 0.4,
+          "ph": 5.9,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.13,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.76,
+          "humidity_pct": 70.2,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 992.0,
+          "light_pct": 0,
+          "ph": 6.41,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.873,
+          "dli_mol": 0.41
+        }
+      },
+      "system": {
+        "water_reserve_l": 469.7,
+        "battery_pct": 87.4,
+        "solar_output_pct": 0.3,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.3,
+        "outside_pressure_pa": 761.0,
+        "radiation_usv_hr": 0.707,
+        "o2_contribution_pct": 14.12
+      }
+    },
+    {
+      "timestamp": "2026-03-19T22:40:00Z",
+      "sol_hour": 16.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.34,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 931.0,
+          "light_pct": 0,
+          "ph": 6.2,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 0.944,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.47,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 860.0,
+          "light_pct": 0,
+          "ph": 5.89,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.129,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.7,
+          "humidity_pct": 69.6,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 988.0,
+          "light_pct": 0.2,
+          "ph": 6.42,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 0.881,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 469.3,
+        "battery_pct": 87.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.6,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.682,
+        "o2_contribution_pct": 14.19
+      }
+    },
+    {
+      "timestamp": "2026-03-19T22:50:00Z",
+      "sol_hour": 16.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.63,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 928.0,
+          "light_pct": 0.6,
+          "ph": 6.18,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 0.97,
+          "dli_mol": 0.49
+        },
+        "carb": {
+          "temp_c": 18.62,
+          "humidity_pct": 59.5,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.133,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.26,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 992.0,
+          "light_pct": 0.1,
+          "ph": 6.44,
+          "ec_ms_cm": 2.25,
+          "vpd_kpa": 0.856,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 469.0,
+        "battery_pct": 87.3,
+        "solar_output_pct": 0.2,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -55.1,
+        "outside_pressure_pa": 764.0,
+        "radiation_usv_hr": 0.633,
+        "o2_contribution_pct": 14.2
+      }
+    },
+    {
+      "timestamp": "2026-03-19T23:00:00Z",
+      "sol_hour": 17.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.23,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 930.0,
+          "light_pct": 0.7,
+          "ph": 6.21,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.975,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.28,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 860.0,
+          "light_pct": 0.2,
+          "ph": 5.94,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.113,
+          "dli_mol": 0.48
+        },
+        "vitamin": {
+          "temp_c": 21.86,
+          "humidity_pct": 70.5,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 986.0,
+          "light_pct": 1.0,
+          "ph": 6.42,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.875,
+          "dli_mol": 0.21
+        }
+      },
+      "system": {
+        "water_reserve_l": 468.7,
+        "battery_pct": 87.3,
+        "solar_output_pct": 0.0,
+        "desal_rate_l_sol": 0.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -54.3,
+        "outside_pressure_pa": 754.0,
+        "radiation_usv_hr": 0.64,
+        "o2_contribution_pct": 14.23
+      }
+    },
+    {
+      "timestamp": "2026-03-19T23:10:00Z",
+      "sol_hour": 17.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.41,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 935.0,
+          "light_pct": 1.0,
+          "ph": 6.18,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.95,
+          "dli_mol": 0.19
+        },
+        "carb": {
+          "temp_c": 18.41,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 859.0,
+          "light_pct": 0.1,
+          "ph": 5.88,
+          "ec_ms_cm": 1.56,
+          "vpd_kpa": 1.135,
+          "dli_mol": 0.34
+        },
+        "vitamin": {
+          "temp_c": 22.18,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.4,
+          "co2_ppm": 992.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.862,
+          "dli_mol": 0.25
+        }
+      },
+      "system": {
+        "water_reserve_l": 468.3,
+        "battery_pct": 87.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.4,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.623,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-19T23:20:00Z",
+      "sol_hour": 17.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.72,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 931.0,
+          "light_pct": 0.7,
+          "ph": 6.23,
+          "ec_ms_cm": 1.77,
+          "vpd_kpa": 0.934,
+          "dli_mol": 0.28
+        },
+        "carb": {
+          "temp_c": 18.6,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 865.0,
+          "light_pct": 0,
+          "ph": 5.85,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.109,
+          "dli_mol": 0.05
+        },
+        "vitamin": {
+          "temp_c": 22.07,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 994.0,
+          "light_pct": 0.7,
+          "ph": 6.43,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.892,
+          "dli_mol": 0.15
+        }
+      },
+      "system": {
+        "water_reserve_l": 468.0,
+        "battery_pct": 87.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.5,
+        "outside_pressure_pa": 740.0,
+        "radiation_usv_hr": 0.688,
+        "o2_contribution_pct": 14.14
+      }
+    },
+    {
+      "timestamp": "2026-03-19T23:30:00Z",
+      "sol_hour": 17.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.51,
+          "humidity_pct": 64.9,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 926.0,
+          "light_pct": 0,
+          "ph": 6.18,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.955,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.29,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 864.0,
+          "light_pct": 0,
+          "ph": 5.9,
+          "ec_ms_cm": 1.51,
+          "vpd_kpa": 1.127,
+          "dli_mol": 0.16
+        },
+        "vitamin": {
+          "temp_c": 21.91,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 987.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.854,
+          "dli_mol": 0.01
+        }
+      },
+      "system": {
+        "water_reserve_l": 467.6,
+        "battery_pct": 87.2,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.5,
+        "outside_pressure_pa": 746.0,
+        "radiation_usv_hr": 0.642,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-19T23:40:00Z",
+      "sol_hour": 17.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.8,
+          "humidity_pct": 65.3,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 932.0,
+          "light_pct": 1.0,
+          "ph": 6.21,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 0.947,
+          "dli_mol": 0.41
+        },
+        "carb": {
+          "temp_c": 18.78,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 864.0,
+          "light_pct": 0,
+          "ph": 5.88,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.113,
+          "dli_mol": 0.05
+        },
+        "vitamin": {
+          "temp_c": 22.19,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 985.0,
+          "light_pct": 0.6,
+          "ph": 6.4,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 0.904,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 467.2,
+        "battery_pct": 87.2,
+        "solar_output_pct": 0.0,
+        "desal_rate_l_sol": 0.1,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.6,
+        "outside_pressure_pa": 737.0,
+        "radiation_usv_hr": 0.687,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-19T23:50:00Z",
+      "sol_hour": 17.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.45,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 935.0,
+          "light_pct": 0.4,
+          "ph": 6.24,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.967,
+          "dli_mol": 0.21
+        },
+        "carb": {
+          "temp_c": 18.29,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 855.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.138,
+          "dli_mol": 0.12
+        },
+        "vitamin": {
+          "temp_c": 21.86,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 985.0,
+          "light_pct": 0.6,
+          "ph": 6.41,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.89,
+          "dli_mol": 0.11
+        }
+      },
+      "system": {
+        "water_reserve_l": 466.9,
+        "battery_pct": 87.2,
+        "solar_output_pct": 0.4,
+        "desal_rate_l_sol": 0.4,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.5,
+        "outside_pressure_pa": 763.0,
+        "radiation_usv_hr": 0.631,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-20T00:00:00Z",
+      "sol_hour": 18.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.25,
+          "humidity_pct": 65.3,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 932.0,
+          "light_pct": 0,
+          "ph": 6.16,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 0.948,
+          "dli_mol": 0.03
+        },
+        "carb": {
+          "temp_c": 18.68,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 862.0,
+          "light_pct": 0.9,
+          "ph": 5.92,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.145,
+          "dli_mol": 0.3
+        },
+        "vitamin": {
+          "temp_c": 22.27,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.4,
+          "co2_ppm": 985.0,
+          "light_pct": 0.1,
+          "ph": 6.44,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.886,
+          "dli_mol": 0.04
+        }
+      },
+      "system": {
+        "water_reserve_l": 466.6,
+        "battery_pct": 87.2,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.6,
+        "outside_pressure_pa": 754.0,
+        "radiation_usv_hr": 0.671,
+        "o2_contribution_pct": 14.13
+      }
+    },
+    {
+      "timestamp": "2026-03-20T00:10:00Z",
+      "sol_hour": 18.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.7,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 934.0,
+          "light_pct": 0,
+          "ph": 6.25,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 0.971,
+          "dli_mol": 0.43
+        },
+        "carb": {
+          "temp_c": 18.53,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.86,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.119,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.76,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 990.0,
+          "light_pct": 0.8,
+          "ph": 6.41,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.887,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 466.2,
+        "battery_pct": 87.1,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.0,
+        "outside_pressure_pa": 742.0,
+        "radiation_usv_hr": 0.642,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-20T00:20:00Z",
+      "sol_hour": 18.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.7,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.9,
+          "co2_ppm": 930.0,
+          "light_pct": 0.5,
+          "ph": 6.21,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.942,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.56,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 860.0,
+          "light_pct": 0.7,
+          "ph": 5.86,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.106,
+          "dli_mol": 0.39
+        },
+        "vitamin": {
+          "temp_c": 21.71,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 989.0,
+          "light_pct": 0,
+          "ph": 6.41,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.885,
+          "dli_mol": 0.41
+        }
+      },
+      "system": {
+        "water_reserve_l": 466.0,
+        "battery_pct": 87.0,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.0,
+        "outside_pressure_pa": 742.0,
+        "radiation_usv_hr": 0.697,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-20T00:30:00Z",
+      "sol_hour": 18.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.48,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 932.0,
+          "light_pct": 0,
+          "ph": 6.21,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.971,
+          "dli_mol": 0.31
+        },
+        "carb": {
+          "temp_c": 18.51,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.9,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.148,
+          "dli_mol": 0.24
+        },
+        "vitamin": {
+          "temp_c": 21.83,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 985.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 0.862,
+          "dli_mol": 0.41
+        }
+      },
+      "system": {
+        "water_reserve_l": 465.7,
+        "battery_pct": 86.9,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 1.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.3,
+        "outside_pressure_pa": 756.0,
+        "radiation_usv_hr": 0.672,
+        "o2_contribution_pct": 14.27
+      }
+    },
+    {
+      "timestamp": "2026-03-20T00:40:00Z",
+      "sol_hour": 18.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.36,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 929.0,
+          "light_pct": 0,
+          "ph": 6.2,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 0.959,
+          "dli_mol": 0.39
+        },
+        "carb": {
+          "temp_c": 18.74,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 860.0,
+          "light_pct": 0,
+          "ph": 5.9,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.119,
+          "dli_mol": 0.16
+        },
+        "vitamin": {
+          "temp_c": 21.8,
+          "humidity_pct": 69.6,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 987.0,
+          "light_pct": 0.6,
+          "ph": 6.36,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.872,
+          "dli_mol": 0.28
+        }
+      },
+      "system": {
+        "water_reserve_l": 465.4,
+        "battery_pct": 86.9,
+        "solar_output_pct": 0.3,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.9,
+        "outside_pressure_pa": 741.0,
+        "radiation_usv_hr": 0.636,
+        "o2_contribution_pct": 14.27
+      }
+    },
+    {
+      "timestamp": "2026-03-20T00:50:00Z",
+      "sol_hour": 18.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.23,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 925.0,
+          "light_pct": 0,
+          "ph": 6.18,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.954,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.77,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 67.3,
+          "co2_ppm": 862.0,
+          "light_pct": 0.1,
+          "ph": 5.86,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.13,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.3,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 74.8,
+          "co2_ppm": 991.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.23,
+          "vpd_kpa": 0.898,
+          "dli_mol": 0.32
+        }
+      },
+      "system": {
+        "water_reserve_l": 465.0,
+        "battery_pct": 86.9,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.1,
+        "outside_pressure_pa": 753.0,
+        "radiation_usv_hr": 0.643,
+        "o2_contribution_pct": 14.18
+      }
+    },
+    {
+      "timestamp": "2026-03-20T01:00:00Z",
+      "sol_hour": 19.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.32,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 926.0,
+          "light_pct": 0.0,
+          "ph": 6.21,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 0.926,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.67,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 856.0,
+          "light_pct": 0,
+          "ph": 5.94,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.126,
+          "dli_mol": 0.33
+        },
+        "vitamin": {
+          "temp_c": 22.09,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.3,
+          "co2_ppm": 990.0,
+          "light_pct": 0,
+          "ph": 6.43,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.864,
+          "dli_mol": 0.3
+        }
+      },
+      "system": {
+        "water_reserve_l": 464.7,
+        "battery_pct": 86.9,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.5,
+        "outside_pressure_pa": 738.0,
+        "radiation_usv_hr": 0.633,
+        "o2_contribution_pct": 14.2
+      }
+    },
+    {
+      "timestamp": "2026-03-20T01:10:00Z",
+      "sol_hour": 19.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.72,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 927.0,
+          "light_pct": 0.8,
+          "ph": 6.21,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.963,
+          "dli_mol": 0.29
+        },
+        "carb": {
+          "temp_c": 18.2,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 859.0,
+          "light_pct": 0.4,
+          "ph": 5.88,
+          "ec_ms_cm": 1.56,
+          "vpd_kpa": 1.099,
+          "dli_mol": 0.15
+        },
+        "vitamin": {
+          "temp_c": 21.95,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 993.0,
+          "light_pct": 0,
+          "ph": 6.4,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.875,
+          "dli_mol": 0.28
+        }
+      },
+      "system": {
+        "water_reserve_l": 464.4,
+        "battery_pct": 86.8,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.7,
+        "outside_pressure_pa": 756.0,
+        "radiation_usv_hr": 0.694,
+        "o2_contribution_pct": 14.27
+      }
+    },
+    {
+      "timestamp": "2026-03-20T01:20:00Z",
+      "sol_hour": 19.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.65,
+          "humidity_pct": 64.9,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 927.0,
+          "light_pct": 0.5,
+          "ph": 6.21,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.944,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.62,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.3,
+          "co2_ppm": 856.0,
+          "light_pct": 1.1,
+          "ph": 5.89,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.099,
+          "dli_mol": 0.45
+        },
+        "vitamin": {
+          "temp_c": 21.83,
+          "humidity_pct": 69.6,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 995.0,
+          "light_pct": 0,
+          "ph": 6.42,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.887,
+          "dli_mol": 0.05
+        }
+      },
+      "system": {
+        "water_reserve_l": 464.2,
+        "battery_pct": 86.8,
+        "solar_output_pct": 0.2,
+        "desal_rate_l_sol": 0.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.6,
+        "outside_pressure_pa": 741.0,
+        "radiation_usv_hr": 0.686,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-20T01:30:00Z",
+      "sol_hour": 19.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.22,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 927.0,
+          "light_pct": 0.0,
+          "ph": 6.15,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.922,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.8,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.86,
+          "ec_ms_cm": 1.43,
+          "vpd_kpa": 1.121,
+          "dli_mol": 0.24
+        },
+        "vitamin": {
+          "temp_c": 21.87,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 995.0,
+          "light_pct": 0.8,
+          "ph": 6.37,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 0.867,
+          "dli_mol": 0.11
+        }
+      },
+      "system": {
+        "water_reserve_l": 463.9,
+        "battery_pct": 86.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.7,
+        "outside_pressure_pa": 737.0,
+        "radiation_usv_hr": 0.649,
+        "o2_contribution_pct": 14.29
+      }
+    },
+    {
+      "timestamp": "2026-03-20T01:40:00Z",
+      "sol_hour": 19.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.77,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 932.0,
+          "light_pct": 0.9,
+          "ph": 6.23,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.978,
+          "dli_mol": 0.12
+        },
+        "carb": {
+          "temp_c": 18.78,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 855.0,
+          "light_pct": 0.2,
+          "ph": 5.91,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.097,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.11,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.9,
+          "co2_ppm": 990.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.13,
+          "vpd_kpa": 0.851,
+          "dli_mol": 0.39
+        }
+      },
+      "system": {
+        "water_reserve_l": 463.6,
+        "battery_pct": 86.7,
+        "solar_output_pct": 0.3,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -56.4,
+        "outside_pressure_pa": 749.0,
+        "radiation_usv_hr": 0.655,
+        "o2_contribution_pct": 14.28
+      }
+    },
+    {
+      "timestamp": "2026-03-20T01:50:00Z",
+      "sol_hour": 19.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.77,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 927.0,
+          "light_pct": 0.8,
+          "ph": 6.17,
+          "ec_ms_cm": 1.75,
+          "vpd_kpa": 0.964,
+          "dli_mol": 0.37
+        },
+        "carb": {
+          "temp_c": 18.35,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 864.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.131,
+          "dli_mol": 0.16
+        },
+        "vitamin": {
+          "temp_c": 22.02,
+          "humidity_pct": 69.5,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 990.0,
+          "light_pct": 0,
+          "ph": 6.44,
+          "ec_ms_cm": 2.2,
+          "vpd_kpa": 0.909,
+          "dli_mol": 0.4
+        }
+      },
+      "system": {
+        "water_reserve_l": 463.4,
+        "battery_pct": 86.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.7,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.625,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-20T02:00:00Z",
+      "sol_hour": 20.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.52,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 927.0,
+          "light_pct": 0,
+          "ph": 6.2,
+          "ec_ms_cm": 1.83,
+          "vpd_kpa": 0.979,
+          "dli_mol": 0.2
+        },
+        "carb": {
+          "temp_c": 18.21,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 861.0,
+          "light_pct": 0.2,
+          "ph": 5.87,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.106,
+          "dli_mol": 0.05
+        },
+        "vitamin": {
+          "temp_c": 22.07,
+          "humidity_pct": 69.9,
+          "soil_moisture_pct": 74.4,
+          "co2_ppm": 992.0,
+          "light_pct": 0,
+          "ph": 6.38,
+          "ec_ms_cm": 2.15,
+          "vpd_kpa": 0.872,
+          "dli_mol": 0.35
+        }
+      },
+      "system": {
+        "water_reserve_l": 463.0,
+        "battery_pct": 86.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.2,
+        "outside_pressure_pa": 743.0,
+        "radiation_usv_hr": 0.644,
+        "o2_contribution_pct": 14.19
+      }
+    },
+    {
+      "timestamp": "2026-03-20T02:10:00Z",
+      "sol_hour": 20.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.29,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 927.0,
+          "light_pct": 0,
+          "ph": 6.23,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 0.95,
+          "dli_mol": 0.5
+        },
+        "carb": {
+          "temp_c": 18.63,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.86,
+          "ec_ms_cm": 1.55,
+          "vpd_kpa": 1.114,
+          "dli_mol": 0.19
+        },
+        "vitamin": {
+          "temp_c": 21.99,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 989.0,
+          "light_pct": 0,
+          "ph": 6.38,
+          "ec_ms_cm": 2.12,
+          "vpd_kpa": 0.884,
+          "dli_mol": 0.43
+        }
+      },
+      "system": {
+        "water_reserve_l": 462.6,
+        "battery_pct": 86.7,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.1,
+        "outside_pressure_pa": 752.0,
+        "radiation_usv_hr": 0.685,
+        "o2_contribution_pct": 14.13
+      }
+    },
+    {
+      "timestamp": "2026-03-20T02:20:00Z",
+      "sol_hour": 20.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.41,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 934.0,
+          "light_pct": 0.2,
+          "ph": 6.21,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.943,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.3,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.87,
+          "ec_ms_cm": 1.46,
+          "vpd_kpa": 1.141,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.89,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 988.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.877,
+          "dli_mol": 0.42
+        }
+      },
+      "system": {
+        "water_reserve_l": 462.4,
+        "battery_pct": 86.6,
+        "solar_output_pct": 0.3,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.7,
+        "outside_pressure_pa": 757.0,
+        "radiation_usv_hr": 0.686,
+        "o2_contribution_pct": 14.29
+      }
+    },
+    {
+      "timestamp": "2026-03-20T02:30:00Z",
+      "sol_hour": 20.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.25,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.3,
+          "co2_ppm": 934.0,
+          "light_pct": 0,
+          "ph": 6.19,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.953,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.25,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 864.0,
+          "light_pct": 0,
+          "ph": 5.88,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.109,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.78,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 994.0,
+          "light_pct": 0,
+          "ph": 6.45,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.87,
+          "dli_mol": 0.02
+        }
+      },
+      "system": {
+        "water_reserve_l": 462.0,
+        "battery_pct": 86.5,
+        "solar_output_pct": 0.2,
+        "desal_rate_l_sol": 0.9,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.9,
+        "outside_pressure_pa": 740.0,
+        "radiation_usv_hr": 0.68,
+        "o2_contribution_pct": 14.23
+      }
+    },
+    {
+      "timestamp": "2026-03-20T02:40:00Z",
+      "sol_hour": 20.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.54,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 928.0,
+          "light_pct": 0.4,
+          "ph": 6.19,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 0.952,
+          "dli_mol": 0.33
+        },
+        "carb": {
+          "temp_c": 18.36,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 863.0,
+          "light_pct": 0,
+          "ph": 5.85,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.111,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.27,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 988.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 0.864,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 461.7,
+        "battery_pct": 86.4,
+        "solar_output_pct": 0.1,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.9,
+        "outside_pressure_pa": 747.0,
+        "radiation_usv_hr": 0.658,
+        "o2_contribution_pct": 14.16
+      }
+    },
+    {
+      "timestamp": "2026-03-20T02:50:00Z",
+      "sol_hour": 20.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.34,
+          "humidity_pct": 65.3,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 932.0,
+          "light_pct": 0.8,
+          "ph": 6.23,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 0.937,
+          "dli_mol": 0.24
+        },
+        "carb": {
+          "temp_c": 18.71,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.87,
+          "ec_ms_cm": 1.42,
+          "vpd_kpa": 1.106,
+          "dli_mol": 0.12
+        },
+        "vitamin": {
+          "temp_c": 21.73,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.3,
+          "co2_ppm": 988.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.14,
+          "vpd_kpa": 0.893,
+          "dli_mol": 0.23
+        }
+      },
+      "system": {
+        "water_reserve_l": 461.4,
+        "battery_pct": 86.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -57.9,
+        "outside_pressure_pa": 765.0,
+        "radiation_usv_hr": 0.666,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-20T03:00:00Z",
+      "sol_hour": 21.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.71,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 926.0,
+          "light_pct": 0,
+          "ph": 6.23,
+          "ec_ms_cm": 1.85,
+          "vpd_kpa": 0.948,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.7,
+          "humidity_pct": 59.6,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 863.0,
+          "light_pct": 0.5,
+          "ph": 5.85,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.117,
+          "dli_mol": 0.24
+        },
+        "vitamin": {
+          "temp_c": 22.16,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 992.0,
+          "light_pct": 1.0,
+          "ph": 6.41,
+          "ec_ms_cm": 2.13,
+          "vpd_kpa": 0.869,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 461.2,
+        "battery_pct": 86.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.5,
+        "outside_pressure_pa": 741.0,
+        "radiation_usv_hr": 0.709,
+        "o2_contribution_pct": 14.27
+      }
+    },
+    {
+      "timestamp": "2026-03-20T03:10:00Z",
+      "sol_hour": 21.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.27,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 928.0,
+          "light_pct": 0,
+          "ph": 6.15,
+          "ec_ms_cm": 1.73,
+          "vpd_kpa": 0.927,
+          "dli_mol": 0.29
+        },
+        "carb": {
+          "temp_c": 18.67,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 856.0,
+          "light_pct": 0.2,
+          "ph": 5.91,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.099,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.3,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 992.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.28,
+          "vpd_kpa": 0.897,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 460.9,
+        "battery_pct": 86.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.3,
+        "outside_pressure_pa": 741.0,
+        "radiation_usv_hr": 0.689,
+        "o2_contribution_pct": 14.17
+      }
+    },
+    {
+      "timestamp": "2026-03-20T03:20:00Z",
+      "sol_hour": 21.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.74,
+          "humidity_pct": 65.0,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 932.0,
+          "light_pct": 0,
+          "ph": 6.18,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.931,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.37,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 856.0,
+          "light_pct": 0.8,
+          "ph": 5.88,
+          "ec_ms_cm": 1.48,
+          "vpd_kpa": 1.099,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.7,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.4,
+          "co2_ppm": 985.0,
+          "light_pct": 0,
+          "ph": 6.37,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 0.901,
+          "dli_mol": 0.28
+        }
+      },
+      "system": {
+        "water_reserve_l": 460.6,
+        "battery_pct": 86.3,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.2,
+        "outside_pressure_pa": 750.0,
+        "radiation_usv_hr": 0.675,
+        "o2_contribution_pct": 14.22
+      }
+    },
+    {
+      "timestamp": "2026-03-20T03:30:00Z",
+      "sol_hour": 21.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.58,
+          "humidity_pct": 64.6,
+          "soil_moisture_pct": 71.3,
+          "co2_ppm": 933.0,
+          "light_pct": 0.0,
+          "ph": 6.17,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 0.928,
+          "dli_mol": 0.37
+        },
+        "carb": {
+          "temp_c": 18.26,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 860.0,
+          "light_pct": 0.7,
+          "ph": 5.89,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.132,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.74,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 994.0,
+          "light_pct": 0,
+          "ph": 6.36,
+          "ec_ms_cm": 2.21,
+          "vpd_kpa": 0.855,
+          "dli_mol": 0.3
+        }
+      },
+      "system": {
+        "water_reserve_l": 460.4,
+        "battery_pct": 86.2,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -58.8,
+        "outside_pressure_pa": 760.0,
+        "radiation_usv_hr": 0.647,
+        "o2_contribution_pct": 14.11
+      }
+    },
+    {
+      "timestamp": "2026-03-20T03:40:00Z",
+      "sol_hour": 21.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.38,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.3,
+          "co2_ppm": 932.0,
+          "light_pct": 0.9,
+          "ph": 6.2,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 0.952,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.58,
+          "humidity_pct": 59.7,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 856.0,
+          "light_pct": 0.5,
+          "ph": 5.9,
+          "ec_ms_cm": 1.53,
+          "vpd_kpa": 1.128,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.23,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 988.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.859,
+          "dli_mol": 0.5
+        }
+      },
+      "system": {
+        "water_reserve_l": 460.0,
+        "battery_pct": 86.2,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.0,
+        "outside_pressure_pa": 758.0,
+        "radiation_usv_hr": 0.663,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-20T03:50:00Z",
+      "sol_hour": 21.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.54,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 927.0,
+          "light_pct": 0.6,
+          "ph": 6.19,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.978,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.79,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 67.9,
+          "co2_ppm": 858.0,
+          "light_pct": 0.1,
+          "ph": 5.94,
+          "ec_ms_cm": 1.42,
+          "vpd_kpa": 1.108,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.19,
+          "humidity_pct": 70.2,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 991.0,
+          "light_pct": 0,
+          "ph": 6.35,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.906,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 459.6,
+        "battery_pct": 86.1,
+        "solar_output_pct": 0.1,
+        "desal_rate_l_sol": 0.2,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.6,
+        "outside_pressure_pa": 759.0,
+        "radiation_usv_hr": 0.629,
+        "o2_contribution_pct": 14.18
+      }
+    },
+    {
+      "timestamp": "2026-03-20T04:00:00Z",
+      "sol_hour": 22.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.64,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 933.0,
+          "light_pct": 0.9,
+          "ph": 6.24,
+          "ec_ms_cm": 1.82,
+          "vpd_kpa": 0.961,
+          "dli_mol": 0.15
+        },
+        "carb": {
+          "temp_c": 18.38,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 67.3,
+          "co2_ppm": 855.0,
+          "light_pct": 0.5,
+          "ph": 5.93,
+          "ec_ms_cm": 1.49,
+          "vpd_kpa": 1.136,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.22,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 991.0,
+          "light_pct": 0,
+          "ph": 6.39,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.851,
+          "dli_mol": 0.36
+        }
+      },
+      "system": {
+        "water_reserve_l": 459.2,
+        "battery_pct": 86.1,
+        "solar_output_pct": 0.4,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.9,
+        "outside_pressure_pa": 742.0,
+        "radiation_usv_hr": 0.625,
+        "o2_contribution_pct": 14.25
+      }
+    },
+    {
+      "timestamp": "2026-03-20T04:10:00Z",
+      "sol_hour": 22.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.47,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 928.0,
+          "light_pct": 0.0,
+          "ph": 6.16,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 0.944,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.23,
+          "humidity_pct": 59.9,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 863.0,
+          "light_pct": 0,
+          "ph": 5.91,
+          "ec_ms_cm": 1.5,
+          "vpd_kpa": 1.098,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.09,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 987.0,
+          "light_pct": 0.2,
+          "ph": 6.38,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 0.854,
+          "dli_mol": 0.28
+        }
+      },
+      "system": {
+        "water_reserve_l": 458.8,
+        "battery_pct": 86.1,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.6,
+        "outside_pressure_pa": 745.0,
+        "radiation_usv_hr": 0.679,
+        "o2_contribution_pct": 14.1
+      }
+    },
+    {
+      "timestamp": "2026-03-20T04:20:00Z",
+      "sol_hour": 22.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.79,
+          "humidity_pct": 65.1,
+          "soil_moisture_pct": 71.5,
+          "co2_ppm": 926.0,
+          "light_pct": 1.0,
+          "ph": 6.17,
+          "ec_ms_cm": 1.78,
+          "vpd_kpa": 0.923,
+          "dli_mol": 0.32
+        },
+        "carb": {
+          "temp_c": 18.65,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.3,
+          "co2_ppm": 864.0,
+          "light_pct": 0,
+          "ph": 5.93,
+          "ec_ms_cm": 1.42,
+          "vpd_kpa": 1.146,
+          "dli_mol": 0.37
+        },
+        "vitamin": {
+          "temp_c": 22.12,
+          "humidity_pct": 69.6,
+          "soil_moisture_pct": 74.3,
+          "co2_ppm": 987.0,
+          "light_pct": 0,
+          "ph": 6.4,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.882,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 458.5,
+        "battery_pct": 86.1,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.7,
+        "outside_pressure_pa": 736.0,
+        "radiation_usv_hr": 0.678,
+        "o2_contribution_pct": 14.23
+      }
+    },
+    {
+      "timestamp": "2026-03-20T04:30:00Z",
+      "sol_hour": 22.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.3,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 926.0,
+          "light_pct": 0.6,
+          "ph": 6.19,
+          "ec_ms_cm": 1.76,
+          "vpd_kpa": 0.959,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.71,
+          "humidity_pct": 60.2,
+          "soil_moisture_pct": 67.3,
+          "co2_ppm": 864.0,
+          "light_pct": 0.7,
+          "ph": 5.89,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.129,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.76,
+          "humidity_pct": 69.8,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 987.0,
+          "light_pct": 0.7,
+          "ph": 6.44,
+          "ec_ms_cm": 2.12,
+          "vpd_kpa": 0.88,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 458.1,
+        "battery_pct": 86.1,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.8,
+        "outside_pressure_pa": 740.0,
+        "radiation_usv_hr": 0.655,
+        "o2_contribution_pct": 14.17
+      }
+    },
+    {
+      "timestamp": "2026-03-20T04:40:00Z",
+      "sol_hour": 22.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.34,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 71.7,
+          "co2_ppm": 931.0,
+          "light_pct": 0.1,
+          "ph": 6.23,
+          "ec_ms_cm": 1.72,
+          "vpd_kpa": 0.973,
+          "dli_mol": 0.41
+        },
+        "carb": {
+          "temp_c": 18.53,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.8,
+          "co2_ppm": 862.0,
+          "light_pct": 0,
+          "ph": 5.95,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.095,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.08,
+          "humidity_pct": 69.7,
+          "soil_moisture_pct": 74.3,
+          "co2_ppm": 995.0,
+          "light_pct": 0,
+          "ph": 6.4,
+          "ec_ms_cm": 2.15,
+          "vpd_kpa": 0.905,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 457.7,
+        "battery_pct": 86.1,
+        "solar_output_pct": 0.1,
+        "desal_rate_l_sol": 0.6,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -59.5,
+        "outside_pressure_pa": 744.0,
+        "radiation_usv_hr": 0.691,
+        "o2_contribution_pct": 14.21
+      }
+    },
+    {
+      "timestamp": "2026-03-20T04:50:00Z",
+      "sol_hour": 22.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.8,
+          "humidity_pct": 65.5,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 934.0,
+          "light_pct": 0,
+          "ph": 6.24,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.939,
+          "dli_mol": 0.06
+        },
+        "carb": {
+          "temp_c": 18.39,
+          "humidity_pct": 60.4,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 864.0,
+          "light_pct": 0.5,
+          "ph": 5.89,
+          "ec_ms_cm": 1.57,
+          "vpd_kpa": 1.115,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.24,
+          "humidity_pct": 70.4,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 986.0,
+          "light_pct": 0,
+          "ph": 6.41,
+          "ec_ms_cm": 2.16,
+          "vpd_kpa": 0.861,
+          "dli_mol": 0.26
+        }
+      },
+      "system": {
+        "water_reserve_l": 457.4,
+        "battery_pct": 86.0,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.2,
+        "outside_pressure_pa": 746.0,
+        "radiation_usv_hr": 0.689,
+        "o2_contribution_pct": 14.2
+      }
+    },
+    {
+      "timestamp": "2026-03-20T05:00:00Z",
+      "sol_hour": 23.0,
+      "zones": {
+        "protein": {
+          "temp_c": 20.56,
+          "humidity_pct": 65.2,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 930.0,
+          "light_pct": 0,
+          "ph": 6.15,
+          "ec_ms_cm": 1.84,
+          "vpd_kpa": 0.928,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.21,
+          "humidity_pct": 59.8,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 865.0,
+          "light_pct": 0,
+          "ph": 5.94,
+          "ec_ms_cm": 1.58,
+          "vpd_kpa": 1.135,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.22,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 987.0,
+          "light_pct": 0,
+          "ph": 6.42,
+          "ec_ms_cm": 2.18,
+          "vpd_kpa": 0.874,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 457.0,
+        "battery_pct": 86.0,
+        "solar_output_pct": 0.0,
+        "desal_rate_l_sol": 0.5,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.7,
+        "outside_pressure_pa": 751.0,
+        "radiation_usv_hr": 0.708,
+        "o2_contribution_pct": 14.26
+      }
+    },
+    {
+      "timestamp": "2026-03-20T05:10:00Z",
+      "sol_hour": 23.17,
+      "zones": {
+        "protein": {
+          "temp_c": 20.47,
+          "humidity_pct": 65.3,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 930.0,
+          "light_pct": 0,
+          "ph": 6.21,
+          "ec_ms_cm": 1.8,
+          "vpd_kpa": 0.944,
+          "dli_mol": 0.24
+        },
+        "carb": {
+          "temp_c": 18.58,
+          "humidity_pct": 59.5,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 858.0,
+          "light_pct": 0,
+          "ph": 5.89,
+          "ec_ms_cm": 1.52,
+          "vpd_kpa": 1.14,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 21.73,
+          "humidity_pct": 70.0,
+          "soil_moisture_pct": 74.7,
+          "co2_ppm": 990.0,
+          "light_pct": 0,
+          "ph": 6.43,
+          "ec_ms_cm": 2.27,
+          "vpd_kpa": 0.893,
+          "dli_mol": 0
+        }
+      },
+      "system": {
+        "water_reserve_l": 456.7,
+        "battery_pct": 85.9,
+        "solar_output_pct": 0.0,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -61.3,
+        "outside_pressure_pa": 740.0,
+        "radiation_usv_hr": 0.679,
+        "o2_contribution_pct": 14.24
+      }
+    },
+    {
+      "timestamp": "2026-03-20T05:20:00Z",
+      "sol_hour": 23.33,
+      "zones": {
+        "protein": {
+          "temp_c": 20.47,
+          "humidity_pct": 64.8,
+          "soil_moisture_pct": 71.8,
+          "co2_ppm": 933.0,
+          "light_pct": 0.4,
+          "ph": 6.16,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 0.963,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.42,
+          "humidity_pct": 60.0,
+          "soil_moisture_pct": 67.7,
+          "co2_ppm": 860.0,
+          "light_pct": 0,
+          "ph": 5.89,
+          "ec_ms_cm": 1.54,
+          "vpd_kpa": 1.147,
+          "dli_mol": 0
+        },
+        "vitamin": {
+          "temp_c": 22.25,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.3,
+          "co2_ppm": 994.0,
+          "light_pct": 0.3,
+          "ph": 6.39,
+          "ec_ms_cm": 2.17,
+          "vpd_kpa": 0.861,
+          "dli_mol": 0.21
+        }
+      },
+      "system": {
+        "water_reserve_l": 456.4,
+        "battery_pct": 85.8,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.3,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -62.5,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.64,
+        "o2_contribution_pct": 14.22
+      }
+    },
+    {
+      "timestamp": "2026-03-20T05:30:00Z",
+      "sol_hour": 23.5,
+      "zones": {
+        "protein": {
+          "temp_c": 20.48,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.2,
+          "co2_ppm": 934.0,
+          "light_pct": 0.1,
+          "ph": 6.2,
+          "ec_ms_cm": 1.79,
+          "vpd_kpa": 0.934,
+          "dli_mol": 0.09
+        },
+        "carb": {
+          "temp_c": 18.25,
+          "humidity_pct": 60.1,
+          "soil_moisture_pct": 67.6,
+          "co2_ppm": 861.0,
+          "light_pct": 0,
+          "ph": 5.85,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.123,
+          "dli_mol": 0.33
+        },
+        "vitamin": {
+          "temp_c": 22.09,
+          "humidity_pct": 69.5,
+          "soil_moisture_pct": 74.6,
+          "co2_ppm": 993.0,
+          "light_pct": 0.7,
+          "ph": 6.35,
+          "ec_ms_cm": 2.19,
+          "vpd_kpa": 0.868,
+          "dli_mol": 0.42
+        }
+      },
+      "system": {
+        "water_reserve_l": 456.0,
+        "battery_pct": 85.8,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 0.2,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -60.9,
+        "outside_pressure_pa": 753.0,
+        "radiation_usv_hr": 0.699,
+        "o2_contribution_pct": 14.14
+      }
+    },
+    {
+      "timestamp": "2026-03-20T05:40:00Z",
+      "sol_hour": 23.67,
+      "zones": {
+        "protein": {
+          "temp_c": 20.55,
+          "humidity_pct": 65.4,
+          "soil_moisture_pct": 71.4,
+          "co2_ppm": 929.0,
+          "light_pct": 0,
+          "ph": 6.19,
+          "ec_ms_cm": 1.81,
+          "vpd_kpa": 0.943,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.38,
+          "humidity_pct": 59.6,
+          "soil_moisture_pct": 67.4,
+          "co2_ppm": 860.0,
+          "light_pct": 0.4,
+          "ph": 5.91,
+          "ec_ms_cm": 1.44,
+          "vpd_kpa": 1.121,
+          "dli_mol": 0.2
+        },
+        "vitamin": {
+          "temp_c": 22.14,
+          "humidity_pct": 70.1,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 992.0,
+          "light_pct": 1.0,
+          "ph": 6.38,
+          "ec_ms_cm": 2.22,
+          "vpd_kpa": 0.906,
+          "dli_mol": 0.49
+        }
+      },
+      "system": {
+        "water_reserve_l": 455.6,
+        "battery_pct": 85.8,
+        "solar_output_pct": 0,
+        "desal_rate_l_sol": 1.0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -62.1,
+        "outside_pressure_pa": 739.0,
+        "radiation_usv_hr": 0.676,
+        "o2_contribution_pct": 14.2
+      }
+    },
+    {
+      "timestamp": "2026-03-20T05:50:00Z",
+      "sol_hour": 23.83,
+      "zones": {
+        "protein": {
+          "temp_c": 20.5,
+          "humidity_pct": 64.7,
+          "soil_moisture_pct": 71.6,
+          "co2_ppm": 935.0,
+          "light_pct": 0.3,
+          "ph": 6.21,
+          "ec_ms_cm": 1.74,
+          "vpd_kpa": 0.92,
+          "dli_mol": 0
+        },
+        "carb": {
+          "temp_c": 18.71,
+          "humidity_pct": 60.3,
+          "soil_moisture_pct": 67.5,
+          "co2_ppm": 858.0,
+          "light_pct": 1.1,
+          "ph": 5.85,
+          "ec_ms_cm": 1.45,
+          "vpd_kpa": 1.124,
+          "dli_mol": 0.16
+        },
+        "vitamin": {
+          "temp_c": 21.87,
+          "humidity_pct": 70.3,
+          "soil_moisture_pct": 74.5,
+          "co2_ppm": 988.0,
+          "light_pct": 0,
+          "ph": 6.38,
+          "ec_ms_cm": 2.24,
+          "vpd_kpa": 0.85,
+          "dli_mol": 0.21
+        }
+      },
+      "system": {
+        "water_reserve_l": 455.3,
+        "battery_pct": 85.7,
+        "solar_output_pct": 0.1,
+        "desal_rate_l_sol": 0,
+        "dome_pressure_hpa": 500,
+        "outside_temp_c": -62.3,
+        "outside_pressure_pa": 745.0,
+        "radiation_usv_hr": 0.687,
+        "o2_contribution_pct": 14.29
+      }
+    }
+  ]
+}

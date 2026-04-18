@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated": "2026-03-19T14:30:00Z",
+    "source": "Syngenta Knowledge Base alignment analysis",
+    "greenhouse_area_m2": 100,
+    "calorie_baseline_kcal": 3000,
+    "calorie_baseline_source": "Syngenta Knowledge Base (not NASA ISS standard of 2,500)"
+  },
+  "rationale": "Crop selection aligned with Syngenta Knowledge Base recommendations for Martian greenhouse agriculture. The KB specifies optimal crop percentages based on caloric density, nutritional completeness, growth cycle efficiency, and resource constraints of a 100m2 sealed dome environment. Our allocation matches all KB targets within specified ranges.",
+  "kb_alignment": {
+    "potatoes": {
+      "kb_recommends": "40-50%",
+      "our_allocation": "45% (45m2)",
+      "reason": "Caloric backbone. 5.0 kg/m2/cycle yield in CEA. 900 kg total across 4 cycles = 693,000 kcal (72.3% of all greenhouse calories). High radiation tolerance makes it the most resilient calorie source. Also provides 19.7mg vitamin C per 100g — potato alone covers 109% of crew vitamin C requirement.",
+      "previous_allocation": "15% (15m2) in v1 — KB analysis showed this was critically undersized for caloric role"
+    },
+    "legumes": {
+      "kb_recommends": "20-30% beans/peas",
+      "our_allocation": "25% (15m2 soybean + 10m2 lentil)",
+      "reason": "Soybean chosen over generic beans for fat content (19.9g/100g — the ONLY meaningful greenhouse fat source) + complete protein (36.5g/100g) + nitrogen fixation companion benefit. Lentil provides complementary protein profile (25.8g/100g) with highest folate density (479ug/100g) of any crop in the mix. Both legumes fix atmospheric nitrogen, reducing nutrient solution costs by ~18%.",
+      "soybean_specific": "Soybean IS a legume (family Fabaceae, subfamily Faboideae). It qualifies as 'beans' per KB recommendation. Chosen over common bean (Phaseolus vulgaris) because: 1) 19.9g fat/100g vs <1g for common beans, 2) complete amino acid profile, 3) higher caloric density (446 kcal/100g vs ~333 for common beans).",
+      "lentil_specific": "Lentil chosen for: 1) highest folate of any crop (479ug/100g), 2) excellent protein (25.8g/100g), 3) Dr. Okonkwo's vegetarian dietary needs, 4) compact plant suitable for dome height constraints."
+    },
+    "leafy_greens": {
+      "kb_recommends": "15-20%",
+      "our_allocation": "18% (10m2 lettuce + 8m2 spinach)",
+      "reason": "Lettuce for vitamin K (126.3ug/100g), vitamin A, and folate (73ug/100g). Spinach for iron (2.7mg/100g), vitamin C (28.1mg/100g), and extreme vitamin K density (482.9ug/100g). Fast cycles (35 and 45 days) provide continuous fresh greens. Combined vitamin K coverage: 729% of crew requirement — critical for blood clotting in any Mars surgical emergency.",
+      "lettuce_specific": "NEW in v2.0. Added because: 1) KB explicitly recommends leafy greens at 15-20%, 2) 35-day cycle provides fast turnaround, 3) high vitamin K and folate, 4) low resource requirements (0.8-1.2 EC), 5) 440 kg total yield — significant fresh food mass.",
+      "spinach_specific": "Retained from v1 with reduced area (10m2 -> 8m2). Still provides: iron, vitamin C, vitamin K (highest density of any crop at 482.9ug/100g), folate."
+    },
+    "radish": {
+      "kb_recommends": "5-10%",
+      "our_allocation": "7% (7m2)",
+      "reason": "21-25 day cycle = first harvest by Sol 25. This is THE morale crop. First fresh food on Mars comes from radish. 15 cycles in 450 sols = 262.5 kg total yield. Provides vitamin C (14.8mg/100g), fiber, and psychological significance of crunchy fresh food. Moderate radiation tolerance makes it reliable.",
+      "morale_value": "Spc. Reyes pulling the first radish at Sol 25 establishes 'Radish Day' as crew tradition. Psychological research shows first fresh food after extended stored-food periods has outsized morale impact."
+    },
+    "herbs": {
+      "kb_recommends": "included in crop mix",
+      "our_allocation": "5% (3m2 basil + 2m2 microgreens)",
+      "reason": "Basil VOCs (linalool, eugenol) provide antifungal protection in sealed dome — this is not just seasoning, it's biological pest management. Reduces Phytophthora and Botrytis spore germination by ~40%. Microgreens serve as emergency vitamin bridge — harvestable in 10-14 days, providing rapid nutritional supplementation during any crop failure.",
+      "basil_specific": "Companion plant role is MISSION-CRITICAL for potato blight prevention. With potato at 45% of area, basil's antifungal VOCs are the first line of defense against the scariest failure scenario (TRIAGE-004).",
+      "microgreens_specific": "Emergency reserve. Not modeled in production projections. 10-14 day harvest cycle means they can bridge ANY crop failure gap. 2m2 is minimal but sufficient for emergency vitamin supplementation."
+    }
+  },
+  "deviations_from_kb": [
+    {
+      "omitted": "Tomato",
+      "reason": "Not in KB primary crop list. Vitamin C coverage achieved through potato (109.4% of requirement from potato alone), spinach (28.1mg/100g), lettuce (9.2mg/100g), and radish (14.8mg/100g). Total vitamin C at 193.7% without tomato. Tomato's 60-80 day cycle and high water needs (4.0 L/m2/day) make it less efficient than leafy greens in resource-constrained Mars environment. The 720 kg yield from v1 was impressive but nutritionally replaceable.",
+      "nutritional_impact": "Vitamin C: v1 had 133.5% coverage WITH tomato. v2 has 193.7% WITHOUT tomato — potato expansion more than compensates. Lycopene loss is the only nutritional gap tomato leaves — but lycopene is not an essential nutrient.",
+      "morale_impact": "Spc. Reyes's emotional attachment transferred to radish in v2.0 (first harvest = mission success indicator). Radish at Sol 25 replaces 'Tomato Day' at Sol 70 as the fresh-food milestone."
+    },
+    {
+      "omitted": "Wheat",
+      "reason": "Not in KB crop list. Caloric role fully covered by expanded potato allocation (45m2 vs original 15m2). Potato provides 5.0 kg/m2/cycle vs wheat's 0.5 kg/m2 — 10x more food per area. Wheat's 120-day cycle allowed only 3 harvests in 450 sols vs potato's 4 harvests at 90 days. Wheat total yield was 22.5 kg vs potato's 900 kg. Wheat bread morale value replaced by fresh potato dishes.",
+      "nutritional_impact": "Wheat provided 76,275 kcal in v1. Potato expansion adds 462,000 kcal (from 231,000 to 693,000). Net gain: +385,725 kcal. Wheat's fiber contribution (2,745g) replaced by potato (19,800g) and radish (4,200g).",
+      "morale_impact": "Loss of fresh bread capability. Mitigated by: stored flour in rations, potato-based flatbread recipes, and overall improvement in fresh food variety (7 crops vs 6, with faster cycles)."
+    }
+  ],
+  "zone_summary": [
+    {"zone": "Caloric", "area_m2": 45, "pct": 45, "crops": "Potato", "primary_contribution": "72.3% of greenhouse calories, 56.5% of vitamin C"},
+    {"zone": "Protein", "area_m2": 25, "pct": 25, "crops": "Soybean + Lentil", "primary_contribution": "54.2% of greenhouse fat, 21.2% of protein (from legumes alone)"},
+    {"zone": "Leafy Green", "area_m2": 18, "pct": 18, "crops": "Lettuce + Spinach", "primary_contribution": "729% vitamin K coverage, 139.6% folate coverage"},
+    {"zone": "Quick Harvest", "area_m2": 7, "pct": 7, "crops": "Radish", "primary_contribution": "First harvest Sol 25, 15 cycles, 262.5 kg total, morale anchor"},
+    {"zone": "Support", "area_m2": 5, "pct": 5, "crops": "Basil + Microgreens", "primary_contribution": "Antifungal VOCs for potato protection, emergency vitamin bridge"}
+  ]
+}

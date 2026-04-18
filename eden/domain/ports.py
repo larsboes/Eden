@@ -1,0 +1,49 @@
+"""EDEN domain ports — Protocol interfaces for hexagonal architecture.
+
+ZERO external imports except typing. THIS IS THE LAW.
+"""
+
+from __future__ import annotations
+
+from typing import Callable, Protocol
+
+from eden.domain.models import (
+    ActuatorCommand,
+    AgentDecision,
+    DesiredState,
+    SensorReading,
+    ZoneState,
+)
+
+
+class SensorPort(Protocol):
+    def start(self) -> None: ...
+    def stop(self) -> None: ...
+    def get_latest(self, zone_id: str) -> ZoneState | None: ...
+    def subscribe(self, callback: Callable[[SensorReading], None]) -> None: ...
+
+
+class ActuatorPort(Protocol):
+    def send_command(self, command: ActuatorCommand) -> bool: ...
+
+
+class StateStorePort(Protocol):
+    def get_zone_state(self, zone_id: str) -> ZoneState | None: ...
+    def put_zone_state(self, zone_id: str, state: ZoneState) -> None: ...
+    def get_desired_state(self, zone_id: str) -> DesiredState | None: ...
+    def put_desired_state(self, zone_id: str, state: DesiredState) -> None: ...
+
+
+class TelemetryStorePort(Protocol):
+    def append(self, reading: SensorReading) -> None: ...
+    def query(self, zone_id: str, since: float, limit: int) -> list[SensorReading]: ...
+
+
+class AgentLogPort(Protocol):
+    def append(self, decision: AgentDecision) -> None: ...
+    def query(self, since: float, limit: int) -> list[AgentDecision]: ...
+
+
+class ModelPort(Protocol):
+    def reason(self, prompt: str, context: dict) -> str: ...
+    def is_available(self) -> bool: ...

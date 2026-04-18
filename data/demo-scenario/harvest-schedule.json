@@ -1,0 +1,492 @@
+{
+  "harvests": [
+    {
+      "sol": 46,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "1"
+    },
+    {
+      "sol": 53,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "1-stagger"
+    },
+    {
+      "sol": 71,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "1"
+    },
+    {
+      "sol": 78,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "1-stagger"
+    },
+    {
+      "sol": 81,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "1"
+    },
+    {
+      "sol": 89,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "1-stagger"
+    },
+    {
+      "sol": 91,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "1"
+    },
+    {
+      "sol": 91,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "1"
+    },
+    {
+      "sol": 96,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "2"
+    },
+    {
+      "sol": 98,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "1-stagger"
+    },
+    {
+      "sol": 98,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "1-stagger"
+    },
+    {
+      "sol": 103,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "2-stagger"
+    },
+    {
+      "sol": 121,
+      "crop": "Wheat",
+      "zone": "carb",
+      "yield_kg": 3.75,
+      "nutrition_highlight": "Carbs + Protein + Fiber",
+      "cycle": "1"
+    },
+    {
+      "sol": 131,
+      "crop": "Wheat",
+      "zone": "carb",
+      "yield_kg": 3.75,
+      "nutrition_highlight": "Carbs + Protein + Fiber",
+      "cycle": "1-stagger"
+    },
+    {
+      "sol": 146,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "3"
+    },
+    {
+      "sol": 146,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "2"
+    },
+    {
+      "sol": 153,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "3-stagger"
+    },
+    {
+      "sol": 153,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "2-stagger"
+    },
+    {
+      "sol": 166,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "2"
+    },
+    {
+      "sol": 174,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "2-stagger"
+    },
+    {
+      "sol": 186,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "2"
+    },
+    {
+      "sol": 186,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "2"
+    },
+    {
+      "sol": 193,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "2-stagger"
+    },
+    {
+      "sol": 193,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "2-stagger"
+    },
+    {
+      "sol": 196,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "4"
+    },
+    {
+      "sol": 203,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "4-stagger"
+    },
+    {
+      "sol": 221,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "3"
+    },
+    {
+      "sol": 228,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "3-stagger"
+    },
+    {
+      "sol": 246,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "5"
+    },
+    {
+      "sol": 246,
+      "crop": "Wheat",
+      "zone": "carb",
+      "yield_kg": 3.75,
+      "nutrition_highlight": "Carbs + Protein + Fiber",
+      "cycle": "2"
+    },
+    {
+      "sol": 251,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "3"
+    },
+    {
+      "sol": 253,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "5-stagger"
+    },
+    {
+      "sol": 256,
+      "crop": "Wheat",
+      "zone": "carb",
+      "yield_kg": 3.75,
+      "nutrition_highlight": "Carbs + Protein + Fiber",
+      "cycle": "2-stagger"
+    },
+    {
+      "sol": 259,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "3-stagger"
+    },
+    {
+      "sol": 281,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "3"
+    },
+    {
+      "sol": 281,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "3"
+    },
+    {
+      "sol": 288,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "3-stagger"
+    },
+    {
+      "sol": 288,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "3-stagger"
+    },
+    {
+      "sol": 296,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "6"
+    },
+    {
+      "sol": 296,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "4"
+    },
+    {
+      "sol": 303,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "6-stagger"
+    },
+    {
+      "sol": 303,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "4-stagger"
+    },
+    {
+      "sol": 336,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "4"
+    },
+    {
+      "sol": 344,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "4-stagger"
+    },
+    {
+      "sol": 346,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "7"
+    },
+    {
+      "sol": 353,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "7-stagger"
+    },
+    {
+      "sol": 371,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "5"
+    },
+    {
+      "sol": 371,
+      "crop": "Wheat",
+      "zone": "carb",
+      "yield_kg": 3.75,
+      "nutrition_highlight": "Carbs + Protein + Fiber",
+      "cycle": "3"
+    },
+    {
+      "sol": 376,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "4"
+    },
+    {
+      "sol": 376,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "4"
+    },
+    {
+      "sol": 378,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "5-stagger"
+    },
+    {
+      "sol": 381,
+      "crop": "Wheat",
+      "zone": "carb",
+      "yield_kg": 3.75,
+      "nutrition_highlight": "Carbs + Protein + Fiber",
+      "cycle": "3-stagger"
+    },
+    {
+      "sol": 383,
+      "crop": "Lentil",
+      "zone": "protein",
+      "yield_kg": 1.0,
+      "nutrition_highlight": "Protein + Fiber + Iron",
+      "cycle": "4-stagger"
+    },
+    {
+      "sol": 383,
+      "crop": "Soybean",
+      "zone": "protein",
+      "yield_kg": 3.0,
+      "nutrition_highlight": "Complete protein + Iron",
+      "cycle": "4-stagger"
+    },
+    {
+      "sol": 396,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "8"
+    },
+    {
+      "sol": 403,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "8-stagger"
+    },
+    {
+      "sol": 421,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "5"
+    },
+    {
+      "sol": 429,
+      "crop": "Potato",
+      "zone": "carb",
+      "yield_kg": 30.0,
+      "nutrition_highlight": "Carbs + Vitamin C + Potassium",
+      "cycle": "5-stagger"
+    },
+    {
+      "sol": 446,
+      "crop": "Spinach",
+      "zone": "vitamin",
+      "yield_kg": 10.0,
+      "nutrition_highlight": "Vitamin C + Iron + Calcium",
+      "cycle": "9"
+    },
+    {
+      "sol": 446,
+      "crop": "Tomato",
+      "zone": "vitamin",
+      "yield_kg": 60.0,
+      "nutrition_highlight": "Vitamin C + Lycopene + Potassium",
+      "cycle": "6"
+    }
+  ],
+  "summary": {
+    "total_harvests": 60,
+    "total_yield_kg": 1184.5,
+    "first_harvest_sol": 46,
+    "last_harvest_sol": 446,
+    "busiest_period": "Sol 71-103: First tomato, potato, and protein harvests converge with spinach Cycle 2",
+    "leanest_period": "Sol 1-45: Pre-first-harvest. Stored food only. Zero fresh produce available."
+  }
+}

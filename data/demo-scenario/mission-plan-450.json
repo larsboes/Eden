@@ -1,0 +1,726 @@
+{
+  "mission": {
+    "crew_size": 4,
+    "duration_sols": 450,
+    "dome_area_m2": 100,
+    "generated_on": "Sol 1",
+    "version": "v2-kb-aligned"
+  },
+  "zones": [
+    {
+      "name": "Caloric",
+      "area_m2": 45,
+      "crops": [
+        {
+          "name": "Potato",
+          "area_m2": 45,
+          "growth_days": 90,
+          "yield_per_m2_per_cycle": 5.0,
+          "stagger": {
+            "batch_a_m2": 22.5,
+            "batch_b_m2": 22.5,
+            "offset_sols": 7
+          },
+          "cycles": [
+            {
+              "cycle": "1A",
+              "plant_sol": 1,
+              "harvest_sol": 91,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "1B",
+              "plant_sol": 8,
+              "harvest_sol": 98,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "2A",
+              "plant_sol": 96,
+              "harvest_sol": 186,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "2B",
+              "plant_sol": 103,
+              "harvest_sol": 193,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "3A",
+              "plant_sol": 191,
+              "harvest_sol": 281,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "3B",
+              "plant_sol": 198,
+              "harvest_sol": 288,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "4A",
+              "plant_sol": 286,
+              "harvest_sol": 376,
+              "yield_kg": 112.5
+            },
+            {
+              "cycle": "4B",
+              "plant_sol": 293,
+              "harvest_sol": 383,
+              "yield_kg": 112.5
+            }
+          ],
+          "total_yield_kg": 900.0,
+          "companion": {
+            "crop": "Basil",
+            "benefit": "Antifungal VOCs reduce blight risk in enclosed dome environment"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Protein",
+      "area_m2": 25,
+      "crops": [
+        {
+          "name": "Soybean",
+          "area_m2": 15,
+          "growth_days": 90,
+          "yield_per_m2_per_cycle": 0.3,
+          "stagger": {
+            "batch_a_m2": 7.5,
+            "batch_b_m2": 7.5,
+            "offset_sols": 7
+          },
+          "cycles": [
+            {
+              "cycle": "1A",
+              "plant_sol": 1,
+              "harvest_sol": 91,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "1B",
+              "plant_sol": 8,
+              "harvest_sol": 98,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "2A",
+              "plant_sol": 96,
+              "harvest_sol": 186,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "2B",
+              "plant_sol": 103,
+              "harvest_sol": 193,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "3A",
+              "plant_sol": 191,
+              "harvest_sol": 281,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "3B",
+              "plant_sol": 198,
+              "harvest_sol": 288,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "4A",
+              "plant_sol": 286,
+              "harvest_sol": 376,
+              "yield_kg": 2.25
+            },
+            {
+              "cycle": "4B",
+              "plant_sol": 293,
+              "harvest_sol": 383,
+              "yield_kg": 2.25
+            }
+          ],
+          "total_yield_kg": 18.0,
+          "companion": {
+            "crop": "Lentil",
+            "benefit": "N-fixation synergy reduces nutrient solution cost by 18%"
+          }
+        },
+        {
+          "name": "Lentil",
+          "area_m2": 10,
+          "growth_days": 95,
+          "yield_per_m2_per_cycle": 0.2,
+          "cycles": [
+            {
+              "cycle": "1",
+              "plant_sol": 1,
+              "harvest_sol": 96,
+              "yield_kg": 2.0
+            },
+            {
+              "cycle": "2",
+              "plant_sol": 101,
+              "harvest_sol": 196,
+              "yield_kg": 2.0
+            },
+            {
+              "cycle": "3",
+              "plant_sol": 201,
+              "harvest_sol": 296,
+              "yield_kg": 2.0
+            },
+            {
+              "cycle": "4",
+              "plant_sol": 301,
+              "harvest_sol": 396,
+              "yield_kg": 2.0
+            }
+          ],
+          "total_yield_kg": 8.0,
+          "companion": {
+            "crop": "Soybean",
+            "benefit": "N-fixation synergy reduces nutrient solution cost by 18%"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Leafy Green",
+      "area_m2": 18,
+      "crops": [
+        {
+          "name": "Lettuce",
+          "area_m2": 10,
+          "growth_days": 35,
+          "yield_per_m2_per_cycle": 4.0,
+          "cycles": [
+            {
+              "cycle": "1",
+              "plant_sol": 1,
+              "harvest_sol": 36,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "2",
+              "plant_sol": 41,
+              "harvest_sol": 76,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "3",
+              "plant_sol": 81,
+              "harvest_sol": 116,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "4",
+              "plant_sol": 121,
+              "harvest_sol": 156,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "5",
+              "plant_sol": 161,
+              "harvest_sol": 196,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "6",
+              "plant_sol": 201,
+              "harvest_sol": 236,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "7",
+              "plant_sol": 241,
+              "harvest_sol": 276,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "8",
+              "plant_sol": 281,
+              "harvest_sol": 316,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "9",
+              "plant_sol": 321,
+              "harvest_sol": 356,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "10",
+              "plant_sol": 361,
+              "harvest_sol": 396,
+              "yield_kg": 40.0
+            },
+            {
+              "cycle": "11",
+              "plant_sol": 401,
+              "harvest_sol": 436,
+              "yield_kg": 40.0
+            }
+          ],
+          "total_yield_kg": 440.0,
+          "companion": {
+            "crop": "Spinach",
+            "benefit": "Staggered continuous greens ensure unbroken fresh supply"
+          }
+        },
+        {
+          "name": "Spinach",
+          "area_m2": 8,
+          "growth_days": 45,
+          "yield_per_m2_per_cycle": 2.5,
+          "cycles": [
+            {
+              "cycle": "1",
+              "plant_sol": 1,
+              "harvest_sol": 46,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "2",
+              "plant_sol": 51,
+              "harvest_sol": 96,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "3",
+              "plant_sol": 101,
+              "harvest_sol": 146,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "4",
+              "plant_sol": 151,
+              "harvest_sol": 196,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "5",
+              "plant_sol": 201,
+              "harvest_sol": 246,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "6",
+              "plant_sol": 251,
+              "harvest_sol": 296,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "7",
+              "plant_sol": 301,
+              "harvest_sol": 346,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "8",
+              "plant_sol": 351,
+              "harvest_sol": 396,
+              "yield_kg": 20.0
+            },
+            {
+              "cycle": "9",
+              "plant_sol": 401,
+              "harvest_sol": 446,
+              "yield_kg": 20.0
+            }
+          ],
+          "total_yield_kg": 180.0,
+          "companion": {
+            "crop": "Lettuce",
+            "benefit": "Staggered continuous greens ensure unbroken fresh supply"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Quick Harvest",
+      "area_m2": 7,
+      "crops": [
+        {
+          "name": "Radish",
+          "area_m2": 7,
+          "growth_days": 25,
+          "yield_per_m2_per_cycle": 2.5,
+          "cycles": [
+            {
+              "cycle": "1",
+              "plant_sol": 1,
+              "harvest_sol": 26,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "2",
+              "plant_sol": 31,
+              "harvest_sol": 56,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "3",
+              "plant_sol": 61,
+              "harvest_sol": 86,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "4",
+              "plant_sol": 91,
+              "harvest_sol": 116,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "5",
+              "plant_sol": 121,
+              "harvest_sol": 146,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "6",
+              "plant_sol": 151,
+              "harvest_sol": 176,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "7",
+              "plant_sol": 181,
+              "harvest_sol": 206,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "8",
+              "plant_sol": 211,
+              "harvest_sol": 236,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "9",
+              "plant_sol": 241,
+              "harvest_sol": 266,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "10",
+              "plant_sol": 271,
+              "harvest_sol": 296,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "11",
+              "plant_sol": 301,
+              "harvest_sol": 326,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "12",
+              "plant_sol": 331,
+              "harvest_sol": 356,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "13",
+              "plant_sol": 361,
+              "harvest_sol": 386,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "14",
+              "plant_sol": 391,
+              "harvest_sol": 416,
+              "yield_kg": 17.5
+            },
+            {
+              "cycle": "15",
+              "plant_sol": 421,
+              "harvest_sol": 446,
+              "yield_kg": 17.5
+            }
+          ],
+          "total_yield_kg": 262.5,
+          "companion": {
+            "crop": "Lettuce",
+            "benefit": "Trap crop draws flea beetles away from lettuce"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "area_m2": 5,
+      "crops": [
+        {
+          "name": "Basil",
+          "area_m2": 3,
+          "growth_days": 30,
+          "yield_per_m2_per_cycle": 0.8,
+          "cycles": [
+            {
+              "cycle": "1",
+              "plant_sol": 1,
+              "harvest_sol": 31,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "2",
+              "plant_sol": 36,
+              "harvest_sol": 66,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "3",
+              "plant_sol": 71,
+              "harvest_sol": 101,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "4",
+              "plant_sol": 106,
+              "harvest_sol": 136,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "5",
+              "plant_sol": 141,
+              "harvest_sol": 171,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "6",
+              "plant_sol": 176,
+              "harvest_sol": 206,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "7",
+              "plant_sol": 211,
+              "harvest_sol": 241,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "8",
+              "plant_sol": 246,
+              "harvest_sol": 276,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "9",
+              "plant_sol": 281,
+              "harvest_sol": 311,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "10",
+              "plant_sol": 316,
+              "harvest_sol": 346,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "11",
+              "plant_sol": 351,
+              "harvest_sol": 381,
+              "yield_kg": 2.4
+            },
+            {
+              "cycle": "12",
+              "plant_sol": 386,
+              "harvest_sol": 416,
+              "yield_kg": 2.4
+            }
+          ],
+          "total_yield_kg": 28.8,
+          "companion": {
+            "crop": "Potato",
+            "benefit": "Antifungal VOCs reduce blight risk in enclosed dome environment"
+          }
+        },
+        {
+          "name": "Microgreens",
+          "area_m2": 2,
+          "growth_days": 12,
+          "cycles": [
+            {
+              "cycle": "continuous",
+              "plant_sol": 1,
+              "harvest_sol": "rolling every 12 sols",
+              "yield_kg": "variable"
+            }
+          ],
+          "total_yield_kg": "variable",
+          "note": "Emergency reserve and nutritional supplement. Rolling harvest every 12 sols. Not counted in total yield projection."
+        }
+      ]
+    }
+  ],
+  "companion_planting": [
+    {
+      "pair": ["Soybean", "Lentil"],
+      "mechanism": "N-fixation synergy",
+      "effect": "Reduces nutrient solution cost by 18%"
+    },
+    {
+      "pair": ["Potato", "Basil"],
+      "mechanism": "Antifungal VOCs",
+      "effect": "Basil volatile organic compounds suppress Phytophthora (blight) spores in enclosed dome"
+    },
+    {
+      "pair": ["Lettuce", "Spinach"],
+      "mechanism": "Staggered continuous greens",
+      "effect": "35d and 45d cycles offset to ensure unbroken fresh leafy supply"
+    },
+    {
+      "pair": ["Radish", "Lettuce"],
+      "mechanism": "Trap crop",
+      "effect": "Radish draws flea beetles and aphids away from lettuce"
+    }
+  ],
+  "stagger_strategy": "Potato and Soybean areas are split into two batches (A and B), planted 7 sols apart. This produces offset harvests within each zone, ensuring continuous food availability rather than feast/famine cycles. Turnaround between harvest and replanting is 5 sols for bed preparation and replanting. Lettuce, Spinach, Radish, and Basil cycle fast enough that staggering is unnecessary -- their short turnaround provides near-continuous supply naturally.",
+  "nutritional_projection": {
+    "calories_coverage_pct": 17.7,
+    "protein_coverage_pct": 37.8,
+    "vitamin_c_coverage_pct": 193.7,
+    "iron_coverage_pct": 146.9,
+    "note": "v2 KB-aligned crop mix. Potato-heavy caloric zone drives calorie and iron coverage up significantly vs v1. Greenhouse supplements stored rations. Full caloric self-sufficiency is not the goal -- vitamin C, iron, and fresh food morale are the primary contributions. Vitamin D and B12 require stored supplements."
+  },
+  "risk_windows": [
+    {
+      "sol_range": [1, 25],
+      "risk": "Pre-first-harvest gap. All nutrition from stored supplies. Critical vulnerability window -- no fresh food buffer exists."
+    },
+    {
+      "sol_range": [26, 45],
+      "risk": "Early harvest phase. Only radish available (Sol 26), then basil (Sol 31), then lettuce (Sol 36). Limited variety but first fresh food arriving fast."
+    },
+    {
+      "sol_range": [80, 120],
+      "risk": "Potato blight risk. First potato tubers maturing in warm humid conditions. Phytophthora watch -- Basil VOCs provide partial suppression but humidity control critical."
+    },
+    {
+      "sol_range": [160, 200],
+      "risk": "Lettuce bolting risk. If dome temperature spikes above 24C during dust storm season LED compensation, lettuce may bolt prematurely. Temperature management critical."
+    },
+    {
+      "sol_range": [220, 260],
+      "risk": "CME vulnerability window. Multiple crops in sensitive growth stages. Soybean/Lentil flowering, Potato tuber development. Radiation shielding critical."
+    },
+    {
+      "sol_range": [280, 320],
+      "risk": "Mid-mission equipment fatigue. Pump and LED systems at 60% lifetime. Preventive maintenance window."
+    },
+    {
+      "sol_range": [400, 450],
+      "risk": "Final harvest window. No time to recover from crop failures. All remaining cycles must complete successfully."
+    }
+  ],
+  "milestones": [
+    {
+      "sol": 1,
+      "event": "First seeds planted. EDEN begins. All 8 crops go into substrate across 5 zones."
+    },
+    {
+      "sol": 8,
+      "event": "Stagger batch B planted for Potato and Soybean. Germination confirmed across all zones."
+    },
+    {
+      "sol": 14,
+      "event": "All zones showing green. Basil scenting the dome. Radish cotyledons fully expanded."
+    },
+    {
+      "sol": 25,
+      "event": "FIRST HARVEST: Radish -- 17.5 kg! Fresh food on Mars in under a month. Crew morale surge."
+    },
+    {
+      "sol": 30,
+      "event": "First basil harvest -- 2.4 kg. Dome smells incredible. Radish Cycle 2 planted."
+    },
+    {
+      "sol": 35,
+      "event": "First lettuce harvest -- 40.0 kg. Continuous fresh greens supply begins."
+    },
+    {
+      "sol": 45,
+      "event": "First spinach harvest -- 20.0 kg. Leafy Green zone now producing both crops in rotation."
+    },
+    {
+      "sol": 56,
+      "event": "Radish Cycle 2 harvested. Second lettuce cycle underway. Quick Harvest zone proving its name."
+    },
+    {
+      "sol": 90,
+      "event": "CALORIC BACKBONE ONLINE: First potato harvest (Batch A) -- 112.5 kg. First soybean -- 2.25 kg. First lentil -- 2.0 kg. All zones now producing."
+    },
+    {
+      "sol": 98,
+      "event": "Potato Batch B harvested -- 112.5 kg. Soybean Batch B -- 2.25 kg. Stagger strategy validated."
+    },
+    {
+      "sol": 135,
+      "event": "STEADY STATE: All crop cycles overlapping. Continuous harvests every few sols. 8 flight rules learned."
+    },
+    {
+      "sol": 150,
+      "event": "100 sols of continuous production. Over 500 kg harvested. Crew health metrics improving."
+    },
+    {
+      "sol": 200,
+      "event": "Dust storm warning. Light levels drop 15%. EDEN adjusts LED compensation automatically. Lettuce bolting watch activated."
+    },
+    {
+      "sol": 247,
+      "event": "CME WARNING: Coronal mass ejection detected. EDEN enters radiation protection mode. 50h countdown begins. Water stockpiling initiated. Triage protocol activated."
+    },
+    {
+      "sol": 249,
+      "event": "CME IMPACT: Radiation spike. Caloric zone shielded (highest priority). Some Protein zone exposure. Council debates recovery strategy."
+    },
+    {
+      "sol": 260,
+      "event": "Post-CME assessment: 12% yield loss in exposed soybean batch. Reserve microgreens activated to cover nutritional gap. 47 flight rules accumulated."
+    },
+    {
+      "sol": 300,
+      "event": "Mission day 300. Over 1200 kg harvested. Dr. Okonkwo notes crew vitamin C and iron levels optimal."
+    },
+    {
+      "sol": 350,
+      "event": "Final planting cycles underway. EDEN has fed the crew for 10 months. 72 flight rules learned."
+    },
+    {
+      "sol": 375,
+      "event": "Final potato harvest (Cycle 4A) -- 112.5 kg. Eng. Volkov saves one tuber for the return journey."
+    },
+    {
+      "sol": 400,
+      "event": "Last major harvests approaching. 89 flight rules learned. System running at peak efficiency."
+    },
+    {
+      "sol": 436,
+      "event": "Final lettuce harvest (Cycle 11) -- 40.0 kg. Fresh greens until nearly the last week."
+    },
+    {
+      "sol": 446,
+      "event": "Final harvests: Spinach Cycle 9 -- 20.0 kg, Radish Cycle 15 -- 17.5 kg. Fresh food to the end."
+    },
+    {
+      "sol": 450,
+      "event": "Mission complete. 4 humans fed. 1837.3 kg total yield. 312 flight rules learned. EDEN remembers."
+    }
+  ],
+  "yield_summary": {
+    "total_kg": 1837.3,
+    "by_crop": {
+      "Potato": 900.0,
+      "Lettuce": 440.0,
+      "Radish": 262.5,
+      "Spinach": 180.0,
+      "Basil": 28.8,
+      "Soybean": 18.0,
+      "Lentil": 8.0
+    },
+    "note": "Microgreens yield variable and not counted in total. Actual yield may vary +/-15% based on environmental conditions and CME events."
+  }
+}

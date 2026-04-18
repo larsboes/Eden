@@ -1,0 +1,209 @@
+{
+  "description": "EDEN Greenhouse Lambda tools — custom tools for the Martian greenhouse agent, served as a single Lambda gateway target.",
+  "tools": [
+    {
+      "name": "eden___read_sensors",
+      "description": "Read current sensor telemetry from all greenhouse zones. Returns temperature (C), humidity (%), CO2 (ppm), light (PAR umol/m2/s), soil moisture (%), pH, EC (mS/cm), and water level (L) for each zone. Used by the agent to assess current greenhouse state before making decisions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "zone_id": {
+            "type": "string",
+            "description": "Optional zone filter. One of: 'zone-a', 'zone-b', 'zone-c', 'zone-d', or omit to read all zones.",
+            "enum": ["zone-a", "zone-b", "zone-c", "zone-d"]
+          },
+          "sensor_types": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["temperature", "humidity", "co2", "light", "soil_moisture", "ph", "ec", "water_level"]
+            },
+            "description": "Optional filter for specific sensor types. Omit to return all sensor readings."
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "eden___run_simulation",
+      "description": "Run a Virtual Farming Lab simulation with a given scenario and one or more strategies. Simulates crop growth, resource consumption, and outcomes over a specified number of sols. Returns projected yields, resource usage, crop health trajectories, and risk scores for each strategy. Used by the Dreamer (L3) layer for Monte Carlo planning.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "scenario": {
+            "type": "object",
+            "description": "The scenario to simulate.",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "Scenario type.",
+                "enum": ["cme_impact", "water_leak", "nutrient_depletion", "light_failure", "pathogen_outbreak", "nominal"]
+              },
+              "severity": {
+                "type": "string",
+                "description": "Severity level of the scenario.",
+                "enum": ["low", "medium", "high", "critical"]
+              },
+              "start_sol": {
+                "type": "integer",
+                "description": "Sol number when the scenario event begins."
+              },
+              "duration_sols": {
+                "type": "integer",
+                "description": "How many sols to simulate from start_sol."
+              }
+            },
+            "required": ["type", "severity", "start_sol", "duration_sols"]
+          },
+          "strategies": {
+            "type": "array",
+            "description": "List of response strategies to compare. Each is simulated independently against the same scenario.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Human-readable name for this strategy."
+                },
+                "actions": {
+                  "type": "array",
+                  "description": "Ordered list of actions the agent would take.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "action": {
+                        "type": "string",
+                        "description": "Action identifier, e.g. 'reduce_water', 'increase_light', 'harvest_early', 'redistribute_nutrients'."
+                      },
+                      "target_zone": {
+                        "type": "string",
+                        "description": "Zone this action applies to."
+                      },
+                      "value": {
+                        "type": "number",
+                        "description": "Numeric parameter for the action (interpretation depends on action type)."
+                      }
+                    },
+                    "required": ["action"]
+                  }
+                }
+              },
+              "required": ["name", "actions"]
+            },
+            "minItems": 1,
+            "maxItems": 5
+          },
+          "monte_carlo_runs": {
+            "type": "integer",
+            "description": "Number of Monte Carlo iterations per strategy. Higher = more accurate but slower. Default: 100.",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 1000
+          }
+        },
+        "required": ["scenario", "strategies"]
+      }
+    },
+    {
+      "name": "eden___calculate_triage",
+      "description": "Calculate salvageability scores for crops under given crisis conditions. Returns a ranked list of crops by salvageability (0-1), caloric value at risk, days to harvest, water cost to save, and a recommended action (save/sacrifice/monitor). Used by L1 Triage Reflexes for rapid crisis response with human-cost awareness.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "crisis_type": {
+            "type": "string",
+            "description": "Type of crisis driving the triage.",
+            "enum": ["water_shortage", "power_failure", "radiation_surge", "pathogen", "nutrient_crash", "multi_failure"]
+          },
+          "severity": {
+            "type": "number",
+            "description": "Crisis severity from 0.0 (minor) to 1.0 (catastrophic).",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "available_resources": {
+            "type": "object",
+            "description": "Current available resources for triage decisions.",
+            "properties": {
+              "water_liters": {
+                "type": "number",
+                "description": "Available water in liters."
+              },
+              "power_watts": {
+                "type": "number",
+                "description": "Available power budget in watts."
+              },
+              "nutrient_units": {
+                "type": "number",
+                "description": "Available nutrient solution units."
+              }
+            }
+          },
+          "crops": {
+            "type": "array",
+            "description": "Crops to evaluate. If omitted, evaluates all currently growing crops.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "crop_id": {
+                  "type": "string",
+                  "description": "Crop identifier, e.g. 'zone-a-lettuce-01'."
+                },
+                "crop_type": {
+                  "type": "string",
+                  "description": "Crop species."
+                },
+                "growth_stage": {
+                  "type": "string",
+                  "description": "Current growth stage.",
+                  "enum": ["seedling", "vegetative", "flowering", "fruiting", "mature", "harvest_ready"]
+                },
+                "health_score": {
+                  "type": "number",
+                  "description": "Current health 0-1.",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": ["crop_id", "crop_type"]
+            }
+          }
+        },
+        "required": ["crisis_type", "severity"]
+      }
+    },
+    {
+      "name": "eden___mars_transform",
+      "description": "Transform Earth-baseline sensor values and agricultural parameters to Mars-adjusted values. Accounts for Mars gravity (0.38g), atmospheric pressure (610 Pa), higher radiation, reduced solar irradiance (43% of Earth), and temperature extremes. Returns adjusted values with correction factors applied.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "transform_type": {
+            "type": "string",
+            "description": "Which transform to apply.",
+            "enum": ["sensor_readings", "growth_rates", "water_requirements", "nutrient_uptake", "light_spectrum"]
+          },
+          "earth_values": {
+            "type": "object",
+            "description": "Earth-baseline values to transform. Keys are parameter names, values are numbers.",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "sol_number": {
+            "type": "integer",
+            "description": "Current sol number (1-450). Affects seasonal and orbital adjustments.",
+            "minimum": 1,
+            "maximum": 450
+          },
+          "include_factors": {
+            "type": "boolean",
+            "description": "If true, include the individual correction factors in the response alongside transformed values. Default: false.",
+            "default": false
+          }
+        },
+        "required": ["transform_type", "earth_values", "sol_number"]
+      }
+    }
+  ]
+}

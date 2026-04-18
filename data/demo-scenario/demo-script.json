@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "description": "EDEN demo scenario: CME detection → stockpiling → crisis → recovery. Full state machine for dashboard replay mode and demo orchestration.",
+    "demo_cme": "2026-01-24T09:23:00-CME-001",
+    "cme_speed_km_s": 1243,
+    "mars_eta_hours": 50.7,
+    "mission_sol": 247,
+    "duration_minutes_real": 180,
+    "phases": 6
+  },
+  "phases": [
+    {
+      "id": "NOMINAL",
+      "name": "The Loneliest Farmer",
+      "demo_time_range": "0:00-0:30",
+      "description": "Dashboard live. All green. Sol counter ticking. Physical prop: LEDs warm-white.",
+      "dashboard_state": "nominal",
+      "background_tint": "#0a0c10",
+      "system": {
+        "water_reserve_l": 340,
+        "battery_pct": 78,
+        "solar_output_pct": 100,
+        "desal_rate_l_sol": 120,
+        "radiation_usv_hr": 0.67,
+        "o2_contribution_pct": 14.2
+      },
+      "zones": {
+        "caloric": {"health_pct": 94, "status": "nominal"},
+        "protein": {"health_pct": 91, "status": "nominal"},
+        "leafy_green": {"health_pct": 87, "status": "nominal"},
+        "quick_harvest": {"health_pct": 96, "status": "nominal"}
+      },
+      "agent_log": [
+        {
+          "agent": "FLORA",
+          "msg": "Sol 247. All zones nominal. Soybean entering BBCH 65 — full flowering. Nitrogen fixation synergy confirmed: nutrient solution EC reduced to 1.6 mS/cm. VPD at 0.95 kPa, within target. Radish cycle 8 harvested yesterday — 1.4kg, crew morale boost.",
+          "type": "info"
+        },
+        {
+          "agent": "VITA",
+          "msg": "Crew nutrition on track. Caloric coverage from potato: strong. Vitamin C via spinach + lettuce: solid. Cmdr. Chen's lettuce preference noted — next harvest Sol 252.",
+          "type": "info"
+        }
+      ],
+      "physical_prop": {"led_color": "warm-white", "led_brightness": 100, "fan": "on"}
+    },
+    {
+      "id": "DETECTION",
+      "name": "EDEN Sees the Future",
+      "demo_time_range": "0:30-1:00",
+      "description": "DONKI CME alert. SENTINEL detects. Council convenes. ORACLE runs simulation.",
+      "dashboard_state": "alert",
+      "background_tint": "#1a1408",
+      "trigger": {
+        "source": "NASA DONKI API",
+        "event_id": "2026-01-24T09:23:00-CME-001",
+        "instruments": ["SOHO: LASCO/C2", "SOHO: LASCO/C3", "STEREO A: SECCHI/COR2"],
+        "speed_km_s": 1243,
+        "half_angle_deg": 11,
+        "source_location": "N15E10"
+      },
+      "countdown": {
+        "hours": 50.7,
+        "label": "CME MARS IMPACT"
+      },
+      "system": {
+        "water_reserve_l": 340,
+        "battery_pct": 78,
+        "solar_output_pct": 100,
+        "desal_rate_l_sol": 120,
+        "radiation_usv_hr": 0.67
+      },
+      "agent_log": [
+        {
+          "agent": "SENTINEL",
+          "msg": "Sol 247. CME-2026-0124 detected. Speed: 1,243 km/s. Mars ETA: 50.7 hours. Source: NASA DONKI. Instruments: SOHO LASCO/C2, C3, STEREO A COR2. Soybean in Protein zone at BBCH 65 — HIGH radiation vulnerability at flowering stage. Potato in Caloric zone at tuber initiation — moderate risk.",
+          "type": "alert"
+        },
+        {
+          "agent": "ORACLE",
+          "msg": "Running Virtual Farming Lab. 3 strategies evaluating...",
+          "type": "info"
+        },
+        {
+          "agent": "ORACLE",
+          "msg": "Strategy A — Do Nothing: 40% crop loss, 3 sols recovery. Strategy B — Standard Survival: 12% crop loss, shields + reduce light. Strategy C — Pre-emptive Full Protocol: 3% crop loss, stockpile water, pre-harvest spinach, stress-harden wheat. RECOMMENDATION: Strategy C. Confidence: 87% (Syngenta KB stress data).",
+          "type": "decision"
+        },
+        {
+          "agent": "COUNCIL",
+          "msg": "VOTE: Strategy C adopted unanimously. SENTINEL: shield activation. AQUA: max desalination. FLORA: pre-harvest spinach, stress-harden wheat nutrient mix. VITA: vitamin C buffer 58 sols — acceptable.",
+          "type": "decision"
+        }
+      ],
+      "physical_prop": {"led_color": "amber", "led_brightness": 90, "fan": "on"}
+    },
+    {
+      "id": "STOCKPILING",
+      "name": "Preparing for the Storm",
+      "demo_time_range": "1:00-1:30",
+      "description": "Water gauge climbing. Battery charging. Desal at MAX. Pre-harvest underway.",
+      "dashboard_state": "alert",
+      "background_tint": "#1a1408",
+      "countdown": {
+        "hours_remaining": 48.0,
+        "label": "CME MARS IMPACT"
+      },
+      "system_progression": {
+        "water_reserve_l": {"start": 340, "end": 580, "rate": "5 L/hr at MAX desal"},
+        "battery_pct": {"start": 78, "end": 100, "rate": "priority charging"},
+        "solar_output_pct": 100,
+        "desal_rate_l_sol": 120,
+        "desal_mode": "MAX"
+      },
+      "agent_log": [
+        {
+          "agent": "AQUA",
+          "msg": "Water reserve at 340L. Need 580L for 5-sol storm autonomy. Deficit: 240L. Running desalination at MAX — solar still at 100%. ETA to target: 48 hours. Battery charging priority: 100% target.",
+          "type": "action"
+        },
+        {
+          "agent": "FLORA",
+          "msg": "Pre-harvesting lettuce and radish now — locking in nutrition before stress period. Adjusting soybean nutrient mix: EC from 2.0 to 2.4 mS/cm for stress hardening. DLI maintained at 17 mol/m²/day. She'll be ornery but she'll make it.",
+          "type": "action"
+        },
+        {
+          "agent": "VITA",
+          "msg": "Pre-harvest lettuce + radish secured: 3.2 kg fresh greens. Vitamin buffer extended 58 sols. Cmdr. Chen's lettuce preference noted — saving a portion. Crew calorie reserves adequate for 5-sol reduced output.",
+          "type": "info"
+        },
+        {
+          "agent": "SENTINEL",
+          "msg": "Querying Syngenta KB: soybean radiation tolerance at BBCH 65... KB response: 'Legume flowering highly sensitive to radiation stress. Yield reduction 20-50% under elevated UV-B. Recommend radiation shielding and increased calcium in nutrient solution.' Shields primed. Activating on impact.",
+          "type": "info"
+        }
+      ],
+      "physical_prop": {"led_color": "amber-pulse", "led_brightness": 80, "fan": "on"}
+    },
+    {
+      "id": "IMPACT",
+      "name": "The Storm Hits",
+      "demo_time_range": "1:30-2:00",
+      "description": "CME impact. Solar drops. Triage activates. Physical LEDs dim. Fan stops.",
+      "dashboard_state": "crisis",
+      "background_tint": "#1a0808",
+      "countdown": {
+        "hours_remaining": 0,
+        "label": "CME IMPACT — SURVIVAL MODE"
+      },
+      "system": {
+        "water_reserve_l": 580,
+        "battery_pct": 100,
+        "solar_output_pct": 30,
+        "desal_rate_l_sol": 36,
+        "radiation_usv_hr": 263,
+        "desal_mode": "REDUCED — 30% solar"
+      },
+      "triage": [
+        {
+          "crop": "Soybean",
+          "zone": "protein",
+          "salvageability": 0.65,
+          "color": "RED",
+          "action": "BBCH 65 flowering — HIGH radiation vulnerability. Shields activated. EC increased +0.4 mS/cm for stress hardening."
+        },
+        {
+          "crop": "Potato",
+          "zone": "caloric",
+          "salvageability": 0.88,
+          "color": "YELLOW",
+          "action": "Tuber initiation stage — moderate radiation risk. Monitoring. Potato is radiation-resilient but reduced light slows tuber growth."
+        },
+        {
+          "crop": "Lettuce",
+          "zone": "leafy_green",
+          "salvageability": 0.92,
+          "color": "GREEN",
+          "action": "Pre-harvested before storm. New seedlings protected under reduced light. Fast cycle — recovers in 30 days."
+        }
+      ],
+      "agent_log": [
+        {
+          "agent": "SENTINEL",
+          "msg": "CME impact confirmed. Radiation spike: 263 uSv/hr. Solar output: 30%. Shields active. Zone isolation protocol: cross-zone resource sharing suspended.",
+          "type": "critical"
+        },
+        {
+          "agent": "AQUA",
+          "msg": "Desal at 30% power: 36 L/sol. Deficit: 64 L/sol. Pre-stockpiled 580L — projected autonomy: 7.2 sols. Covers 5-sol storm plus 2.2-sol margin. We're good.",
+          "type": "info"
+        },
+        {
+          "agent": "VITA",
+          "msg": "TRIAGE: Wheat salvageability 0.72 — RED, intervening. Tomato 0.85 — YELLOW, monitoring. Soybean 0.91 — GREEN, stable. Crew impact: protein output reduced 8% during storm. Eng. Volkov's calorie target: supplementing from stored rations. No scurvy risk — pre-harvest spinach secured.",
+          "type": "triage"
+        },
+        {
+          "agent": "FLORA",
+          "msg": "Sol 249. Storm's here. Soybean's struggling at BBCH 65 — stress-hardened EC mix is all we can do now. Potato's holding, tough tubers. Lettuce pre-harvested, new seedlings sleeping under minimal light. Radish doesn't care — fast little plant will bounce back in days. We wait.",
+          "type": "info"
+        }
+      ],
+      "physical_prop": {"led_color": "dim-red", "led_brightness": 30, "fan": "off"}
+    },
+    {
+      "id": "RECOVERY",
+      "name": "Through the Storm",
+      "demo_time_range": "2:00-2:15",
+      "description": "Solar returns. Systems ramp back. Green creeping in. Fan restarts.",
+      "dashboard_state": "recovery",
+      "background_tint": "#081a0a",
+      "system_progression": {
+        "solar_output_pct": {"start": 30, "end": 95},
+        "water_reserve_l": {"start": 260, "end": 340},
+        "desal_rate_l_sol": {"start": 36, "end": 114},
+        "battery_pct": {"start": 45, "end": 72},
+        "radiation_usv_hr": {"start": 263, "end": 1.2}
+      },
+      "agent_log": [
+        {
+          "agent": "SENTINEL",
+          "msg": "Radiation levels returning to baseline. Solar output recovering: 95%. Storm duration: 4.8 sols. Within predicted parameters.",
+          "type": "info"
+        },
+        {
+          "agent": "FLORA",
+          "msg": "Sol 254. We made it. Soybean lost 12% yield at flowering — better than the 20-50% the KB predicted without intervention. Stress-hardening earned us 8-38% yield saved. Potato resumed tuber growth. Lettuce seedlings perking up. Radish already sprouting new leaves.",
+          "type": "info"
+        },
+        {
+          "agent": "ORACLE",
+          "msg": "Post-event analysis complete. Predicted: 3% total crop loss. Actual: 2.7%. Model accuracy: 90%. Proposing new flight rule: FR-CME-012: IF cme_speed > 1000 AND soybean_bbch BETWEEN 55-70 THEN pre-harvest all leafy greens AND stress-harden soybean EC +0.4 mS/cm AND shield priority to protein zone.",
+          "type": "info"
+        },
+        {
+          "agent": "VITA",
+          "msg": "Crew nutrition restored to pre-storm projections. Pre-harvested lettuce + radish provided 58-sol vitamin buffer — never breached. Zero crew health impact. Cmdr. Chen enjoyed the lettuce. Radish already back in harvest rotation — 21 days to next batch.",
+          "type": "info"
+        }
+      ],
+      "physical_prop": {"led_color": "warm-white", "led_brightness": 85, "fan": "on"}
+    },
+    {
+      "id": "MIRROR",
+      "name": "The Mirror — Mars to Earth",
+      "demo_time_range": "2:15-3:00",
+      "description": "Everything you just saw works on Earth too. Same architecture, different planet.",
+      "dashboard_state": "nominal",
+      "background_tint": "#0a0c10",
+      "pitch_lines": [
+        "Everything you just saw works on Earth too.",
+        "Swap dust storm for drought. Swap 4 astronauts for 4,000 farmers.",
+        "Same architecture. Same Syngenta crop science.",
+        "800 million people are food insecure. They can't wait for Mars. EDEN is ready now.",
+        "We built the loneliest farmer in the solar system. And it's the best farmer in the solar system. Because it has to be."
+      ]
+    }
+  ]
+}

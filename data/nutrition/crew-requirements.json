@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "generated": "2026-03-19T14:30:00Z",
+    "source": "Syngenta Knowledge Base + NASA Space Flight Human-System Standard (NASA-STD-3001)",
+    "notes": "Daily requirements based on Syngenta KB baseline of 3,000 kcal/person/day (higher than NASA ISS standard of 2,500 due to Mars surface EVA workload). Calorie modifiers reflect role-specific energy expenditure. Vitamin D: 15ug/day — greenhouse cannot produce this; supplement mandatory."
+  },
+  "daily_per_astronaut": {
+    "calories_kcal": 3000,
+    "protein_g": 60,
+    "fat_g": 70,
+    "carbs_g": 350,
+    "fiber_g": 25,
+    "vitamin_c_mg": 90,
+    "iron_mg": 8,
+    "calcium_mg": 1000,
+    "vitamin_d_ug": 15,
+    "vitamin_k_ug": 120,
+    "folate_ug": 400,
+    "potassium_mg": 3500,
+    "vitamin_b12_ug": 2.4,
+    "zinc_mg": 11
+  },
+  "crew": [
+    {
+      "id": "chen",
+      "name": "Cmdr. Chen",
+      "role": "Commander",
+      "calorie_modifier": 0.95,
+      "daily_calories_adjusted": 2850,
+      "preference": "spinach",
+      "note": "Requested spinach 3 times this week. Prefers stir-fry style preparation with basil. Light EVA schedule. Appreciates lettuce wraps as lunch staple.",
+      "dietary_flags": []
+    },
+    {
+      "id": "okonkwo",
+      "name": "Dr. Okonkwo",
+      "role": "Science Lead",
+      "calorie_modifier": 0.90,
+      "daily_calories_adjusted": 2700,
+      "preference": "lentil soup",
+      "note": "Vegetarian preference. Lab-focused work, lowest energy expenditure. Values variety in meals. Enjoys radish as crunchy snack between shifts. Excited about soybean-lentil combinations.",
+      "dietary_flags": ["vegetarian"]
+    },
+    {
+      "id": "volkov",
+      "name": "Eng. Volkov",
+      "role": "Engineer",
+      "calorie_modifier": 1.10,
+      "daily_calories_adjusted": 3300,
+      "preference": "potato",
+      "note": "Highest calorie need from EVA work and physical maintenance tasks. Comfort food preference — potatoes remind him of home. Appreciates hearty potato-based meals after EVA shifts.",
+      "dietary_flags": []
+    },
+    {
+      "id": "reyes",
+      "name": "Spc. Reyes",
+      "role": "Botanist",
+      "calorie_modifier": 1.05,
+      "daily_calories_adjusted": 3150,
+      "preference": "radish",
+      "note": "Monitors crop health daily. Emotional attachment to the greenhouse — sees fresh radish harvest as mission success indicator. Takes pride in the fast radish cycle. Enjoys fresh salads with lettuce, radish, and basil.",
+      "dietary_flags": []
+    }
+  ],
+  "crew_aggregate": {
+    "total_daily_calories": 12000,
+    "average_daily_calories": 3000,
+    "adjusted_total_daily_calories": 11700,
+    "note": "Sum of adjusted calories: 2850 + 2700 + 3300 + 3150 = 12,000 kcal/day for full crew (using modifiers: 11,700 adjusted, but we use 12,000 baseline for safety margin)"
+  },
+  "mission": {
+    "crew_size": 4,
+    "duration_sols": 450,
+    "total_person_days": 1800,
+    "total_calories_required": 5400000,
+    "total_calories_required_note": "4 crew x 450 sols x 3,000 kcal = 5,400,000 kcal (Syngenta KB baseline)"
+  },
+  "supplementation_requirements": {
+    "vitamin_d": {
+      "daily_dose_ug": 15,
+      "total_mission_dose_ug": 27000,
+      "source": "Stored vitamin D3 supplements (cholecalciferol tablets)",
+      "reason": "No plant produces vitamin D. Supplementation is mandatory.",
+      "risk_if_deficient": "Bone density loss accelerated by Mars partial gravity (0.38g). Immune function decline."
+    },
+    "vitamin_b12": {
+      "daily_dose_ug": 2.4,
+      "total_mission_dose_ug": 4320,
+      "source": "Stored B12 supplements or fortified stored food",
+      "reason": "B12 only found in animal products. No animal agriculture in greenhouse.",
+      "risk_if_deficient": "Megaloblastic anemia, neurological damage over extended deficiency."
+    },
+    "omega_3_fatty_acids": {
+      "daily_dose_mg": 250,
+      "source": "Stored fish oil capsules or algae-derived DHA/EPA",
+      "reason": "No omega-3 producing crops in current greenhouse plan. Soybean provides some ALA but conversion to DHA/EPA is poor (~5%).",
+      "risk_if_deficient": "Cardiovascular risk increase, cognitive decline."
+    }
+  }
+}

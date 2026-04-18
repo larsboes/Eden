@@ -1,0 +1,755 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated": "2026-03-19T12:00:00Z",
+    "description": "Controlled Environment Agriculture (CEA) and hydroponic growing parameters for EDEN Mars greenhouse crops. Compiled from NASA VEGGIE, BIO-Plex, and published CEA research literature.",
+    "context": "Data optimized for closed-loop hydroponic/aeroponic systems in a Mars greenhouse environment. Assumes LED lighting, recycled water, and CO2-enriched atmosphere.",
+    "units": {
+      "temperature": "Celsius",
+      "DLI": "mol/m2/day (photosynthetically active radiation, 400-700nm)",
+      "transpiration": "L/m2/day",
+      "germination": "days"
+    }
+  },
+  "crops": {
+    "soybean": {
+      "germination": {
+        "days_to_emerge": "4-7",
+        "optimal_germ_temp_c": [25, 30],
+        "min_germ_temp_c": 10,
+        "max_germ_temp_c": 40,
+        "method": "Direct sow in growing medium or rockwool cubes. Pre-soak seeds 12h for faster emergence.",
+        "germ_rate_pct": 85
+      },
+      "root_zone": {
+        "optimal_temp_c": [22, 26],
+        "min_temp_c": 15,
+        "max_temp_c": 33,
+        "notes": "Root zone cooling critical in Mars greenhouse. Bradyrhizobium japonicum inoculation for nitrogen fixation requires root zone >18C."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 20,
+          "optimal": 30,
+          "maximum": 45
+        },
+        "photoperiod_hours": 16,
+        "ppfd_umol_m2_s": {
+          "minimum": 250,
+          "optimal": 400,
+          "maximum": 600
+        },
+        "light_spectrum_notes": "Red:Blue ratio of 4:1 to 7:1 optimal. Far-red supplementation (730nm) increases stem elongation and canopy penetration for dwarf varieties."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "vegetative": 2.1,
+          "flowering": 3.2,
+          "pod_fill": 2.8
+        },
+        "notes": "Transpiration peaks during flowering. In closed greenhouse, recovered condensate is a major water source. VPD target: 0.8-1.2 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Hoyt",
+          "type": "Determinate dwarf",
+          "height_cm": "30-45",
+          "days_to_maturity": 80,
+          "notes": "Developed by University of Guelph for space applications. Compact canopy, high harvest index."
+        },
+        {
+          "name": "Proto",
+          "type": "Semi-dwarf",
+          "height_cm": "40-55",
+          "days_to_maturity": 85,
+          "notes": "High protein content (40%+). Adapted to continuous light environments."
+        },
+        {
+          "name": "Enrei",
+          "type": "Determinate",
+          "height_cm": "50-70",
+          "days_to_maturity": 90,
+          "notes": "Japanese variety. Strong performer in hydroponic systems. Used in JAXA research."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA VEGGIE / Advanced Plant Habitat (APH)",
+          "details": "Soybean tested aboard ISS in APH. Growth comparable to ground controls under LED lighting.",
+          "citation": "Massa et al. 2017, New Phytologist 214, 1379-1389"
+        },
+        {
+          "program": "BIO-Plex (Bioregenerative Planetary Life Support)",
+          "details": "Soybean was one of 4 core crops in NASA JSC BIO-Plex closed-loop life support test.",
+          "citation": "Wheeler 2017, Open Agriculture 2, 14-32"
+        },
+        {
+          "program": "University of Guelph CESRF",
+          "details": "Developed dwarf soybean varieties specifically for space crop production.",
+          "citation": "Bisbis et al. 2018, Agronomy 8(10), 236"
+        }
+      ]
+    },
+    "lentil": {
+      "germination": {
+        "days_to_emerge": "5-10",
+        "optimal_germ_temp_c": [20, 25],
+        "min_germ_temp_c": 5,
+        "max_germ_temp_c": 35,
+        "method": "Direct sow. Seeds are small; 1-2cm depth in growing medium. No pre-soaking needed.",
+        "germ_rate_pct": 80
+      },
+      "root_zone": {
+        "optimal_temp_c": [18, 24],
+        "min_temp_c": 10,
+        "max_temp_c": 30,
+        "notes": "Cool-season legume. Root zone temps above 28C reduce nitrogen fixation. Rhizobium leguminosarum inoculation essential."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 15,
+          "optimal": 22,
+          "maximum": 35
+        },
+        "photoperiod_hours": 14,
+        "ppfd_umol_m2_s": {
+          "minimum": 200,
+          "optimal": 350,
+          "maximum": 500
+        },
+        "light_spectrum_notes": "Standard Red:Blue 4:1. Long-day plant; >12h photoperiod accelerates flowering. UV-B supplementation may increase antioxidant content."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "vegetative": 1.5,
+          "flowering": 2.4,
+          "pod_fill": 2.0
+        },
+        "notes": "Lower water demand than most crops. Excellent candidate for water-limited phases. VPD target: 0.7-1.0 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Indianhead",
+          "type": "Small seeded, black",
+          "height_cm": "25-35",
+          "days_to_maturity": 80,
+          "notes": "Very compact growth habit. Cold tolerant. Good for high-density planting."
+        },
+        {
+          "name": "Crimson",
+          "type": "Red lentil",
+          "height_cm": "30-40",
+          "days_to_maturity": 85,
+          "notes": "Red cotyledon variety. Higher iron content. Faster cooking (important for energy conservation)."
+        },
+        {
+          "name": "CDC Maxim",
+          "type": "Small red",
+          "height_cm": "28-38",
+          "days_to_maturity": 90,
+          "notes": "High yield potential. Disease resistant. Developed by University of Saskatchewan Crop Development Centre."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "Canadian Space Agency - Controlled Environment Studies",
+          "details": "Lentils evaluated as candidate crop for long-duration space missions due to compact growth, nitrogen fixation, and high protein.",
+          "citation": "Waters et al. 2014, Life Sciences in Space Research 1, 49-58"
+        },
+        {
+          "program": "MELiSSA (Micro-Ecological Life Support System Alternative)",
+          "details": "ESA MELiSSA project evaluated lentils for bioregenerative life support. Good nitrogen cycling properties.",
+          "citation": "Gros et al. 2003, Advances in Space Research 31(1), 195-210"
+        }
+      ]
+    },
+    "potato": {
+      "germination": {
+        "days_to_emerge": "10-14 (from tuber seed piece)",
+        "optimal_germ_temp_c": [18, 22],
+        "min_germ_temp_c": 7,
+        "max_germ_temp_c": 30,
+        "method": "Vegetative propagation from seed tubers or stem cuttings. Cut tuber pieces with 1-2 eyes each. Allow cut surfaces to heal 48h before planting.",
+        "germ_rate_pct": 95
+      },
+      "root_zone": {
+        "optimal_temp_c": [15, 20],
+        "min_temp_c": 7,
+        "max_temp_c": 28,
+        "notes": "CRITICAL: Tuber initiation requires root zone below 20C. Above 25C, tuberization stops entirely. Cooling system is non-negotiable for Mars greenhouse. Aeroponics preferred for tuber production (easy harvest, higher yields)."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 15,
+          "optimal": 25,
+          "maximum": 40
+        },
+        "photoperiod_hours": 14,
+        "ppfd_umol_m2_s": {
+          "minimum": 200,
+          "optimal": 300,
+          "maximum": 500
+        },
+        "light_spectrum_notes": "Red:Blue 5:1. Short days (12h) promote tuberization. Switch from 16h to 12h photoperiod at stem elongation to trigger tuber initiation. Far-red increases stem length; minimize for compact growth."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "vegetative": 2.5,
+          "tuber_bulking": 4.5,
+          "senescence": 1.5
+        },
+        "notes": "Highest water demand during tuber bulking phase. Water stress during bulking causes hollow heart and reduced yields. VPD target: 0.6-1.0 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Norland",
+          "type": "Red skin, early",
+          "height_cm": "40-50",
+          "days_to_maturity": 70,
+          "notes": "Early maturity. High vitamin C. Tested in NASA Biomass Production Chamber (BPC)."
+        },
+        {
+          "name": "Denali",
+          "type": "White, compact",
+          "height_cm": "35-45",
+          "days_to_maturity": 75,
+          "notes": "Compact plant. High tuber yield per plant. Good disease resistance."
+        },
+        {
+          "name": "Exploration (CIP-bred)",
+          "type": "Heat-tolerant, compact",
+          "height_cm": "30-40",
+          "days_to_maturity": 80,
+          "notes": "Bred by International Potato Center (CIP) in partnership with NASA for Mars conditions. Heat and salinity tolerant. Tested in Mars-like soil simulant."
+        },
+        {
+          "name": "Jelly",
+          "type": "Yellow flesh, semi-dwarf",
+          "height_cm": "40-55",
+          "days_to_maturity": 80,
+          "notes": "Excellent flavor. High dry matter content (good for processing/storage)."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA Biomass Production Chamber (BPC) - Kennedy Space Center",
+          "details": "Extensive potato studies in sealed growth chambers. Achieved 4.2 kg/m2/cycle with continuous harvest. Demonstrated aeroponic production method.",
+          "citation": "Wheeler et al. 2008, Advances in Space Research 41(5), 706-712"
+        },
+        {
+          "program": "CIP-NASA Mars Potato Project",
+          "details": "International Potato Center grew potatoes in Mars soil simulant from the Pampas de La Joya desert. Tubers formed successfully under Mars-like conditions.",
+          "citation": "Ramirez et al. 2019, CIP Working Paper 2019-1"
+        },
+        {
+          "program": "BIO-Plex / BLSS (Bioregenerative Life Support System)",
+          "details": "Potato was the primary calorie crop in the BIO-Plex test. Staggered planting ensured continuous harvest every 10-14 days.",
+          "citation": "Stutte et al. 2011, Acta Horticulturae 893, 1175-1182"
+        }
+      ]
+    },
+    "wheat": {
+      "germination": {
+        "days_to_emerge": "3-7",
+        "optimal_germ_temp_c": [20, 25],
+        "min_germ_temp_c": 4,
+        "max_germ_temp_c": 35,
+        "method": "Direct sow at high density (400-600 seeds/m2). Continuous harvest system with staggered plantings every 20-30 days for uninterrupted grain supply.",
+        "germ_rate_pct": 90
+      },
+      "root_zone": {
+        "optimal_temp_c": [18, 22],
+        "min_temp_c": 8,
+        "max_temp_c": 30,
+        "notes": "Spring wheat varieties avoid vernalization requirement. Root zone temp directly affects tillering; cooler temps (15-18C) promote more tillers and higher grain yield."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 22,
+          "optimal": 35,
+          "maximum": 55
+        },
+        "photoperiod_hours": 16,
+        "ppfd_umol_m2_s": {
+          "minimum": 300,
+          "optimal": 450,
+          "maximum": 700
+        },
+        "light_spectrum_notes": "Highest light demand of all EDEN crops. Red:Blue 5:1 base with supplemental far-red for canopy penetration. Long photoperiod (20-24h) used in speed breeding to reduce generation time to 60 days."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "vegetative": 2.0,
+          "heading_flowering": 3.5,
+          "grain_fill": 3.0,
+          "senescence": 1.0
+        },
+        "notes": "Wheat canopy acts as excellent air biofilter. High transpiration during heading provides significant water recovery. VPD target: 0.8-1.2 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Apogee (USU-Apogee)",
+          "type": "Semi-dwarf spring wheat",
+          "height_cm": "35-45",
+          "days_to_maturity": 62,
+          "notes": "THE space wheat. Developed by Utah State University specifically for space. Grown on ISS. 62-day maturity under 24h light. Very compact. High harvest index (0.42)."
+        },
+        {
+          "name": "Perigee",
+          "type": "Super-dwarf spring wheat",
+          "height_cm": "25-35",
+          "days_to_maturity": 70,
+          "notes": "Even more compact than Apogee. Higher protein content. Second-generation space wheat from USU."
+        },
+        {
+          "name": "Red River 68",
+          "type": "Hard red spring",
+          "height_cm": "45-55",
+          "days_to_maturity": 85,
+          "notes": "Higher yield than Apogee but taller. Good for systems with more vertical space."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA VEGGIE / Advanced Plant Habitat (APH)",
+          "details": "Apogee wheat grown on ISS multiple times. Full seed-to-seed cycle completed in orbit. Key crop for future BLSS.",
+          "citation": "Massa et al. 2017, New Phytologist 214, 1379-1389"
+        },
+        {
+          "program": "Utah State University / NASA Breadboard Project",
+          "details": "Apogee developed through speed breeding program specifically for space. 62-day cycle demonstrated repeatedly in controlled environment.",
+          "citation": "Bugbee & Koerner 1997, Life Support Biosphere Science 4(1), 47-53"
+        },
+        {
+          "program": "BIO-Plex",
+          "details": "Wheat was a primary calorie/carbohydrate crop. Staggered 20-day planting intervals for continuous grain production.",
+          "citation": "Wheeler 2017, Open Agriculture 2, 14-32"
+        },
+        {
+          "program": "Speed Breeding (Watson et al.)",
+          "details": "Extended photoperiod (22h) reduces wheat generation time to 60 days. Directly applicable to Mars greenhouse scheduling.",
+          "citation": "Watson et al. 2018, Nature Plants 4, 23-29"
+        }
+      ]
+    },
+    "tomato": {
+      "germination": {
+        "days_to_emerge": "5-10",
+        "optimal_germ_temp_c": [25, 30],
+        "min_germ_temp_c": 10,
+        "max_germ_temp_c": 35,
+        "method": "Start in rockwool cubes or propagation trays. Transplant to NFT or Dutch bucket systems at 3-4 true leaf stage (~21 days). Grafting onto vigorous rootstock recommended.",
+        "germ_rate_pct": 90
+      },
+      "root_zone": {
+        "optimal_temp_c": [20, 25],
+        "min_temp_c": 13,
+        "max_temp_c": 30,
+        "notes": "Root zone above 30C promotes Pythium and root rot. Below 16C slows nutrient uptake significantly. Dutch bucket or NFT systems work well."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 20,
+          "optimal": 30,
+          "maximum": 45
+        },
+        "photoperiod_hours": 16,
+        "ppfd_umol_m2_s": {
+          "minimum": 250,
+          "optimal": 400,
+          "maximum": 600
+        },
+        "light_spectrum_notes": "Red:Blue 4:1 for vegetative. Increase blue fraction to 25% during fruiting for compact growth and better fruit quality. UV-B (280-315nm) supplementation increases lycopene and vitamin C content by 15-30%."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "vegetative": 2.5,
+          "flowering_fruiting": 4.5,
+          "ripening": 3.0
+        },
+        "notes": "Highest transpiration rate of all EDEN crops during fruiting. Excellent for water recovery but requires robust condensate collection. VPD target: 0.8-1.2 kPa. Low VPD causes blossom end rot."
+      },
+      "space_cultivars": [
+        {
+          "name": "Red Robin",
+          "type": "Micro-dwarf determinate",
+          "height_cm": "15-25",
+          "days_to_maturity": 55,
+          "notes": "Extremely compact. Grown on ISS in VEGGIE. Perfect for constrained space. Cherry-sized fruit."
+        },
+        {
+          "name": "Micro-Tom",
+          "type": "Micro-dwarf determinate",
+          "height_cm": "10-20",
+          "days_to_maturity": 60,
+          "notes": "Smallest tomato cultivar. Model organism for tomato genetics research. Very small fruit but prolific."
+        },
+        {
+          "name": "Sweetie",
+          "type": "Dwarf indeterminate cherry",
+          "height_cm": "30-50",
+          "days_to_maturity": 65,
+          "notes": "Higher yield than micro-dwarfs. Good flavor. Continuous harvest over extended period."
+        },
+        {
+          "name": "Heinz 1706",
+          "type": "Determinate processing",
+          "height_cm": "50-70",
+          "days_to_maturity": 70,
+          "notes": "Reference genome variety. Larger fruit. High lycopene. For systems with more space."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA VEGGIE",
+          "details": "Red Robin dwarf tomatoes grown and eaten on ISS in 2021-2022 (VEG-05 experiment). First tomato consumed in space. One fruit went missing for 8 months before being found (2024).",
+          "citation": "Massa et al. 2017, New Phytologist 214, 1379-1389; NASA ISS Program VEG-05 report"
+        },
+        {
+          "program": "EDEN ISS (DLR Antarctic Greenhouse)",
+          "details": "German Aerospace Center operated a greenhouse in Antarctica as Mars analog. Grew tomatoes year-round at Neumayer Station III. Achieved 8.5 kg/m2/cycle.",
+          "citation": "Zabel et al. 2020, Life Sciences in Space Research 26, 43-53"
+        },
+        {
+          "program": "University of Arizona CEAC",
+          "details": "Controlled Environment Agriculture Center extensive tomato hydroponic research. LED optimization for greenhouse tomato production.",
+          "citation": "Kubota et al. 2016, HortTechnology 26(2), 157-165"
+        }
+      ]
+    },
+    "spinach": {
+      "germination": {
+        "days_to_emerge": "5-9",
+        "optimal_germ_temp_c": [15, 20],
+        "min_germ_temp_c": 5,
+        "max_germ_temp_c": 30,
+        "method": "Direct sow in NFT channels or DWC rafts at high density (200-300 seeds/m2). Seeds have hard seed coat; 24h soak improves germination rate by 15-20%. Successive sowings every 2 weeks for continuous harvest.",
+        "germ_rate_pct": 75
+      },
+      "root_zone": {
+        "optimal_temp_c": [14, 20],
+        "min_temp_c": 5,
+        "max_temp_c": 25,
+        "notes": "CRITICAL: Spinach is highly bolt-sensitive. Root zone above 22C combined with long photoperiod triggers premature bolting, making leaves bitter and unusable. Coolest root zone requirement of all EDEN crops. Pair with cold-water reservoir."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 10,
+          "optimal": 17,
+          "maximum": 25
+        },
+        "photoperiod_hours": 12,
+        "ppfd_umol_m2_s": {
+          "minimum": 150,
+          "optimal": 250,
+          "maximum": 400
+        },
+        "light_spectrum_notes": "Lowest light requirement of all EDEN crops. Short day (10-12h) prevents bolting. Red:Blue 3:1. Higher blue fraction (30-35%) increases leaf thickness and oxalate content. Green light supplementation improves inner canopy growth."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "early_growth": 1.2,
+          "active_growth": 2.5,
+          "harvest_stage": 2.0
+        },
+        "notes": "Moderate transpiration. Oxalic acid in transpiration water may cause calcium precipitation in nutrient system; monitor and manage. VPD target: 0.5-0.8 kPa (lower than other crops)."
+      },
+      "space_cultivars": [
+        {
+          "name": "Space (F1 Hybrid)",
+          "type": "Semi-savoy, slow-bolt",
+          "height_cm": "15-25",
+          "days_to_maturity": 40,
+          "notes": "Slow-bolt variety perfect for long photoperiod environments. Dark green, high nutrient density."
+        },
+        {
+          "name": "Malabar Red Stem",
+          "type": "Tropical spinach (Basella alba)",
+          "height_cm": "20-30 (vining, trainable)",
+          "days_to_maturity": 45,
+          "notes": "Heat-tolerant alternative to true spinach. Does not bolt. Continuous cut-and-come-again harvest. Different species but similar nutritional profile."
+        },
+        {
+          "name": "Tyee (F1 Hybrid)",
+          "type": "Semi-savoy, bolt-resistant",
+          "height_cm": "18-25",
+          "days_to_maturity": 42,
+          "notes": "Very bolt resistant. High yield. Good for multiple cut harvests. Dark green, high vitamin content."
+        },
+        {
+          "name": "Regiment (F1 Hybrid)",
+          "type": "Flat leaf, bolt-resistant",
+          "height_cm": "15-22",
+          "days_to_maturity": 38,
+          "notes": "Fastest maturity. Smooth leaf for easy cleaning (important in closed system). High iron content."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA VEGGIE (VEG-04A)",
+          "details": "Spinach was among crops evaluated for ISS production. Challenges with bolting under 16h photoperiod led to recommendation for short-day scheduling.",
+          "citation": "Massa et al. 2017, New Phytologist 214, 1379-1389"
+        },
+        {
+          "program": "EDEN ISS (DLR Antarctic Greenhouse)",
+          "details": "Spinach grown year-round in Antarctic greenhouse. Cut-and-come-again harvest protocol. 2.0 kg/m2 per 45-day cycle achieved.",
+          "citation": "Zabel et al. 2020, Life Sciences in Space Research 26, 43-53"
+        },
+        {
+          "program": "University of Arizona CEAC",
+          "details": "DLI optimization studies for hydroponic spinach. Found 17 mol/m2/day optimal for yield without triggering bolting.",
+          "citation": "Brechner & Both 2013, Cornell CEA program technical report"
+        },
+        {
+          "program": "Wageningen University Plant Factory Research",
+          "details": "LED spectrum optimization for spinach. Blue-rich spectra increase nutritional density (iron, calcium, vitamin C) by 12-25%.",
+          "citation": "Pennisi et al. 2019, Frontiers in Plant Science 10, 1589"
+        }
+      ]
+    },
+    "lettuce": {
+      "germination": {
+        "days_to_emerge": "2-4",
+        "optimal_germ_temp_c": [15, 20],
+        "min_germ_temp_c": 5,
+        "max_germ_temp_c": 30,
+        "method": "Direct sow in NFT or DWC systems at high density (200-300 seeds/m2). Surface sow or very shallow cover; lettuce seed benefits from light exposure during germination.",
+        "germ_rate_pct": 90
+      },
+      "root_zone": {
+        "optimal_temp_c": [16, 22],
+        "min_temp_c": 8,
+        "max_temp_c": 25,
+        "notes": "CRITICAL: Bolt-sensitive above 24C air temperature. High temps cause premature bolting, bitter flavor, and crop loss. Keep root zone cool to buffer against air temp spikes. NFT or DWC preferred for temperature control."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 10,
+          "optimal": 14,
+          "maximum": 22
+        },
+        "photoperiod_hours": 14,
+        "ppfd_umol_m2_s": {
+          "minimum": 150,
+          "optimal": 250,
+          "maximum": 400
+        },
+        "light_spectrum_notes": "Red:Blue 4:1. Green light supplement improves inner leaf development and reduces tip burn. Low light requirement makes lettuce ideal for energy-constrained periods."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "seedling": 1.2,
+          "heading": 2.5,
+          "mature": 2.0
+        },
+        "notes": "Moderate transpiration. Tip burn is linked to low calcium transport under low transpiration conditions; maintain adequate VPD. VPD target: 0.5-0.8 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Outredgeous (Red Romaine)",
+          "type": "Red romaine lettuce",
+          "height_cm": "15-25",
+          "days_to_maturity": 33,
+          "notes": "THE ISS lettuce. Grown and eaten in space during VEG-01 experiment (2015). First food grown and consumed in space by NASA astronauts. Robust, reliable, high anthocyanin content."
+        },
+        {
+          "name": "Waldmann's Green",
+          "type": "Green leaf lettuce",
+          "height_cm": "15-25",
+          "days_to_maturity": 28,
+          "notes": "Fast-growing green leaf variety. Reliable in hydroponic systems. Good for cut-and-come-again harvest."
+        },
+        {
+          "name": "Butterhead (Rex)",
+          "type": "Butterhead lettuce",
+          "height_cm": "12-20",
+          "days_to_maturity": 35,
+          "notes": "Compact growth habit. Tender, sweet leaves. Well-suited for tight spacing in Mars greenhouse modules."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA VEGGIE (VEG-01)",
+          "details": "Outredgeous red romaine lettuce was the first crop grown and eaten on ISS (August 2015). Multiple subsequent grows confirmed reliable production under spaceflight conditions.",
+          "citation": "Massa et al. 2017, New Phytologist 214, 1379-1389"
+        },
+        {
+          "program": "EDEN ISS (DLR Antarctic Greenhouse)",
+          "details": "Lettuce grown year-round at Neumayer Station III as a staple salad crop. Achieved consistent harvests with NFT system.",
+          "citation": "Zabel et al. 2020, Life Sciences in Space Research 26, 43-53"
+        },
+        {
+          "program": "Cornell CEA Lettuce Studies",
+          "details": "Extensive DLI and spectrum optimization for hydroponic lettuce production. Established baseline parameters for controlled environment lettuce.",
+          "citation": "Brechner & Both 2013, Cornell CEA program technical reports"
+        }
+      ]
+    },
+    "radish": {
+      "germination": {
+        "days_to_emerge": "3-5",
+        "optimal_germ_temp_c": [18, 25],
+        "min_germ_temp_c": 5,
+        "max_germ_temp_c": 35,
+        "method": "Direct sow at high density (300-400 seeds/m2). Fast germinator; no pre-treatment needed. Excellent succession crop — sow every 7-10 days for continuous harvest.",
+        "germ_rate_pct": 90
+      },
+      "root_zone": {
+        "optimal_temp_c": [15, 20],
+        "min_temp_c": 5,
+        "max_temp_c": 25,
+        "notes": "Root swelling phase requires consistent moisture and cool, stable root zone temperatures. Temperature fluctuations cause cracking and pithy roots. Quick turnaround crop ideal for early-mission morale."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 8,
+          "optimal": 14,
+          "maximum": 20
+        },
+        "photoperiod_hours": 12,
+        "ppfd_umol_m2_s": {
+          "minimum": 150,
+          "optimal": 250,
+          "maximum": 350
+        },
+        "light_spectrum_notes": "Red:Blue 3:1. Short photoperiod preferred to prevent bolting and promote root swelling over leaf growth. Low-moderate light requirement makes radish energy-efficient."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "early": 0.8,
+          "root_swelling": 1.5,
+          "mature": 1.0
+        },
+        "notes": "Low water demand crop. Consistent moisture during root swelling phase is critical — water stress causes woody, split roots. VPD target: 0.5-0.8 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Cherry Belle",
+          "type": "Round red radish",
+          "height_cm": "10-15",
+          "days_to_maturity": 22,
+          "notes": "Classic round red variety. Very fast 22-day maturity. Compact top growth. Ideal for rapid-turnaround morale crop."
+        },
+        {
+          "name": "Extra Early Saxa",
+          "type": "Round red, extra early",
+          "height_cm": "10-15",
+          "days_to_maturity": 19,
+          "notes": "Very early maturity at 18-20 days. Slightly smaller root than Cherry Belle but fastest harvest of any EDEN crop."
+        },
+        {
+          "name": "Hailstone",
+          "type": "Round white radish",
+          "height_cm": "12-18",
+          "days_to_maturity": 25,
+          "notes": "Larger white root variety. 25-day maturity. Mild, crisp flavor. Adds variety to radish selection."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "NASA VEGGIE (VEG-04B)",
+          "details": "Radishes successfully grown on ISS in 2020 as part of the Plant Habitat-02 (PH-02) experiment. 27-day grow cycle confirmed viability for space crop production.",
+          "citation": "Massa et al. 2020, NASA ISS Program VEG-04B / PH-02 report"
+        },
+        {
+          "program": "EDEN ISS (DLR Antarctic Greenhouse)",
+          "details": "Radish included in Antarctic greenhouse crop rotation as a fast-turnaround fresh food source. Reliable performance in closed environment.",
+          "citation": "Zabel et al. 2020, Life Sciences in Space Research 26, 43-53"
+        }
+      ]
+    },
+    "basil": {
+      "germination": {
+        "days_to_emerge": "5-10",
+        "optimal_germ_temp_c": [20, 25],
+        "min_germ_temp_c": 13,
+        "max_germ_temp_c": 35,
+        "method": "Surface sow — basil seeds require light for germination. Do not cover. Mist to maintain moisture. Slower germinator than other EDEN crops; patience required.",
+        "germ_rate_pct": 70
+      },
+      "root_zone": {
+        "optimal_temp_c": [20, 27],
+        "min_temp_c": 15,
+        "max_temp_c": 33,
+        "notes": "TROPICAL plant — needs warmth. Root zone below 15C causes severe growth stunting and leaf yellowing. Warmest root zone requirement of all EDEN crops. Pair with warm-water reservoir or locate near heat-generating equipment."
+      },
+      "light": {
+        "dli_mol_m2_day": {
+          "minimum": 12,
+          "optimal": 20,
+          "maximum": 30
+        },
+        "photoperiod_hours": 16,
+        "ppfd_umol_m2_s": {
+          "minimum": 200,
+          "optimal": 350,
+          "maximum": 500
+        },
+        "light_spectrum_notes": "Red:Blue 4:1. UV-B supplementation (280-315nm) significantly increases essential oil content (linalool, eugenol) — improves flavor and aroma. High light produces more compact, flavorful plants."
+      },
+      "transpiration": {
+        "rate_l_m2_day": {
+          "early": 0.6,
+          "active": 1.2,
+          "flowering": 1.5
+        },
+        "notes": "Moderate transpiration. Pinch flower buds to maintain vegetative growth and prevent flavor decline. Essential oils in transpiration stream add pleasant aroma to greenhouse atmosphere. VPD target: 0.8-1.2 kPa."
+      },
+      "space_cultivars": [
+        {
+          "name": "Genovese",
+          "type": "Sweet basil",
+          "height_cm": "25-40",
+          "days_to_maturity": 50,
+          "notes": "Standard sweet basil. Most productive variety. Best flavor profile for culinary use. Continuous cut-and-come-again harvest."
+        },
+        {
+          "name": "Dark Opal",
+          "type": "Purple basil",
+          "height_cm": "25-35",
+          "days_to_maturity": 55,
+          "notes": "Purple variety with high anthocyanin content. Ornamental and culinary value. Crew psychological benefit from color variety in greenhouse."
+        },
+        {
+          "name": "Greek Columnar",
+          "type": "Compact columnar basil",
+          "height_cm": "20-30",
+          "days_to_maturity": 45,
+          "notes": "Very compact, upright growth habit. Ideal for tight vertical spaces in Mars greenhouse modules. Small leaves but intense flavor."
+        }
+      ],
+      "research_references": [
+        {
+          "program": "LED Optimization for Basil (Pennisi et al.)",
+          "details": "Comprehensive LED spectrum study for basil production in vertical farms. Found optimal Red:Blue ratios and demonstrated UV-B increases essential oil content by 20-30%.",
+          "citation": "Pennisi et al. 2019, Frontiers in Plant Science 10, 305"
+        },
+        {
+          "program": "EDEN ISS (DLR Antarctic Greenhouse)",
+          "details": "Herbs including basil grown year-round at Neumayer Station III. Noted significant positive impact on crew morale and meal quality.",
+          "citation": "Zabel et al. 2020, Life Sciences in Space Research 26, 43-53"
+        },
+        {
+          "program": "University of Arizona CEAC",
+          "details": "Vertical farm research on herb production including basil. Established baseline CEA parameters for controlled environment basil cultivation.",
+          "citation": "Kubota et al. 2016, HortTechnology 26(2), 157-165"
+        }
+      ]
+    }
+  },
+  "cross_crop_notes": {
+    "water_recycling": "In a closed Mars greenhouse, 95-98% of transpired water is recoverable via condensation. Total crop transpiration of ~18-25 L/day for 100 m2 greenhouse (9 crops) produces significant potable water as a byproduct.",
+    "co2_management": "All 9 crops benefit from CO2 enrichment (800-1200 ppm). Mars atmosphere is 95% CO2 — ISRU can provide essentially unlimited CO2 supply. Challenge is pressure regulation, not supply.",
+    "staggered_planting": "Critical for continuous food supply. Potato and spinach benefit most from staggered planting (new batch every 10-14 days). Wheat uses 20-30 day staging. Radish and lettuce are fast-turnaround crops ideal for succession planting every 7-14 days.",
+    "lighting_strategy": "Total LED power for 100 m2 at average 350 umol/m2/s for 15h/day = ~19 kW. During dust storms, supplement lighting becomes critical and energy-constrained. Priority order: lettuce > radish > spinach > potato > tomato > basil > soybean > lentil > wheat (based on calories-per-energy and crew morale value per m2).",
+    "nutrient_solution_sharing": "Soybean and lentil can share nutrient reservoir (similar EC/pH). Tomato and basil can share higher-EC solution (similar warm-climate requirements). Potato and wheat can share. Spinach and lettuce can share cooler reservoir (similar cool-crop pH/EC). Radish can share with the spinach/lettuce reservoir during root swelling phase.",
+    "key_programs": {
+      "NASA_VEGGIE": "Vegetable Production System. Operational on ISS since 2014. Pillow-based growing system with LED arrays. Has grown lettuce, radish, chili pepper, tomato, zinnia.",
+      "NASA_APH": "Advanced Plant Habitat. Larger, more automated ISS growth chamber. Full environmental control. Used for wheat, radish, pepper research.",
+      "BIO_Plex": "Bioregenerative Planetary Life Support Systems Test Complex at NASA JSC. 4 core crops: wheat, soybean, potato, rice. Tested closed-loop life support for long-duration missions.",
+      "EDEN_ISS": "DLR (German Aerospace Center) Antarctic greenhouse at Neumayer Station III. Mars/Moon analog. Year-round crop production since 2018. Tomato, lettuce, spinach, herbs, strawberry.",
+      "MELiSSA": "ESA Micro-Ecological Life Support System Alternative. Multi-loop bioregenerative system. Includes higher plant compartment for food production and atmosphere regeneration.",
+      "Lunar_Palace_1": "Beijing University of Aeronautics & Astronautics. 370-day human closed ecosystem experiment (2017-2018). Grew wheat, potato, and 33 other crops supporting 4 crew members."
+    }
+  }
+}

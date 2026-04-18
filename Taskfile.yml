@@ -1,0 +1,83 @@
+version: "3"
+
+vars:
+  IP:
+    sh: cd infra && source ../setup-bedrock.sh 2>/dev/null && uv run pulumi stack output public_ip --stack dev 2>/dev/null || echo ""
+
+tasks:
+  # ── Docker ───────────────────────────────────────────────────────────
+  docker:
+    desc: Start everything (API + dashboard + MQTT) in Docker
+    cmds:
+      - docker compose up --build -d
+      - echo ""
+      - echo "  Dashboard{{":"}} http://localhost:3000"
+      - echo "  API{{":"}}       http://localhost:8000/api/status"
+      - echo "  MQTT{{":"}}      localhost:1883"
+      - echo ""
+
+  docker:logs:
+    desc: Tail all container logs
+    cmds:
+      - docker compose logs -f
+
+  docker:stop:
+    desc: Stop all containers
+    cmds:
+      - docker compose down
+
+  docker:rebuild:
+    desc: Full rebuild (no cache)
+    cmds:
+      - docker compose build --no-cache
+      - docker compose up -d
+
+  # ── Infrastructure ───────────────────────────────────────────────────
+  deploy:
+    desc: Deploy EC2 instance (run once)
+    cmds:
+      - cd infra && source ../setup-bedrock.sh && uv run pulumi up --stack dev --yes
+
+  destroy:
+    desc: Tear down EC2 instance
+    cmds:
+      - cd infra && source ../setup-bedrock.sh && uv run pulumi destroy --stack dev --yes
+
+  preview:
+    desc: Preview infra changes
+    cmds:
+      - cd infra && source ../setup-bedrock.sh && uv run pulumi preview --stack dev
+
+  # ── Connection ───────────────────────────────────────────────────────
+  ssh:
+    desc: SSH into the EC2 instance
+    cmds:
+      - ssh -i astrofarm-key.pem ubuntu@{{.IP}}
+
+  key:
+    desc: Export SSH key from Pulumi (run after deploy)
+    cmds:
+      - cd infra && source ../setup-bedrock.sh 2>/dev/null && uv run pulumi stack output ssh_private_key --show-secrets --stack dev > ../astrofarm-key.pem
+      - chmod 600 astrofarm-key.pem
+      - echo "Key saved to astrofarm-key.pem"
+
+  ip:
+    desc: Show EC2 public IP
+    cmds:
+      - echo "{{.IP}}"
+
+  status:
+    desc: Check if EC2 bootstrap is done
+    cmds:
+      - ssh -i astrofarm-key.pem -o StrictHostKeyChecking=no ubuntu@{{.IP}} "cat ~/setup-complete 2>/dev/null && claude --version || echo 'STILL BOOTSTRAPPING...'"
+
+  # ── AgentCore ────────────────────────────────────────────────────────
+  deploy:agentcore:
+    desc: Deploy AgentCore Gateway + Runtime
+    cmds:
+      - ./scripts/deploy-agentcore.sh
+
+  deploy:agentcore:gateway:
+    desc: Deploy only AgentCore Gateway (skip Runtime)
+    cmds:
+      - ./scripts/deploy-agentcore.sh --skip-runtime

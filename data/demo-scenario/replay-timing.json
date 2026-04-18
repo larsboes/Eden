@@ -1,0 +1,65 @@
+{
+  "description": "Replay mode timing configuration. Controls how fast each demo phase plays when in REPLAY_MODE. Dashboard auto-advances through phases on these timers.",
+  "total_duration_seconds": 180,
+  "phases": [
+    {
+      "id": "NOMINAL",
+      "duration_seconds": 30,
+      "agent_log_interval_ms": 5000,
+      "description": "Dashboard loads. Sol counter ticking. Zones green. 2 agent log entries scroll in.",
+      "auto_advance": true
+    },
+    {
+      "id": "DETECTION",
+      "duration_seconds": 30,
+      "agent_log_interval_ms": 3000,
+      "description": "CME alert banner appears. Countdown starts. Council debate streams in. Strategy comparison appears.",
+      "auto_advance": true,
+      "transition_effect": "background tint shift to amber over 1.5s"
+    },
+    {
+      "id": "STOCKPILING",
+      "duration_seconds": 30,
+      "agent_log_interval_ms": 4000,
+      "description": "Water gauge animates upward. Battery gauge climbing. Agent log shows AQUA/FLORA actions. KB query visible.",
+      "auto_advance": true,
+      "animations": {
+        "water_reserve_l": {"from": 340, "to": 580, "easing": "ease-in-out"},
+        "battery_pct": {"from": 78, "to": 100, "easing": "ease-in-out"}
+      }
+    },
+    {
+      "id": "IMPACT",
+      "duration_seconds": 30,
+      "agent_log_interval_ms": 3000,
+      "description": "Background goes red. Solar drops. Triage cards appear. Physical prop dims. Fan stops.",
+      "auto_advance": true,
+      "transition_effect": "background tint shift to red over 1.0s"
+    },
+    {
+      "id": "RECOVERY",
+      "duration_seconds": 15,
+      "agent_log_interval_ms": 4000,
+      "description": "Solar recovers. Green creeps back. New flight rule proposed. Post-event analysis.",
+      "auto_advance": true,
+      "transition_effect": "background tint shift to green over 3.0s"
+    },
+    {
+      "id": "MIRROR",
+      "duration_seconds": 45,
+      "agent_log_interval_ms": null,
+      "description": "Pitch closing. No new agent log entries. Dashboard returns to calm nominal state. Pitch lines overlay if enabled.",
+      "auto_advance": false
+    }
+  ],
+  "controls": {
+    "keyboard": {
+      "space": "pause/resume",
+      "right_arrow": "advance to next phase",
+      "left_arrow": "go back to previous phase",
+      "r": "restart from NOMINAL",
+      "1-6": "jump to specific phase"
+    },
+    "note": "ONE person on keyboard during demo. Assign this role in advance."
+  }
+}

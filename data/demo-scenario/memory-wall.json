@@ -1,0 +1,259 @@
+{
+  "entries": [
+    {
+      "sol": 1,
+      "text": "First seeds planted. EDEN online. The dome smells like wet soil and possibility.",
+      "icon": "seed"
+    },
+    {
+      "sol": 3,
+      "text": "Spc. Reyes stays late to check the germination trays. Nothing yet, but she can feel it.",
+      "icon": "seed"
+    },
+    {
+      "sol": 5,
+      "text": "First sprouts: spinach pushing through. Tiny green arcs in the growing medium.",
+      "icon": "sprout"
+    },
+    {
+      "sol": 7,
+      "text": "Tomato seedlings emerge. Reyes photographs each one and names Tray A 'Los Primeros.'",
+      "icon": "sprout"
+    },
+    {
+      "sol": 10,
+      "text": "Potato shoots breaking surface. Soybean cotyledons unfurling. The dome is waking up.",
+      "icon": "sprout"
+    },
+    {
+      "sol": 14,
+      "text": "All zones showing green. Basil scenting the dome. Cmdr. Chen says it smells like her grandmother's kitchen.",
+      "icon": "leaf"
+    },
+    {
+      "sol": 21,
+      "text": "Spinach rosettes forming. The first real leaves. Dr. Okonkwo measures them daily for the science log.",
+      "icon": "leaf"
+    },
+    {
+      "sol": 30,
+      "text": "Tomato plants staked and climbing. Potato canopy thick and green. The dome looks like a garden now.",
+      "icon": "leaf"
+    },
+    {
+      "sol": 35,
+      "text": "First tomato flowers open. Spc. Reyes hand-pollinates with a small brush. 'Come on,' she whispers.",
+      "icon": "flower"
+    },
+    {
+      "sol": 40,
+      "text": "Wheat tillers spreading. Soybean nodules visible on roots \u2014 nitrogen fixation confirmed. EDEN learning.",
+      "icon": "leaf"
+    },
+    {
+      "sol": 46,
+      "text": "FIRST HARVEST. Cmdr. Chen eats fresh spinach for the first time on Mars. She closes her eyes and smiles.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 46,
+      "text": "Flight rule #1 written: 'Always stagger plantings. Never bet the harvest on one batch.'",
+      "icon": "rule"
+    },
+    {
+      "sol": 53,
+      "text": "Spinach Batch B harvested. The system works \u2014 continuous fresh greens confirmed.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 60,
+      "text": "First tiny green tomatoes visible. Reyes says they look like emeralds.",
+      "icon": "fruit"
+    },
+    {
+      "sol": 71,
+      "text": "First tomato harvest: 60 kg. Spc. Reyes bites into one and says it tastes like home. The crew cheers.",
+      "icon": "fruit"
+    },
+    {
+      "sol": 78,
+      "text": "Stagger tomato harvest: another 60 kg. Dr. Okonkwo makes tomato soup. Best meal since Earth.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 81,
+      "text": "First potato harvest: 30 kg. Eng. Volkov roasts them with basil. 'Like my mother's,' he says quietly.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 91,
+      "text": "First protein harvest: soybean and lentil. All four zones now producing. EDEN is fully operational.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 100,
+      "text": "100 sols of EDEN. 18 flight rules learned. The greenhouse has become the heart of the habitat.",
+      "icon": "milestone"
+    },
+    {
+      "sol": 121,
+      "text": "First wheat harvest. Cmdr. Chen grinds flour and makes flatbread. Fresh bread on Mars. 23 flight rules.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 146,
+      "text": "Third spinach and second tomato cycles harvested same week. The dome is abundant.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 150,
+      "text": "Dr. Okonkwo's health report: crew vitamin C levels optimal, iron levels stable. The greenhouse is working.",
+      "icon": "health"
+    },
+    {
+      "sol": 166,
+      "text": "Second potato harvest. Volkov experiments with potato soup. The crew votes it 'best recipe so far.'",
+      "icon": "harvest"
+    },
+    {
+      "sol": 186,
+      "text": "Second protein cycle complete. Lentil soup night. Okonkwo is happy. 35 flight rules.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 200,
+      "text": "Dust storm approaching. Light levels dropping. EDEN compensates with LED boost. All systems nominal.",
+      "icon": "storm"
+    },
+    {
+      "sol": 210,
+      "text": "Storm peak. External dust coating the dome. Inside, the plants don't know. EDEN keeps growing.",
+      "icon": "storm"
+    },
+    {
+      "sol": 220,
+      "text": "Storm passes. External solar panels cleaned by Volkov during EVA. EDEN never missed a beat.",
+      "icon": "sun"
+    },
+    {
+      "sol": 237,
+      "text": "CME WARNING. Coronal mass ejection incoming. 22 minutes to impact. EDEN enters triage mode.",
+      "icon": "alert"
+    },
+    {
+      "sol": 237,
+      "text": "Spc. Reyes runs to the dome. Deploys radiation shields over the vitamin zone. Hands shaking but steady.",
+      "icon": "shield"
+    },
+    {
+      "sol": 238,
+      "text": "CME IMPACT. Radiation spike. Sensors show elevated levels in protein zone. Vitamin zone shielded successfully.",
+      "icon": "radiation"
+    },
+    {
+      "sol": 239,
+      "text": "Assessment begins. Soybean Batch A showing stress signs. Lentil Batch A wilting. Tomatoes protected.",
+      "icon": "damage"
+    },
+    {
+      "sol": 242,
+      "text": "EDEN triage decision: sacrifice stressed soybean batch, protect remaining crops, activate reserve microgreens.",
+      "icon": "triage"
+    },
+    {
+      "sol": 245,
+      "text": "Microgreens from reserve zone harvested to cover nutrition gap. 10m2 reserve proves its worth.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 250,
+      "text": "Recovery plantings in protein zone. New soybean seeds. Reyes tends them like newborns.",
+      "icon": "seed"
+    },
+    {
+      "sol": 260,
+      "text": "New growth in damaged zone. Recovery ahead of schedule. 47 flight rules now. EDEN adapts.",
+      "icon": "sprout"
+    },
+    {
+      "sol": 270,
+      "text": "Eng. Volkov repairs a micro-crack in irrigation Line 3. Caught by EDEN sensors before any crop damage.",
+      "icon": "repair"
+    },
+    {
+      "sol": 281,
+      "text": "Third protein harvest. Yields recovering. The crew exhales.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 296,
+      "text": "Tomato Cycle 4 and Spinach Cycle 6 harvested. Over 800 kg total harvested. 58 flight rules.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 300,
+      "text": "Sol 300. Two-thirds of the mission complete. The greenhouse has become family. Chen writes home about it.",
+      "icon": "milestone"
+    },
+    {
+      "sol": 336,
+      "text": "Potato Cycle 4. Volkov says the potatoes get better every cycle. He's probably right \u2014 EDEN is optimizing.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 350,
+      "text": "Final planting cycles begin. Every seed counts now. 72 flight rules guiding every decision.",
+      "icon": "seed"
+    },
+    {
+      "sol": 371,
+      "text": "Wheat Cycle 3 harvested. Last bread flour of the mission. Chen makes it count.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 376,
+      "text": "Final soybean and lentil harvest. 80 flight rules. Protein zone goes quiet after 376 sols of service.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 396,
+      "text": "Spinach Cycle 8. Still producing. The simplest crop, the most reliable. 85 flight rules.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 400,
+      "text": "Sol 400. Final stretch. EDEN has produced over 1,100 kg of food. Crew health excellent.",
+      "icon": "milestone"
+    },
+    {
+      "sol": 421,
+      "text": "Final potato harvest. Volkov saves one tuber \u2014 'for the journey home.' 92 flight rules.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 429,
+      "text": "Last potato stagger harvest. Carb zone completes its mission. Thank you, potatoes.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 440,
+      "text": "Crew begins greenhouse decommission prep. Reyes walks the rows one last time, touching every plant.",
+      "icon": "leaf"
+    },
+    {
+      "sol": 446,
+      "text": "Final harvests: Spinach and Tomato. Fresh food until nearly the last day. 1,184.5 kg total.",
+      "icon": "harvest"
+    },
+    {
+      "sol": 448,
+      "text": "EDEN powers down growing systems. Reyes saves seeds from the best tomato plant. 'For next time,' she says.",
+      "icon": "seed"
+    },
+    {
+      "sol": 450,
+      "text": "Mission complete. 4 humans fed. 312 flight rules learned. EDEN remembers.",
+      "icon": "flag"
+    }
+  ]
+}

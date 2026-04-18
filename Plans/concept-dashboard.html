@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstroFarm — Concept Dashboard</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-0: #0a0c10;
+  --bg-1: #0f1218;
+  --bg-2: #151a22;
+  --bg-3: #1c222d;
+  --bg-4: #242b38;
+  --border: rgba(255,255,255,0.06);
+  --border-hover: rgba(255,255,255,0.12);
+  --fg: #e8eaed;
+  --fg-secondary: #9aa0ab;
+  --fg-muted: #5f6672;
+  --mars-red: #c1440e;
+  --mars-amber: #e8913a;
+  --mars-glow: rgba(232,145,58,0.15);
+  --green: #34d399;
+  --green-dim: rgba(52,211,153,0.15);
+  --red: #ef4444;
+  --red-dim: rgba(239,68,68,0.15);
+  --blue: #60a5fa;
+  --blue-dim: rgba(96,165,250,0.12);
+  --purple: #a78bfa;
+  --yellow: #fbbf24;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-0);
+  color: var(--fg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* --- SIDEBAR NAV --- */
+nav {
+  position: fixed;
+  left: 0; top: 0;
+  width: 56px;
+  height: 100vh;
+  background: var(--bg-1);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  z-index: 100;
+  gap: 4px;
+}
+nav .logo {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--mars-red), var(--mars-amber));
+  margin-bottom: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+nav a {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--fg-muted);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s;
+  position: relative;
+}
+nav a:hover { color: var(--fg); background: var(--bg-3); }
+nav a.active { color: var(--mars-amber); background: var(--mars-glow); }
+nav a .tooltip {
+  position: absolute;
+  left: 52px;
+  background: var(--bg-3);
+  color: var(--fg);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  border: 1px solid var(--border);
+}
+nav a:hover .tooltip { opacity: 1; }
+
+/* --- MAIN --- */
+main {
+  margin-left: 56px;
+  min-height: 100vh;
+}
+section {
+  min-height: 100vh;
+  padding: 64px 48px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+section:last-child { border-bottom: none; }
+
+/* --- SECTION HEADERS --- */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--mars-amber);
+  margin-bottom: 8px;
+}
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+/* --- HERO --- */
+#mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 70% 30%, rgba(193,68,14,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 30% 70%, rgba(96,165,250,0.04) 0%, transparent 50%),
+              var(--bg-0);
+}
+.hero-pre {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--mars-amber);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.hero-title {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.hero-title span { color: var(--mars-amber); }
+.hero-sub {
+  font-size: 20px;
+  color: var(--fg-secondary);
+  max-width: 600px;
+  margin-bottom: 48px;
+  line-height: 1.5;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin-bottom: 48px;
+}
+.stat-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+}
+.stat-value {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--mars-amber);
+}
+.stat-label {
+  font-size: 12px;
+  color: var(--fg-muted);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* K8s Metaphor */
+.k8s-map {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  margin-top: 32px;
+}
+.k8s-row {
+  display: contents;
+}
+.k8s-cell {
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.k8s-cell.k8s-header {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--fg-muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.k8s-cell.k8s-concept {
+  background: var(--blue-dim);
+  border: 1px solid rgba(96,165,250,0.2);
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+.k8s-cell.k8s-greenhouse {
+  background: var(--green-dim);
+  border: 1px solid rgba(52,211,153,0.2);
+  color: var(--green);
+}
+.k8s-cell.k8s-arrow {
+  display: flex; justify-content: center;
+  color: var(--fg-muted);
+  font-size: 18px;
+  background: none;
+  border: none;
+}
+
+/* --- ARCHITECTURE --- */
+.arch-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.arch-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.arch-layer {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s;
+  cursor: default;
+}
+.arch-layer:hover {
+  border-color: var(--mars-amber);
+  box-shadow: 0 0 20px rgba(232,145,58,0.08);
+}
+.arch-layer-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--bg-0);
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--mars-amber);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.arch-layer-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+.arch-layer-desc {
+  font-size: 12px;
+  color: var(--fg-secondary);
+}
+.arch-layer-owner {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--fg-muted);
+  margin-left: auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.arch-flow-arrow {
+  text-align: center;
+  color: var(--fg-muted);
+  font-size: 14px;
+  padding: 4px 0;
+  position: relative;
+}
+.arch-flow-arrow::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--mars-amber), transparent);
+  opacity: 0.3;
+}
+
+/* Water chain */
+.water-chain {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+.water-chain h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.chain-flow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.chain-node {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 100px;
+  transition: all 0.3s;
+}
+.chain-node.solar { border-color: var(--yellow); color: var(--yellow); }
+.chain-node.power { border-color: var(--blue); color: var(--blue); }
+.chain-node.water { border-color: #06b6d4; color: #06b6d4; }
+.chain-node.crops { border-color: var(--green); color: var(--green); }
+.chain-arrow {
+  color: var(--fg-muted);
+  font-size: 16px;
+  animation: pulse-arrow 2s infinite;
+}
+@keyframes pulse-arrow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+.chain-storm {
+  margin-top: 20px;
+  padding: 16px;
+  background: var(--red-dim);
+  border: 1px solid rgba(239,68,68,0.2);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--red);
+}
+.chain-storm strong { color: #fca5a5; }
+
+/* --- PREDICTIONS --- */
+.pred-timeline {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 32px;
+  position: relative;
+  height: 60px;
+}
+.pred-timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--mars-red), var(--mars-amber), var(--yellow), var(--green), var(--blue));
+}
+.tl-point {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.tl-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-0);
+  margin-bottom: 8px;
+}
+.tl-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pred-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+.pred-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: all 0.3s;
+  cursor: default;
+}
+.pred-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+.pred-card.killer {
+  border-color: var(--mars-amber);
+  box-shadow: 0 0 30px rgba(232,145,58,0.08);
+}
+.pred-card.killer::before {
+  content: 'KILLER FEATURE';
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--bg-0);
+  background: var(--mars-amber);
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+.pred-id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.pred-card:nth-child(1) .pred-id { background: rgba(239,68,68,0.15); color: var(--red); }
+.pred-card:nth-child(2) .pred-id { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.pred-card:nth-child(3) .pred-id { background: rgba(96,165,250,0.15); color: var(--blue); }
+.pred-card:nth-child(4) .pred-id { background: rgba(52,211,153,0.15); color: var(--green); }
+.pred-card:nth-child(5) .pred-id { background: rgba(167,139,250,0.15); color: var(--purple); }
+.pred-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.pred-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.pred-meta dt {
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pred-meta dd { color: var(--fg-secondary); }
+.pred-action {
+  background: var(--bg-2);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--fg-secondary);
+  border-left: 2px solid var(--mars-amber);
+}
+
+/* --- VIRTUAL LAB --- */
+.lab-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.lab-panel {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.lab-panel-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lab-panel-header .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+}
+.lab-panel-header .dot.green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+.lab-panel-header .dot.amber { background: var(--mars-amber); box-shadow: 0 0 6px var(--mars-amber); animation: blink 2s infinite; }
+@keyframes blink { 0%,100%{ opacity:1 } 50%{ opacity:0.4 } }
+.lab-panel-body { padding: 20px; }
+
+.node-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.node-row:last-child { border-bottom: none; }
+.node-name {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  width: 100px;
+}
+.node-status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+.node-status.healthy { background: var(--green-dim); color: var(--green); }
+.node-status.warning { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.node-status.critical { background: var(--red-dim); color: var(--red); }
+
+.gauge {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.gauge-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1.5s ease;
+}
+.gauge-fill.green { background: var(--green); }
+.gauge-fill.amber { background: var(--mars-amber); }
+.gauge-fill.red { background: var(--red); }
+
+/* Strategies */
+.strategies {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.strategy {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  transition: all 0.3s;
+}
+.strategy.selected {
+  border-color: var(--green);
+  box-shadow: 0 0 15px rgba(52,211,153,0.1);
+}
+.strategy.rejected { opacity: 0.5; }
+.strategy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.strategy-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.strategy-result {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+}
+.strategy-desc {
+  font-size: 12px;
+  color: var(--fg-secondary);
+}
+.strategy-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+.strategy-badge.best { background: var(--green-dim); color: var(--green); }
+
+/* --- WATER/ENERGY --- */
+.energy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.energy-panel {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.energy-panel h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--fg-secondary);
+}
+.resource-bar {
+  margin-bottom: 16px;
+}
+.resource-bar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+.resource-bar-header .label { color: var(--fg-secondary); }
+.resource-bar-header .value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+.resource-track {
+  height: 10px;
+  background: var(--bg-3);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.resource-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 2s ease;
+  position: relative;
+}
+.resource-fill.water { background: linear-gradient(90deg, #0891b2, #06b6d4); }
+.resource-fill.power { background: linear-gradient(90deg, var(--yellow), #fcd34d); }
+.resource-fill.battery { background: linear-gradient(90deg, var(--green), #6ee7b7); }
+.resource-fill.solar { background: linear-gradient(90deg, var(--mars-amber), var(--yellow)); }
+
+.stockpile-animation {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--bg-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+.stockpile-log {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 2;
+  color: var(--fg-secondary);
+}
+.stockpile-log .time { color: var(--fg-muted); }
+.stockpile-log .action { color: var(--mars-amber); }
+.stockpile-log .value { color: var(--green); }
+
+/* Toggle */
+.toggle-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.toggle-btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  color: var(--fg-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.toggle-btn:hover { border-color: var(--border-hover); color: var(--fg); }
+.toggle-btn.active {
+  border-color: var(--mars-amber);
+  color: var(--mars-amber);
+  background: var(--mars-glow);
+}
+
+/* --- DEMO SCRIPT --- */
+.demo-acts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.demo-act {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  position: relative;
+  transition: all 0.3s;
+}
+.demo-act:hover {
+  border-color: var(--border-hover);
+}
+.act-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--mars-amber);
+  margin-bottom: 4px;
+}
+.act-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.act-time {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-muted);
+  margin-bottom: 12px;
+}
+.act-detail {
+  font-size: 13px;
+  color: var(--fg-secondary);
+  line-height: 1.7;
+}
+.act-detail strong { color: var(--fg); font-weight: 500; }
+.act-channels {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.act-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+.act-tag.screen { background: var(--blue-dim); color: var(--blue); }
+.act-tag.agent { background: var(--mars-glow); color: var(--mars-amber); }
+.act-tag.physical { background: var(--green-dim); color: var(--green); }
+.act-tag.voice { background: rgba(167,139,250,0.15); color: var(--purple); }
+
+/* --- JUDGE GRID --- */
+.judge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.judge-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+.judge-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.judge-criterion {
+  font-size: 16px;
+  font-weight: 600;
+}
+.judge-weight {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--mars-amber);
+}
+.judge-features {
+  list-style: none;
+  font-size: 13px;
+  color: var(--fg-secondary);
+}
+.judge-features li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.judge-features li:last-child { border-bottom: none; }
+.score-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.score-dot.high { background: var(--green); }
+.score-dot.med { background: var(--yellow); }
+.score-dot.low { background: var(--fg-muted); }
+
+.aws-bonus {
+  background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(167,139,250,0.08));
+  border: 1px solid rgba(96,165,250,0.2);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.aws-bonus-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--blue);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.aws-bonus-text {
+  font-size: 13px;
+  color: var(--fg-secondary);
+}
+
+/* --- TECH STACK --- */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.tech-item {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  transition: all 0.2s;
+}
+.tech-item:hover { border-color: var(--border-hover); }
+.tech-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.tech-purpose {
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.mcp-panel {
+  background: var(--bg-1);
+  border: 1px solid var(--mars-amber);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 24px;
+}
+.mcp-panel h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--mars-amber);
+}
+.mcp-endpoint {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-muted);
+  background: var(--bg-2);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  word-break: break-all;
+}
+.mcp-domains {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.mcp-domain {
+  font-size: 12px;
+  color: var(--fg-secondary);
+  padding: 8px 12px;
+  background: var(--bg-2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mcp-domain-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--mars-amber);
+  width: 20px;
+  text-align: center;
+}
+
+/* --- BUILD PRIORITY --- */
+.tier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tier {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.tier-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tier-header:hover { background: var(--bg-2); }
+.tier-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+.tier-badge.t1 { background: var(--red-dim); color: var(--red); }
+.tier-badge.t2 { background: rgba(232,145,58,0.15); color: var(--mars-amber); }
+.tier-badge.t3 { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.tier-badge.t4 { background: var(--blue-dim); color: var(--blue); }
+.tier-badge.t5 { background: rgba(167,139,250,0.12); color: var(--purple); }
+.tier-title { font-weight: 600; font-size: 15px; flex: 1; }
+.tier-time {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+.tier-body {
+  padding: 16px 20px;
+}
+.tier-tasks {
+  list-style: none;
+  font-size: 13px;
+  color: var(--fg-secondary);
+}
+.tier-tasks li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tier-tasks li:last-child { border-bottom: none; }
+.tier-checkbox {
+  width: 14px; height: 14px;
+  border: 1.5px solid var(--fg-muted);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* --- FOOTER --- */
+.pitch-line {
+  text-align: center;
+  padding: 64px 48px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(193,68,14,0.06) 0%, transparent 70%);
+}
+.pitch-line blockquote {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--mars-amber);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.pitch-line .attr {
+  font-size: 13px;
+  color: var(--fg-muted);
+  margin-top: 16px;
+  font-style: normal;
+}
+
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb { background: var(--bg-4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--fg-muted); }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  nav { display: none; }
+  main { margin-left: 0; }
+  section { padding: 40px 20px; }
+  .mission-stats { grid-template-columns: repeat(2, 1fr); }
+  .arch-container { grid-template-columns: 1fr; }
+  .lab-container { grid-template-columns: 1fr; }
+  .energy-grid { grid-template-columns: 1fr; }
+  .demo-acts { grid-template-columns: 1fr; }
+  .judge-grid { grid-template-columns: 1fr; }
+  .k8s-map { grid-template-columns: 1fr 1fr 1fr; font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR NAV -->
+<nav id="sidebar">
+  <div class="logo">AF</div>
+  <a href="#mission" class="active" data-section="mission">
+    <span>01</span><span class="tooltip">Mission</span>
+  </a>
+  <a href="#architecture" data-section="architecture">
+    <span>02</span><span class="tooltip">Architecture</span>
+  </a>
+  <a href="#predictions" data-section="predictions">
+    <span>03</span><span class="tooltip">Predictions</span>
+  </a>
+  <a href="#virtual-lab" data-section="virtual-lab">
+    <span>04</span><span class="tooltip">Virtual Lab</span>
+  </a>
+  <a href="#water-energy" data-section="water-energy">
+    <span>05</span><span class="tooltip">Water/Energy</span>
+  </a>
+  <a href="#demo-script" data-section="demo-script">
+    <span>06</span><span class="tooltip">Demo Script</span>
+  </a>
+  <a href="#judge-optimization" data-section="judge-optimization">
+    <span>07</span><span class="tooltip">Judging</span>
+  </a>
+  <a href="#tech-stack" data-section="tech-stack">
+    <span>08</span><span class="tooltip">Tech Stack</span>
+  </a>
+  <a href="#build-priority" data-section="build-priority">
+    <span>09</span><span class="tooltip">Build Plan</span>
+  </a>
+</nav>
+
+<main>
+
+<!-- ==================== 1. MISSION OVERVIEW ==================== -->
+<section id="mission">
+  <div class="hero-pre">START HACK 2026 &mdash; Syngenta &times; AWS</div>
+  <h1 class="hero-title">Astro<span>Farm</span></h1>
+  <p class="hero-sub">An autonomous AI agent system that manages a Martian greenhouse using Kubernetes orchestration principles &mdash; with predictive weather response, auto-healing, and resource-aware crop management.</p>
+
+  <div class="mission-stats">
+    <div class="stat-card">
+      <div class="stat-value">4</div>
+      <div class="stat-label">Astronauts</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">450</div>
+      <div class="stat-label">Sol Mission</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">22m</div>
+      <div class="stat-label">Signal Delay</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">42%</div>
+      <div class="stat-label">Target Humidity</div>
+    </div>
+  </div>
+
+  <div class="section-label">The K8s &rarr; Greenhouse Metaphor</div>
+  <div class="k8s-map">
+    <div class="k8s-cell k8s-header">Kubernetes</div>
+    <div class="k8s-cell k8s-header" style="text-align:center;justify-content:center;">&nbsp;</div>
+    <div class="k8s-cell k8s-header">Greenhouse</div>
+
+    <div class="k8s-cell k8s-concept">Cluster</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Greenhouse Dome</div>
+
+    <div class="k8s-cell k8s-concept">Control Plane</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">AI Agent (Bedrock)</div>
+
+    <div class="k8s-cell k8s-concept">Node</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Grow Bed / Zone</div>
+
+    <div class="k8s-cell k8s-concept">Pod</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Individual Plant</div>
+
+    <div class="k8s-cell k8s-concept">HPA Autoscaler</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Nutritional Gap &rarr; Scale Crops</div>
+
+    <div class="k8s-cell k8s-concept">Liveness Probe</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Is the plant alive?</div>
+
+    <div class="k8s-cell k8s-concept">PodDisruptionBudget</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Never &gt;30% offline</div>
+
+    <div class="k8s-cell k8s-concept">Canary Deploy</div>
+    <div class="k8s-cell k8s-arrow">&rarr;</div>
+    <div class="k8s-cell k8s-greenhouse">Virtual Farming Lab</div>
+  </div>
+</section>
+
+<!-- ==================== 2. ARCHITECTURE ==================== -->
+<section id="architecture">
+  <div class="section-label">02 &mdash; System Architecture</div>
+  <h2 class="section-title">Five-Layer Stack</h2>
+
+  <div class="arch-container">
+    <div class="arch-layers">
+      <div class="arch-layer">
+        <div class="arch-layer-num">5</div>
+        <div>
+          <div class="arch-layer-title">External APIs</div>
+          <div class="arch-layer-desc">DONKI CME/MPC, InSight, Syngenta MCP KB, NASA Images</div>
+        </div>
+        <div class="arch-layer-owner">NASA / AWS</div>
+      </div>
+      <div class="arch-flow-arrow">&darr;</div>
+      <div class="arch-layer">
+        <div class="arch-layer-num">4</div>
+        <div>
+          <div class="arch-layer-title">Dashboard &mdash; The Lens</div>
+          <div class="arch-layer-desc">React + Amplify &mdash; sensor panels, agent log, Sol Forecast, virtual lab</div>
+        </div>
+        <div class="arch-layer-owner">Bryan + Lars</div>
+      </div>
+      <div class="arch-flow-arrow">&darr;</div>
+      <div class="arch-layer">
+        <div class="arch-layer-num">3</div>
+        <div>
+          <div class="arch-layer-title">AI Agent &mdash; Control Plane</div>
+          <div class="arch-layer-desc">Bedrock Claude via Strands SDK &mdash; reconciliation loop every 30s</div>
+        </div>
+        <div class="arch-layer-owner">Lars + Bryan</div>
+      </div>
+      <div class="arch-flow-arrow">&darr;</div>
+      <div class="arch-layer">
+        <div class="arch-layer-num">2</div>
+        <div>
+          <div class="arch-layer-title">Mars Transform Layer</div>
+          <div class="arch-layer-desc">Lambda &mdash; Earth sensor &rarr; Mars-adjusted values + event injection</div>
+        </div>
+        <div class="arch-layer-owner">Lars</div>
+      </div>
+      <div class="arch-flow-arrow">&darr;</div>
+      <div class="arch-layer">
+        <div class="arch-layer-num">1</div>
+        <div>
+          <div class="arch-layer-title">Physical Layer</div>
+          <div class="arch-layer-desc">Raspberry Pi &mdash; DHT22, soil moisture, light, camera, pump, LEDs</div>
+        </div>
+        <div class="arch-layer-owner">Johannes + PJ</div>
+      </div>
+    </div>
+
+    <div class="water-chain">
+      <h3>&#9889; Water / Energy Chain</h3>
+      <div class="chain-flow">
+        <div class="chain-node solar">&#9728; Solar<br><small>4.2 kW</small></div>
+        <div class="chain-arrow">&rarr;</div>
+        <div class="chain-node power">&#9889; Power<br><small>+ Battery</small></div>
+        <div class="chain-arrow">&rarr;</div>
+        <div class="chain-node water">&#128167; Desalinate<br><small>120L/sol</small></div>
+        <div class="chain-arrow">&rarr;</div>
+        <div class="chain-node crops">&#127793; Crops<br><small>100L/sol</small></div>
+      </div>
+
+      <div class="chain-storm">
+        <strong>During Storm (30% solar):</strong> Desalination drops to 36L/sol &mdash; deficit of 64L/sol. Agent must stockpile BEFORE storm arrives. Pre-storm protocol: max desalination for 48h, top battery to 100%, pre-water all crops.
+      </div>
+
+      <div style="margin-top:20px">
+        <div class="section-label" style="margin-bottom:12px">Power Allocation</div>
+        <div style="display:flex;gap:4px;height:24px;border-radius:4px;overflow:hidden;">
+          <div style="flex:3;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--bg-0);">LIGHTS 30%</div>
+          <div style="flex:2.5;background:#06b6d4;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--bg-0);">DESAL 25%</div>
+          <div style="flex:2;background:var(--mars-amber);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--bg-0);">HEAT 20%</div>
+          <div style="flex:1.5;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--bg-0);">SHIELDS 15%</div>
+          <div style="flex:1;background:var(--purple);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--bg-0);">OTHER</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 3. PREDICTIONS ==================== -->
+<section id="predictions">
+  <div class="section-label">03 &mdash; Predictive Capabilities</div>
+  <h2 class="section-title">Five Time Horizons</h2>
+
+  <div class="pred-timeline">
+    <div class="tl-point"><div class="tl-dot" style="background:var(--red)"></div><div class="tl-label">Hours</div></div>
+    <div class="tl-point"><div class="tl-dot" style="background:var(--mars-amber)"></div><div class="tl-label">Days</div></div>
+    <div class="tl-point"><div class="tl-dot" style="background:var(--yellow)"></div><div class="tl-label">Weeks</div></div>
+    <div class="tl-point"><div class="tl-dot" style="background:var(--green)"></div><div class="tl-label">Months</div></div>
+    <div class="tl-point"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-label">Full Mission</div></div>
+  </div>
+
+  <div class="pred-cards">
+    <div class="pred-card killer">
+      <div class="pred-id">P1</div>
+      <div class="pred-name">Solar Event Prediction</div>
+      <dl class="pred-meta">
+        <dt>Source</dt><dd>DONKI CME API (LIVE &mdash; real 2026 data)</dd>
+        <dt>Horizon</dt><dd>25&ndash;96 hours</dd>
+        <dt>Model</dt><dd>ETA = Mars_distance / CME_speed</dd>
+      </dl>
+      <div class="pred-action">CME detected &rarr; calculate transit &rarr; assess crop vulnerability &rarr; stockpile water &rarr; activate shields &rarr; survival mode</div>
+    </div>
+
+    <div class="pred-card">
+      <div class="pred-id">P2</div>
+      <div class="pred-name">Seasonal Growth Cycle</div>
+      <dl class="pred-meta">
+        <dt>Source</dt><dd>Mars orbital mechanics (deterministic)</dd>
+        <dt>Horizon</dt><dd>30&ndash;100+ sols</dd>
+        <dt>Model</dt><dd>Solar longitude Ls &rarr; flux curve</dd>
+      </dl>
+      <div class="pred-action">Pre-compute 450-sol light budget &rarr; schedule crop rotations around seasonal peaks &rarr; align planting with optimal flux windows</div>
+    </div>
+
+    <div class="pred-card">
+      <div class="pred-id">P3</div>
+      <div class="pred-name">Resource Depletion Forecast</div>
+      <dl class="pred-meta">
+        <dt>Source</dt><dd>Consumption telemetry + water/power budget</dd>
+        <dt>Horizon</dt><dd>Days to weeks</dd>
+        <dt>Model</dt><dd>Linear projection + storm impact</dd>
+      </dl>
+      <div class="pred-action">Project water exhaustion date &rarr; if before Sol 450, reduce non-critical irrigation &rarr; prioritize calorie crops</div>
+    </div>
+
+    <div class="pred-card">
+      <div class="pred-id">P4</div>
+      <div class="pred-name">Nutritional Gap Projection</div>
+      <dl class="pred-meta">
+        <dt>Source</dt><dd>Crop growth rates + Syngenta KB + crew needs</dd>
+        <dt>Horizon</dt><dd>Weeks to months</dd>
+        <dt>Model</dt><dd>projected_yield &minus; required_intake</dd>
+      </dl>
+      <div class="pred-action">Protein projected 12% below target by Sol 300 &rarr; HPA: scale up soybean pods from 4 to 6 &rarr; close gap</div>
+    </div>
+
+    <div class="pred-card">
+      <div class="pred-id">P5</div>
+      <div class="pred-name">Dust Storm Readiness</div>
+      <dl class="pred-meta">
+        <dt>Source</dt><dd>InSight baseline + Ls seasonal correlation</dd>
+        <dt>Horizon</dt><dd>Hours to days</dd>
+        <dt>Model</dt><dd>Ls 180&deg;&ndash;330&deg; = storm season probability</dd>
+      </dl>
+      <div class="pred-action">Heightened readiness during storm season &rarr; pre-planned response protocols &rarr; not prediction, honest readiness framing</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 4. VIRTUAL FARMING LAB ==================== -->
+<section id="virtual-lab">
+  <div class="section-label">04 &mdash; Virtual Farming Lab</div>
+  <h2 class="section-title">The Staging Environment</h2>
+  <p style="color:var(--fg-secondary);margin-bottom:24px;max-width:700px;">The agent tests response strategies in simulation before applying to the real greenhouse. Like a K8s staging cluster &mdash; canary deployment for crops.</p>
+
+  <div class="lab-container">
+    <div class="lab-panel">
+      <div class="lab-panel-header">
+        <span class="dot green"></span> Production Greenhouse
+      </div>
+      <div class="lab-panel-body">
+        <div class="node-row">
+          <div class="node-name">Node:Protein</div>
+          <span class="node-status healthy">HEALTHY</span>
+          <div class="gauge"><div class="gauge-fill green" style="width:87%"></div></div>
+          <span style="font-family:var(--font-mono);font-size:11px;color:var(--fg-muted)">87%</span>
+        </div>
+        <div class="node-row">
+          <div class="node-name">Node:Carb</div>
+          <span class="node-status healthy">HEALTHY</span>
+          <div class="gauge"><div class="gauge-fill green" style="width:92%"></div></div>
+          <span style="font-family:var(--font-mono);font-size:11px;color:var(--fg-muted)">92%</span>
+        </div>
+        <div class="node-row">
+          <div class="node-name">Node:Vitamin</div>
+          <span class="node-status warning">WARNING</span>
+          <div class="gauge"><div class="gauge-fill amber" style="width:64%"></div></div>
+          <span style="font-family:var(--font-mono);font-size:11px;color:var(--fg-muted)">64%</span>
+        </div>
+        <div style="margin-top:16px;padding:12px;background:var(--bg-2);border-radius:var(--radius-sm);font-family:var(--font-mono);font-size:11px;color:var(--fg-muted);">
+          <div>Water: 340L &nbsp;|&nbsp; Battery: 78% &nbsp;|&nbsp; Solar: 100%</div>
+          <div style="margin-top:4px;color:var(--green);">Sol 142 &mdash; All systems nominal</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lab-panel">
+      <div class="lab-panel-header">
+        <span class="dot amber"></span> Simulation Lab
+        <span style="margin-left:auto;font-size:10px;color:var(--mars-amber);letter-spacing:0;">SCENARIO: CME-2026-0315</span>
+      </div>
+      <div class="lab-panel-body">
+        <div class="strategies">
+          <div class="strategy rejected">
+            <div class="strategy-header">
+              <div class="strategy-name">A &mdash; Do Nothing</div>
+              <div class="strategy-result" style="color:var(--red);">40% LOSS</div>
+            </div>
+            <div class="strategy-desc">No pre-emptive action. Wheat dies at Sol 144. Protein deficit by Sol 200. Recovery: 45 sols.</div>
+          </div>
+          <div class="strategy rejected">
+            <div class="strategy-header">
+              <div class="strategy-name">B &mdash; Standard Survival</div>
+              <div class="strategy-result" style="color:var(--yellow);">12% LOSS</div>
+            </div>
+            <div class="strategy-desc">Activate shields + reduce power. Spinach stressed, soybean reduced. Recovery: 15 sols.</div>
+          </div>
+          <div class="strategy selected">
+            <div class="strategy-header">
+              <div class="strategy-name">C &mdash; Pre-emptive Full Protocol</div>
+              <div class="strategy-result" style="color:var(--green);">3% LOSS</div>
+            </div>
+            <div class="strategy-desc">Stockpile water 48h, pre-harvest spinach, stress-harden wheat, top battery, full shields.</div>
+            <div class="strategy-badge best">SELECTED &mdash; BEST OUTCOME</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--bg-1);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;">
+    <div class="section-label" style="margin-bottom:12px;">Agent Reasoning Transcript</div>
+    <div style="font-family:var(--font-mono);font-size:11px;line-height:2;color:var(--fg-secondary);">
+      <div><span style="color:var(--fg-muted)">[Sol 142, 14:24:00]</span> <span style="color:var(--mars-amber)">VIRTUAL LAB:</span> Running 3 response strategies for CME-2026-0315</div>
+      <div><span style="color:var(--fg-muted)">[Sol 142, 14:24:03]</span> <span style="color:var(--blue)">KB QUERY:</span> "Wheat radiation tolerance at flowering stage" &rarr; Syngenta MCP</div>
+      <div><span style="color:var(--fg-muted)">[Sol 142, 14:24:05]</span> <span style="color:var(--blue)">KB RESULT:</span> "Zadoks 60-69: HIGH sensitivity. UV-B yield reduction 15-40%"</div>
+      <div><span style="color:var(--fg-muted)">[Sol 142, 14:24:08]</span> <span style="color:var(--mars-amber)">SIMULATION:</span> Strategy A complete: 40% loss. Strategy B: 12%. Strategy C: 3%.</div>
+      <div><span style="color:var(--fg-muted)">[Sol 142, 14:24:09]</span> <span style="color:var(--green)">DECISION:</span> Strategy C selected. Initiating pre-storm protocol.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. WATER/ENERGY ==================== -->
+<section id="water-energy">
+  <div class="section-label">05 &mdash; Water / Energy Nexus</div>
+  <h2 class="section-title">Pre-Storm Resource Stockpiling</h2>
+
+  <div class="toggle-row">
+    <button class="toggle-btn active" onclick="setEnergyMode('normal',this)">Normal Operations</button>
+    <button class="toggle-btn" onclick="setEnergyMode('prestorm',this)">Pre-Storm Stockpiling</button>
+    <button class="toggle-btn" onclick="setEnergyMode('storm',this)">During Storm</button>
+  </div>
+
+  <div class="energy-grid">
+    <div class="energy-panel">
+      <h3>Resource Levels</h3>
+      <div class="resource-bar">
+        <div class="resource-bar-header">
+          <span class="label">Clean Water Reserve</span>
+          <span class="value" id="water-val">340L / 500L</span>
+        </div>
+        <div class="resource-track"><div class="resource-fill water" id="water-fill" style="width:68%"></div></div>
+      </div>
+      <div class="resource-bar">
+        <div class="resource-bar-header">
+          <span class="label">Battery Charge</span>
+          <span class="value" id="battery-val">78%</span>
+        </div>
+        <div class="resource-track"><div class="resource-fill battery" id="battery-fill" style="width:78%"></div></div>
+      </div>
+      <div class="resource-bar">
+        <div class="resource-bar-header">
+          <span class="label">Solar Output</span>
+          <span class="value" id="solar-val">100% (4.2 kW)</span>
+        </div>
+        <div class="resource-track"><div class="resource-fill solar" id="solar-fill" style="width:100%"></div></div>
+      </div>
+      <div class="resource-bar">
+        <div class="resource-bar-header">
+          <span class="label">Desalination Rate</span>
+          <span class="value" id="desal-val">120 L/sol</span>
+        </div>
+        <div class="resource-track"><div class="resource-fill power" id="desal-fill" style="width:100%"></div></div>
+      </div>
+    </div>
+
+    <div class="energy-panel">
+      <h3>Agent Protocol Log</h3>
+      <div class="stockpile-log" id="energy-log">
+        <div><span class="time">[Sol 142, 08:00]</span> <span class="action">ROUTINE:</span> All systems nominal. Water consumption: 100L/sol. Production: 120L/sol. Net: <span class="value">+20L/sol</span></div>
+        <div><span class="time">[Sol 142, 08:30]</span> <span class="action">ROUTINE:</span> Battery cycling normally. Solar panels at full efficiency.</div>
+        <div><span class="time">[Sol 142, 09:00]</span> <span class="action">ROUTINE:</span> Crop irrigation on schedule. All zones within target moisture.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 6. DEMO SCRIPT ==================== -->
+<section id="demo-script">
+  <div class="section-label">06 &mdash; Demo Script</div>
+  <h2 class="section-title">3-Minute Pitch Breakdown</h2>
+
+  <div style="font-family:var(--font-mono);font-size:12px;color:var(--fg-muted);margin-bottom:24px;display:flex;gap:24px;">
+    <span>Total: <strong style="color:var(--fg)">180 seconds</strong></span>
+    <span>Format: <strong style="color:var(--fg)">Live demo + physical prop</strong></span>
+    <span>Climax: <strong style="color:var(--mars-amber)">Act 2 &mdash; Agent sees the future</strong></span>
+  </div>
+
+  <div class="demo-acts">
+    <div class="demo-act">
+      <div class="act-num">Act 1</div>
+      <div class="act-title">&ldquo;The Farm is Running&rdquo;</div>
+      <div class="act-time">0:00 &ndash; 0:30 (30s)</div>
+      <div class="act-detail">
+        Dashboard live with 3 zones green. Nutritional tracking: <strong>&ldquo;4 astronauts on track.&rdquo;</strong> Agent log streaming: <strong>&ldquo;Sol 142. All systems nominal.&rdquo;</strong> Physical prop LEDs on, pump running. Sol Forecast timeline visible.
+      </div>
+      <div class="act-channels">
+        <span class="act-tag screen">Dashboard</span>
+        <span class="act-tag agent">Agent Log</span>
+        <span class="act-tag physical">LEDs On</span>
+      </div>
+    </div>
+
+    <div class="demo-act" style="border-color:var(--mars-amber);box-shadow:0 0 20px rgba(232,145,58,0.06);">
+      <div class="act-num">Act 2 &mdash; THE CLIMAX</div>
+      <div class="act-title">&ldquo;The Agent Sees the Future&rdquo;</div>
+      <div class="act-time">0:30 &ndash; 1:15 (45s)</div>
+      <div class="act-detail">
+        DONKI alert: <strong>&ldquo;CME-2026-0315 detected. Speed: 1,247 km/s.&rdquo;</strong> Agent calculates: <strong>&ldquo;Mars transit: 50.7 hours.&rdquo;</strong> Virtual Lab runs 3 strategies. Strategy C selected: <strong>3% loss vs 40% baseline.</strong> Dashboard shifts green &rarr; amber. Countdown appears.
+      </div>
+      <div class="act-channels">
+        <span class="act-tag screen">Amber Alert</span>
+        <span class="act-tag agent">Prediction</span>
+        <span class="act-tag screen">Virtual Lab</span>
+        <span class="act-tag voice">Narrator</span>
+      </div>
+    </div>
+
+    <div class="demo-act">
+      <div class="act-num">Act 3</div>
+      <div class="act-title">&ldquo;Stockpiling Before the Storm&rdquo;</div>
+      <div class="act-time">1:15 &ndash; 2:00 (45s)</div>
+      <div class="act-detail">
+        Agent: <strong>&ldquo;Desalination &rarr; MAX.&rdquo;</strong> Water gauge climbing live. Battery charging. Pre-harvest spinach. Stress-harden wheat nutrients. <strong>Physical LEDs dim gradually</strong> showing power reallocation. Countdown: <strong>48:12:33</strong>.
+      </div>
+      <div class="act-channels">
+        <span class="act-tag screen">Gauges</span>
+        <span class="act-tag agent">Stockpiling</span>
+        <span class="act-tag physical">LEDs Dim</span>
+      </div>
+    </div>
+
+    <div class="demo-act">
+      <div class="act-num">Act 4</div>
+      <div class="act-title">&ldquo;The Vision&rdquo;</div>
+      <div class="act-time">2:00 &ndash; 2:30 (30s)</div>
+      <div class="act-detail">
+        <strong>&ldquo;This isn't just Mars.&rdquo;</strong> Every drought, energy crisis, extreme weather event &mdash; same resource-constrained challenge. Syngenta's crop science + predictive AI. Agent queried Syngenta KB for stress thresholds. Used real NASA DONKI data. Tested strategies before acting. <strong>&ldquo;It thinks like a farmer who can see the future.&rdquo;</strong>
+      </div>
+      <div class="act-channels">
+        <span class="act-tag voice">Pitch Close</span>
+        <span class="act-tag screen">Earth App</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. JUDGE OPTIMIZATION ==================== -->
+<section id="judge-optimization">
+  <div class="section-label">07 &mdash; Judge Optimization</div>
+  <h2 class="section-title">Scoring Every Criterion</h2>
+
+  <div class="judge-grid">
+    <div class="judge-card">
+      <div class="judge-card-header">
+        <div class="judge-criterion">Creativity</div>
+        <div class="judge-weight">25%</div>
+      </div>
+      <ul class="judge-features">
+        <li><span class="score-dot high"></span>K8s &rarr; Greenhouse metaphor (unique framing)</li>
+        <li><span class="score-dot high"></span>Virtual Farming Lab (simulation-within-simulation)</li>
+        <li><span class="score-dot high"></span>Cross-domain: astrophysics &rarr; agriculture</li>
+        <li><span class="score-dot high"></span>Water/energy chain prediction (resource cascade)</li>
+        <li><span class="score-dot med"></span>Predictive vs reactive (paradigm shift)</li>
+      </ul>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-card-header">
+        <div class="judge-criterion">Functionality &amp; Accuracy</div>
+        <div class="judge-weight">25%</div>
+      </div>
+      <ul class="judge-features">
+        <li><span class="score-dot high"></span>DONKI CME = LIVE, REAL 2026 solar data</li>
+        <li><span class="score-dot high"></span>CME transit math = verifiable physics</li>
+        <li><span class="score-dot high"></span>Syngenta KB queries for crop stress thresholds</li>
+        <li><span class="score-dot high"></span>Nutritional tracking answers the exact prompt</li>
+        <li><span class="score-dot med"></span>InSight honestly framed as historical baseline</li>
+      </ul>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-card-header">
+        <div class="judge-criterion">Visual Design &amp; UX</div>
+        <div class="judge-weight">25%</div>
+      </div>
+      <ul class="judge-features">
+        <li><span class="score-dot high"></span>Sol Forecast timeline (unified multi-horizon viz)</li>
+        <li><span class="score-dot high"></span>Green &rarr; amber dashboard transition in demo</li>
+        <li><span class="score-dot high"></span>Side-by-side Production vs Simulation panels</li>
+        <li><span class="score-dot high"></span>Water reserve gauge climbing in real-time</li>
+        <li><span class="score-dot med"></span>Physical prop LEDs synced with dashboard</li>
+      </ul>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-card-header">
+        <div class="judge-criterion">Presentation Quality</div>
+        <div class="judge-weight">25%</div>
+      </div>
+      <ul class="judge-features">
+        <li><span class="score-dot high"></span>4-act narrative arc with dramatic climax</li>
+        <li><span class="score-dot high"></span>&ldquo;Watch the agent think&rdquo; &mdash; live reasoning stream</li>
+        <li><span class="score-dot high"></span>Countdown timer creates urgency</li>
+        <li><span class="score-dot high"></span>Physical prop + digital twin synchronized</li>
+        <li><span class="score-dot med"></span>Earth application &rarr; Syngenta relevance close</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="aws-bonus">
+    <div class="aws-bonus-badge">AWS Bonus Points</div>
+    <div class="aws-bonus-text">
+      Bedrock (Claude agent) &bull; AgentCore Gateway &amp; Runtime &bull; Syngenta MCP KB &bull; IoT Core (MQTT) &bull; DynamoDB &bull; Lambda &bull; Amplify &bull; EventBridge &bull; CloudWatch &bull; S3 &mdash; <strong style="color:var(--fg)">10 AWS services</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. TECH STACK ==================== -->
+<section id="tech-stack">
+  <div class="section-label">08 &mdash; Tech Stack</div>
+  <h2 class="section-title">AWS Services &amp; Tools</h2>
+
+  <div class="tech-grid">
+    <div class="tech-item"><div class="tech-name">Amazon Bedrock</div><div class="tech-purpose">Claude AI agent runtime</div></div>
+    <div class="tech-item"><div class="tech-name">AgentCore Gateway</div><div class="tech-purpose">MCP endpoint + tool access control</div></div>
+    <div class="tech-item"><div class="tech-name">AgentCore Runtime</div><div class="tech-purpose">Isolated Firecracker MicroVM per session</div></div>
+    <div class="tech-item"><div class="tech-name">Strands SDK</div><div class="tech-purpose">Agent framework with @tool decorators</div></div>
+    <div class="tech-item"><div class="tech-name">AWS IoT Core</div><div class="tech-purpose">MQTT broker: Pi &harr; Cloud</div></div>
+    <div class="tech-item"><div class="tech-name">DynamoDB</div><div class="tech-purpose">Telemetry + state + agent log</div></div>
+    <div class="tech-item"><div class="tech-name">Lambda</div><div class="tech-purpose">Mars Transform Layer</div></div>
+    <div class="tech-item"><div class="tech-name">Amplify</div><div class="tech-purpose">React dashboard hosting</div></div>
+    <div class="tech-item"><div class="tech-name">EventBridge</div><div class="tech-purpose">CronJob triggers (watering, dosing)</div></div>
+    <div class="tech-item"><div class="tech-name">CloudWatch</div><div class="tech-purpose">Agent log streaming</div></div>
+    <div class="tech-item"><div class="tech-name">S3</div><div class="tech-purpose">Images, static assets, OpenAPI specs</div></div>
+    <div class="tech-item"><div class="tech-name">Cognito</div><div class="tech-purpose">JWT auth for gateway</div></div>
+  </div>
+
+  <div class="mcp-panel">
+    <h3>Syngenta MCP Knowledge Base</h3>
+    <div class="mcp-endpoint">https://kb-start-hack-gateway-buyjtibfpg.gateway.bedrock-agentcore.us-east-2.amazonaws.com/mcp</div>
+    <div class="mcp-domains">
+      <div class="mcp-domain"><span class="mcp-domain-num">1</span>Mars Environmental Constraints</div>
+      <div class="mcp-domain"><span class="mcp-domain-num">2</span>Controlled Environment Agriculture</div>
+      <div class="mcp-domain"><span class="mcp-domain-num">3</span>Crop Profiles</div>
+      <div class="mcp-domain"><span class="mcp-domain-num">4</span>Plant Stress &amp; Response Guide</div>
+      <div class="mcp-domain"><span class="mcp-domain-num">5</span>Human Nutritional Strategy</div>
+      <div class="mcp-domain"><span class="mcp-domain-num">6</span>Greenhouse Operational Scenarios</div>
+      <div class="mcp-domain"><span class="mcp-domain-num">7</span>Innovation Impact (Mars &rarr; Earth)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 9. BUILD PRIORITY ==================== -->
+<section id="build-priority">
+  <div class="section-label">09 &mdash; Build Priority</div>
+  <h2 class="section-title">Implementation Tiers</h2>
+
+  <div class="tier-list">
+    <div class="tier">
+      <div class="tier-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="tier-badge t1">TIER 1</span>
+        <span class="tier-title">Demo Climax &mdash; CME + Water Stockpiling</span>
+        <span class="tier-time">~6 hours</span>
+      </div>
+      <div class="tier-body">
+        <ul class="tier-tasks">
+          <li><span class="tier-checkbox"></span>DONKI CME API integration (poll, parse speed/location)</li>
+          <li><span class="tier-checkbox"></span>CME &rarr; Mars ETA calculator (distance / speed)</li>
+          <li><span class="tier-checkbox"></span>Water/energy chain model (solar &rarr; power &rarr; desal &rarr; water)</li>
+          <li><span class="tier-checkbox"></span>Pre-storm stockpiling logic (max desal, top battery, pre-water)</li>
+          <li><span class="tier-checkbox"></span>Agent decision chain: detect &rarr; simulate &rarr; select &rarr; execute</li>
+          <li><span class="tier-checkbox"></span>Dashboard: CME alert banner + countdown timer</li>
+          <li><span class="tier-checkbox"></span>Dashboard: Water gauge + power budget (climbing animation)</li>
+          <li><span class="tier-checkbox"></span>Physical sync: LEDs dim when survival mode activates</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="tier-badge t2">TIER 2</span>
+        <span class="tier-title">Virtual Farming Lab</span>
+        <span class="tier-time">~5 hours</span>
+      </div>
+      <div class="tier-body">
+        <ul class="tier-tasks">
+          <li><span class="tier-checkbox"></span>Simulation engine (fast-forward crop outcomes)</li>
+          <li><span class="tier-checkbox"></span>Strategy generator (3 candidates per threat)</li>
+          <li><span class="tier-checkbox"></span>Strategy evaluator (rank by survival %, resource cost)</li>
+          <li><span class="tier-checkbox"></span>Dashboard: side-by-side Production vs Simulation panel</li>
+          <li><span class="tier-checkbox"></span>Dashboard: strategy comparison A/B/C with outcomes</li>
+          <li><span class="tier-checkbox"></span>Syngenta MCP KB: query stress thresholds for params</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="tier-badge t3">TIER 3</span>
+        <span class="tier-title">Nutritional Tracking (Challenge Answer)</span>
+        <span class="tier-time">~3 hours</span>
+      </div>
+      <div class="tier-body">
+        <ul class="tier-tasks">
+          <li><span class="tier-checkbox"></span>4 astronauts &times; 450 days progress bars</li>
+          <li><span class="tier-checkbox"></span>Nutritional gap detection (yield vs intake projection)</li>
+          <li><span class="tier-checkbox"></span>HPA trigger: auto-scale crop count on gap</li>
+          <li><span class="tier-checkbox"></span>Dashboard: nutrition panel per-nutrient</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="tier-badge t4">TIER 4</span>
+        <span class="tier-title">Sol Forecast Timeline</span>
+        <span class="tier-time">~4 hours</span>
+      </div>
+      <div class="tier-body">
+        <ul class="tier-tasks">
+          <li><span class="tier-checkbox"></span>Horizontal 450-sol timeline component</li>
+          <li><span class="tier-checkbox"></span>Season band (Ls-based color coding)</li>
+          <li><span class="tier-checkbox"></span>Crop growth bars on timeline</li>
+          <li><span class="tier-checkbox"></span>Solar event markers (red vertical lines)</li>
+          <li><span class="tier-checkbox"></span>Resource trend lines projected forward</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="tier-badge t5">TIER 5</span>
+        <span class="tier-title">Scientific Polish</span>
+        <span class="tier-time">~2 hours</span>
+      </div>
+      <div class="tier-body">
+        <ul class="tier-tasks">
+          <li><span class="tier-checkbox"></span>Ls solar longitude indicator</li>
+          <li><span class="tier-checkbox"></span>Mars exterior conditions (InSight baseline)</li>
+          <li><span class="tier-checkbox"></span>Seasonal solar flux calculation</li>
+          <li><span class="tier-checkbox"></span>DONKI MPC (confirmed Mars impacts)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PITCH LINE -->
+<div class="pitch-line">
+  <blockquote>&ldquo;It doesn't just manage a greenhouse. It thinks like a farmer who can see the future.&rdquo;</blockquote>
+  <div class="attr">AstroFarm &mdash; START HACK 2026</div>
+</div>
+
+</main>
+
+<script>
+// Sidebar active state on scroll
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`nav a[data-section="${entry.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+
+sections.forEach(s => observer.observe(s));
+
+// Energy mode toggle
+function setEnergyMode(mode, btn) {
+  document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const waterFill = document.getElementById('water-fill');
+  const batteryFill = document.getElementById('battery-fill');
+  const solarFill = document.getElementById('solar-fill');
+  const desalFill = document.getElementById('desal-fill');
+  const waterVal = document.getElementById('water-val');
+  const batteryVal = document.getElementById('battery-val');
+  const solarVal = document.getElementById('solar-val');
+  const desalVal = document.getElementById('desal-val');
+  const log = document.getElementById('energy-log');
+
+  if (mode === 'normal') {
+    waterFill.style.width = '68%';
+    batteryFill.style.width = '78%';
+    solarFill.style.width = '100%';
+    desalFill.style.width = '100%';
+    waterVal.textContent = '340L / 500L';
+    batteryVal.textContent = '78%';
+    solarVal.textContent = '100% (4.2 kW)';
+    desalVal.textContent = '120 L/sol';
+    log.innerHTML = `
+      <div><span class="time">[Sol 142, 08:00]</span> <span class="action">ROUTINE:</span> All systems nominal. Water: 100L/sol consumption, 120L/sol production. Net: <span class="value">+20L/sol</span></div>
+      <div><span class="time">[Sol 142, 08:30]</span> <span class="action">ROUTINE:</span> Battery cycling normally. Solar panels at full efficiency.</div>
+      <div><span class="time">[Sol 142, 09:00]</span> <span class="action">ROUTINE:</span> Crop irrigation on schedule. All zones within target moisture.</div>`;
+  } else if (mode === 'prestorm') {
+    waterFill.style.width = '96%';
+    batteryFill.style.width = '100%';
+    solarFill.style.width = '100%';
+    desalFill.style.width = '100%';
+    waterVal.textContent = '480L / 500L (+140L)';
+    batteryVal.textContent = '100%';
+    solarVal.textContent = '100% (4.2 kW)';
+    desalVal.textContent = '120 L/sol (MAX)';
+    log.innerHTML = `
+      <div><span class="time">[Sol 142, 14:24]</span> <span class="action">PRE-STORM:</span> CME-2026-0315 ETA 50.7h. Initiating water stockpile protocol.</div>
+      <div><span class="time">[Sol 142, 14:25]</span> <span class="action">DESALINATION:</span> Output &rarr; MAX. Battery priority &rarr; CHARGE. Water target: <span class="value">480L (+140L buffer)</span></div>
+      <div><span class="time">[Sol 142, 18:00]</span> <span class="action">PROGRESS:</span> Water 380L &rarr; 420L. Battery 78% &rarr; 89%. On track for storm readiness.</div>
+      <div><span class="time">[Sol 143, 06:00]</span> <span class="action">PROGRESS:</span> Water 420L &rarr; 475L. Battery 89% &rarr; 98%. <span class="value">Pre-storm protocol 92% complete.</span></div>
+      <div><span class="time">[Sol 143, 10:00]</span> <span class="action">COMPLETE:</span> Water <span class="value">480L</span>. Battery <span class="value">100%</span>. Crops pre-watered. Shields ARMED. Ready.</div>`;
+  } else {
+    waterFill.style.width = '52%';
+    batteryFill.style.width = '45%';
+    solarFill.style.width = '30%';
+    desalFill.style.width = '30%';
+    waterVal.textContent = '260L / 500L (consuming reserves)';
+    batteryVal.textContent = '45% (draining)';
+    solarVal.textContent = '30% (1.26 kW) — STORM';
+    desalVal.textContent = '36 L/sol (degraded)';
+    log.innerHTML = `
+      <div><span class="time">[Sol 144, 17:00]</span> <span class="action" style="color:var(--red)">STORM HIT:</span> Solar output dropped to 30%. Dust accumulation on panels confirmed.</div>
+      <div><span class="time">[Sol 144, 17:01]</span> <span class="action">SURVIVAL MODE:</span> Lights reduced 70%. Heating priority. Shields at 100%. Desalination throttled to <span style="color:var(--red)">36L/sol</span>.</div>
+      <div><span class="time">[Sol 145, 08:00]</span> <span class="action">STATUS:</span> Water 380L &rarr; 320L. Deficit 64L/sol as projected. Reserves holding. <span class="value">3.5 sols autonomy remaining.</span></div>
+      <div><span class="time">[Sol 147, 12:00]</span> <span class="action" style="color:var(--green)">CLEARING:</span> Solar recovering 30% &rarr; 68%. Desalination ramping up. <span class="value">Crisis averted. All crops viable.</span></div>`;
+  }
+}
+
+// Tier toggle
+document.querySelectorAll('.tier').forEach(t => t.classList.add('open'));
+</script>
+</body>
+</html>

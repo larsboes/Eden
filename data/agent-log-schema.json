@@ -1,0 +1,69 @@
+{
+  "description": "EDEN Agent Log entry schema. Every log entry from the council follows this format. Dashboard parses and color-codes by agent name.",
+  "schema": {
+    "timestamp": "ISO 8601 string",
+    "sol": "number — mission sol (1-450)",
+    "sol_fraction": "number — fractional sol (0.0-1.0, maps to time of sol)",
+    "agent": "string — one of: SENTINEL, ORACLE, AQUA, FLORA, VITA, COUNCIL, FLIGHT_CTRL, SYSTEM",
+    "msg": "string — the log message, written in farmer personality voice",
+    "type": "string — one of: info, warning, alert, critical, decision, triage, action, kb_query",
+    "severity": "number — 0 (info) to 4 (critical)",
+    "triage_data": {
+      "optional": true,
+      "schema": {
+        "crop": "string",
+        "zone": "string",
+        "salvageability": "number 0.0-1.0",
+        "color": "string — RED | YELLOW | GREEN | BLACK",
+        "crew_impact": "string — human cost statement",
+        "mitigation": "string",
+        "nutritional_delta": "object — {nutrient: pct_change}"
+      }
+    },
+    "kb_query": {
+      "optional": true,
+      "schema": {
+        "query": "string — what was asked",
+        "source": "string — which KB document responded",
+        "response_summary": "string — key finding"
+      }
+    },
+    "vote": {
+      "optional": true,
+      "schema": {
+        "decision": "string — what was decided",
+        "votes": "object — {agent_name: for|against|abstain}",
+        "reasoning": "string"
+      }
+    },
+    "flight_rule_proposed": {
+      "optional": true,
+      "schema": {
+        "id": "string — proposed rule ID",
+        "trigger": "string",
+        "action": "string",
+        "evidence": "string — what event prompted this"
+      }
+    }
+  },
+  "agent_colors": {
+    "SENTINEL": "#ef4444",
+    "ORACLE": "#f59e0b",
+    "AQUA": "#06b6d4",
+    "FLORA": "#22c55e",
+    "VITA": "#a855f7",
+    "COUNCIL": "#ffffff",
+    "FLIGHT_CTRL": "#f97316",
+    "SYSTEM": "#6b7280"
+  },
+  "type_icons": {
+    "info": "i",
+    "warning": "!",
+    "alert": "!!",
+    "critical": "!!!",
+    "decision": "vote",
+    "triage": "triage",
+    "action": "wrench",
+    "kb_query": "book"
+  }
+}

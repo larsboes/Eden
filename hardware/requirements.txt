@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+adafruit-blinka
+adafruit-circuitpython-ads1x15
+adafruit-circuitpython-bmp280
+adafruit-circuitpython-dht

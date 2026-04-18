@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "description": "EDEN Flight Rules Engine — Layer 0 deterministic protocols. Execute in 0ms. Cannot be overridden by AI agents.",
+    "version": "1.0.0",
+    "rules_count": 50,
+    "categories": {
+      "FR-T": "Temperature",
+      "FR-W": "Water",
+      "FR-P": "Pressure",
+      "FR-R": "Radiation",
+      "FR-L": "Light",
+      "FR-N": "Nutrients",
+      "FR-C": "CO2",
+      "FR-H": "Humidity",
+      "FR-E": "Energy",
+      "FR-S": "Safety",
+      "FR-CME": "Solar Events (learned)"
+    },
+    "priority_order": "Human safety > Crop survival > Resource conservation > Optimization"
+  },
+  "rules": [
+    {
+      "id": "FR-S-001",
+      "category": "Safety",
+      "trigger": "dome_pressure_hpa < 400",
+      "action": "SEAL all zones. ALERT crew CRITICAL. Enter EMERGENCY mode. Suspend all non-essential systems.",
+      "priority": "CRITICAL",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-S-002",
+      "category": "Safety",
+      "trigger": "o2_pct < 19.5",
+      "action": "ALERT crew CRITICAL. Activate O2 reserve. Increase plant lighting to maximize photosynthesis.",
+      "priority": "CRITICAL",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-S-003",
+      "category": "Safety",
+      "trigger": "co2_ppm > 5000",
+      "action": "ALERT crew WARNING. Activate ventilation scrubbers. Reduce crew dome time if > 10000 ppm.",
+      "priority": "CRITICAL",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-T-001",
+      "category": "Temperature",
+      "trigger": "zone_temp_c < 10",
+      "action": "Activate zone heater to MAX. ALERT: frost risk. If < 5C for > 1 hour, initiate emergency harvest of vulnerable crops.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-T-002",
+      "category": "Temperature",
+      "trigger": "zone_temp_c > 30",
+      "action": "Activate emergency cooling. Increase ventilation. Reduce lighting to lower heat load.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-T-003",
+      "category": "Temperature",
+      "trigger": "zone_temp_c > 25 AND zone = 'vitamin' AND crop_includes('spinach')",
+      "action": "ALERT: Spinach bolting risk. Reduce zone temp immediately. If > 25C for > 4 hours, trigger emergency spinach harvest.",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: leafy greens heat threshold 25C"
+    },
+    {
+      "id": "FR-T-004",
+      "category": "Temperature",
+      "trigger": "root_zone_temp_c < 15",
+      "action": "Activate root zone heater. Nutrient uptake impaired below 15C. Monitor EC drift.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-W-001",
+      "category": "Water",
+      "trigger": "water_reserve_l < 200",
+      "action": "RATION mode: suspend all non-critical irrigation. Prioritize by salvageability score. ALERT crew.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-W-002",
+      "category": "Water",
+      "trigger": "water_reserve_l < 100",
+      "action": "CRITICAL RATION: irrigate only CRITICAL-priority crops. All zones enter survival mode. Request crew intervention.",
+      "priority": "CRITICAL",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-W-003",
+      "category": "Water",
+      "trigger": "soil_moisture_pct < 15 AND crop_priority = 'CRITICAL'",
+      "action": "Irrigate immediately. This crop is at wilting point.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-W-004",
+      "category": "Water",
+      "trigger": "soil_moisture_pct > 85",
+      "action": "Suspend irrigation for zone. Risk of root hypoxia. Increase aeration.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-W-005",
+      "category": "Water",
+      "trigger": "desal_output_l_sol < 60 AND water_reserve_l < 300",
+      "action": "ALERT: Desalination underperforming. Check membrane. Initiate water conservation protocol.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-R-001",
+      "category": "Radiation",
+      "trigger": "radiation_usv_hr > 50",
+      "action": "Activate radiation shields. Reduce non-essential power. ALERT crew: limit EVA.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-R-002",
+      "category": "Radiation",
+      "trigger": "radiation_usv_hr > 200",
+      "action": "CRITICAL: Full shield deployment. Zone isolation. Suspend all non-life-critical systems. Power priority: shields > heating > water.",
+      "priority": "CRITICAL",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-R-003",
+      "category": "Radiation",
+      "trigger": "radiation_usv_hr > 100 AND any_crop_bbch BETWEEN 55 AND 70",
+      "action": "ALERT: Flowering crops under radiation stress. Activate shields. Stress-harden nutrient mix: increase EC by 0.4 mS/cm.",
+      "priority": "HIGH",
+      "source": "Syngenta KB: yield reduction 15-40% under UV-B during flowering"
+    },
+    {
+      "id": "FR-P-001",
+      "category": "Pressure",
+      "trigger": "dome_pressure_hpa < 450",
+      "action": "ALERT: Pressure dropping. Check seals. If < 400 hPa, trigger FR-S-001.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-P-002",
+      "category": "Pressure",
+      "trigger": "dome_pressure_hpa > 600",
+      "action": "Vent excess pressure. Check CO2 injection system.",
+      "priority": "MEDIUM",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-L-001",
+      "category": "Light",
+      "trigger": "solar_output_pct < 40",
+      "action": "Enter low-power lighting mode. Prioritize light to flowering/fruiting crops. Reduce light to vegetative crops by 50%.",
+      "priority": "MEDIUM",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-L-002",
+      "category": "Light",
+      "trigger": "dli_mol < 10 AND crop_stage = 'flowering'",
+      "action": "Supplement artificial lighting. Flowering requires DLI > 12 mol/m²/day minimum.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-L-003",
+      "category": "Light",
+      "trigger": "dli_mol > 25",
+      "action": "Reduce lighting. Excess DLI causes light stress and wastes power.",
+      "priority": "LOW",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-N-001",
+      "category": "Nutrients",
+      "trigger": "ph < 5.0 OR ph > 7.0",
+      "action": "Nutrient lockout risk. Flush and recalibrate nutrient solution. Target: pH 5.5-6.5.",
+      "priority": "HIGH",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-N-002",
+      "category": "Nutrients",
+      "trigger": "ec_ms_cm < 0.8",
+      "action": "Nutrient solution depleted. Replenish macro/micronutrients. Monitor new leaf color for N deficiency.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-N-003",
+      "category": "Nutrients",
+      "trigger": "ec_ms_cm > 3.5",
+      "action": "Nutrient concentration too high. Dilute with clean water. Risk of salt stress and root burn.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-N-004",
+      "category": "Nutrients",
+      "trigger": "leaf_yellowing_detected AND leaf_position = 'older_leaves'",
+      "action": "Nitrogen deficiency indicated. Increase N in nutrient solution. Monitor recovery in 48h.",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: Plant Stress Guide"
+    },
+    {
+      "id": "FR-N-005",
+      "category": "Nutrients",
+      "trigger": "leaf_edge_browning_detected",
+      "action": "Potassium deficiency indicated. Supplement K. Check for salt buildup (high EC may cause K lockout).",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: Plant Stress Guide"
+    },
+    {
+      "id": "FR-N-006",
+      "category": "Nutrients",
+      "trigger": "interveinal_chlorosis_detected AND leaf_position = 'young_leaves'",
+      "action": "Iron deficiency indicated. Supplement chelated Fe. Check pH — Fe locks out above 6.5.",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: Plant Stress Guide"
+    },
+    {
+      "id": "FR-C-001",
+      "category": "CO2",
+      "trigger": "co2_ppm < 600",
+      "action": "CO2 below optimal for photosynthesis. Increase CO2 injection. Target: 800-1200 ppm.",
+      "priority": "LOW",
+      "source": "Syngenta KB: CEA Principles"
+    },
+    {
+      "id": "FR-C-002",
+      "category": "CO2",
+      "trigger": "co2_ppm > 1500",
+      "action": "CO2 excess. Reduce injection. Check for crew breathing comfort.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-H-001",
+      "category": "Humidity",
+      "trigger": "humidity_pct > 85",
+      "action": "Fungal risk. Activate ventilation cycle. Increase air circulation. Monitor for mold.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-H-002",
+      "category": "Humidity",
+      "trigger": "humidity_pct < 40",
+      "action": "Low humidity. Increase misting. VPD above optimal range — transpiration stress likely.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-H-003",
+      "category": "Humidity",
+      "trigger": "vpd_kpa > 1.5",
+      "action": "VPD above optimal. Plants transpiring too fast. Increase humidity or reduce temperature.",
+      "priority": "MEDIUM",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-H-004",
+      "category": "Humidity",
+      "trigger": "vpd_kpa < 0.4",
+      "action": "VPD below optimal. Poor transpiration. Risk of edema and nutrient transport issues. Reduce humidity.",
+      "priority": "LOW",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-E-001",
+      "category": "Energy",
+      "trigger": "battery_pct < 20",
+      "action": "LOW POWER mode. Shutdown non-critical lighting. Heating to minimum safe. Desal suspended until solar recovery.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-E-002",
+      "category": "Energy",
+      "trigger": "battery_pct < 10",
+      "action": "CRITICAL POWER. Only life support and heating. All grow lights OFF. ALERT crew: manual intervention may be needed.",
+      "priority": "CRITICAL",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-E-003",
+      "category": "Energy",
+      "trigger": "solar_output_pct < 20 AND battery_pct < 50",
+      "action": "Dust storm or equipment failure. Enter survival mode. Priority: heating > shields > water > minimal lighting.",
+      "priority": "HIGH",
+      "source": "Earth baseline"
+    },
+    {
+      "id": "FR-CME-001",
+      "category": "Solar Events",
+      "trigger": "cme_detected AND cme_speed > 800",
+      "action": "Calculate Mars ETA. If < 72h: convene Council. If < 24h: immediate pre-storm protocol.",
+      "priority": "HIGH",
+      "source": "Learned: Sol 1 baseline"
+    },
+    {
+      "id": "FR-CME-002",
+      "category": "Solar Events",
+      "trigger": "cme_eta_hours < 72",
+      "action": "Begin pre-storm water stockpiling. Desal to MAX. Battery charge priority. Pre-water all crops to saturation.",
+      "priority": "HIGH",
+      "source": "Learned: Sol 1 baseline"
+    },
+    {
+      "id": "FR-CME-003",
+      "category": "Solar Events",
+      "trigger": "cme_eta_hours < 24",
+      "action": "IMMINENT IMPACT. Full shield deployment. Pre-harvest all vulnerable crops. Zone isolation. Emergency crop assessment.",
+      "priority": "CRITICAL",
+      "source": "Learned: Sol 1 baseline"
+    },
+    {
+      "id": "FR-CME-004",
+      "category": "Solar Events",
+      "trigger": "cme_speed > 1000 AND any_crop_bbch BETWEEN 55 AND 70",
+      "action": "Fast CME with flowering crops. Pre-harvest adjacent leafy greens. Stress-harden flowering crops: increase EC +0.4 mS/cm. Shield priority.",
+      "priority": "HIGH",
+      "source": "Learned: post-CME-2026-0124 analysis"
+    },
+    {
+      "id": "FR-CME-005",
+      "category": "Solar Events",
+      "trigger": "post_cme AND radiation_normal AND solar_recovering",
+      "action": "Begin recovery protocol. Gradual light restoration. Resume normal irrigation. Run post-event simulation. Compare predicted vs actual. Propose rule updates.",
+      "priority": "MEDIUM",
+      "source": "Learned: post-event improvement loop"
+    },
+    {
+      "id": "FR-T-005",
+      "category": "Temperature",
+      "trigger": "zone_temp_c > 28 AND crop_includes('potato')",
+      "action": "Potato heat stress. Tuber initiation impaired above 25-28C. Activate cooling priority for carb zone.",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: potato heat threshold"
+    },
+    {
+      "id": "FR-T-006",
+      "category": "Temperature",
+      "trigger": "zone_temp_c > 30 AND crop_includes('beans')",
+      "action": "Bean/legume heat stress threshold reached. Emergency cooling. Monitor for flower drop.",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: legume heat threshold 30C"
+    },
+    {
+      "id": "FR-W-006",
+      "category": "Water",
+      "trigger": "water_consumption_rate > desal_production_rate AND trend_increasing",
+      "action": "Consumption outpacing production. Review crop water budgets. Reduce lowest-priority zone irrigation by 20%.",
+      "priority": "MEDIUM",
+      "source": "Resource chain model"
+    },
+    {
+      "id": "FR-N-007",
+      "category": "Nutrients",
+      "trigger": "crop_health_pct < 60",
+      "action": "Crop health critical. Run triage evaluation. If salvageability < 0.3, mark EXPECTANT and reallocate resources.",
+      "priority": "HIGH",
+      "source": "Triage engine"
+    },
+    {
+      "id": "FR-N-008",
+      "category": "Nutrients",
+      "trigger": "crop_failed_3_consecutive_times",
+      "action": "CrashLoopBackOff: This crop variety is failing in current conditions. Try different growth parameters. If still fails, switch to alternative crop variety.",
+      "priority": "MEDIUM",
+      "source": "K8s self-healing pattern"
+    },
+    {
+      "id": "FR-E-004",
+      "category": "Energy",
+      "trigger": "solar_output_pct < 40 AND duration_hours > 48",
+      "action": "Extended reduced solar. Zone isolation protocol. Suspend cross-zone resource sharing. Each zone operates on local budget.",
+      "priority": "HIGH",
+      "source": "Learned: storm preparedness"
+    },
+    {
+      "id": "FR-S-004",
+      "category": "Safety",
+      "trigger": "pathogen_detected",
+      "action": "QUARANTINE affected zone immediately. Suspend cross-zone air circulation. ALERT crew. Do NOT attempt treatment until pathogen identified.",
+      "priority": "CRITICAL",
+      "source": "CEA principles"
+    },
+    {
+      "id": "FR-S-005",
+      "category": "Safety",
+      "trigger": "crew_intervention_request_pending > 24_hours",
+      "action": "Escalate to CRITICAL priority. Crew may be unable to respond. Attempt autonomous workaround.",
+      "priority": "HIGH",
+      "source": "Autonomy principle"
+    },
+    {
+      "id": "FR-H-005",
+      "category": "Humidity",
+      "trigger": "humidity_pct > 80 AND zone_has_fruit_crops",
+      "action": "Blossom end rot risk for tomatoes. Increase calcium in nutrient solution. Improve air circulation in fruit zone.",
+      "priority": "MEDIUM",
+      "source": "Syngenta KB: tomato stress"
+    },
+    {
+      "id": "FR-L-004",
+      "category": "Light",
+      "trigger": "photoperiod_hours > 20 AND crop_is_short_day",
+      "action": "Excessive photoperiod for short-day crops. Reduce to 14-16h. Risk of delayed flowering.",
+      "priority": "LOW",
+      "source": "CEA principles"
+    }
+  ]
+}

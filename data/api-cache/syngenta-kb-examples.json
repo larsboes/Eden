@@ -1,0 +1,124 @@
+{
+  "source": "Syngenta MCP Knowledge Base",
+  "endpoint": "https://kb-start-hack-gateway-buyjtibfpg.gateway.bedrock-agentcore.us-east-2.amazonaws.com/mcp",
+  "tool_name": "kb-start-hack-target___knowledge_base_retrieve",
+  "probed_at": "2026-03-19",
+  "queries": [
+    {
+      "query": "optimal conditions for growing wheat on Mars greenhouse",
+      "results_count": 4,
+      "source_documents": [
+        "s3://start-hack-documents/03_Crop_Profiles_Extended.md",
+        "s3://start-hack-documents/01_Mars_Environment_Extended.md",
+        "s3://start-hack-documents/07_From_Mars_to_Earth_Innovation_Impact.md",
+        "s3://start-hack-documents/05_Human_Nutritional_Strategy.md"
+      ],
+      "key_findings": [
+        "Crops: Lettuce (30-45d), Potatoes (70-120d), Radish (21-30d), Beans/Peas (50-70d), Herbs",
+        "Optimal temps: 15-22C leafy, 16-20C potato, 18-25C legumes",
+        "Humidity: 50-70% RH target",
+        "PAR: 150-250 umol/m2/s leafy, 200-400 potato",
+        "CO2: 800-1200 ppm optimal",
+        "pH: 5.5-6.5 hydroponic solution",
+        "Mars gravity: 38% Earth (3.721 m/s2)",
+        "Mars pressure: 6-7 mbar, greenhouse must be sealed/pressurized",
+        "Mars irradiance: ~43% of Earth, artificial lighting mandatory"
+      ]
+    },
+    {
+      "query": "plant stress detection nutrient deficiency disease symptoms",
+      "results_count": 1,
+      "source_documents": [
+        "s3://start-hack-documents/04_Plant_Stress_and_Response_Guide.md"
+      ],
+      "key_findings": [
+        "7 stress categories: Water, Salinity, Temperature, Nutrient, Light, CO2, Hypoxia",
+        "N deficiency: yellowing older leaves, reduced growth",
+        "K deficiency: leaf edge browning, weak stems",
+        "Fe deficiency: yellowing young leaves (interveinal chlorosis)",
+        "Heat stress thresholds: Lettuce >25C, Radish >26C, Beans >30C, Potatoes >25-28C",
+        "AI stress response: Detect -> Match symptoms -> Validate -> Correct -> Monitor"
+      ]
+    },
+    {
+      "query": "water recycling nutrient management closed loop hydroponic system",
+      "results_count": 4,
+      "source_documents": [
+        "s3://start-hack-documents/02_Controlled_Environment_Agriculture_Principles.md",
+        "s3://start-hack-documents/03_Crop_Profiles_Extended.md",
+        "s3://start-hack-documents/04_Plant_Stress_and_Response_Guide.md"
+      ],
+      "key_findings": [
+        "Hydroponic methods: NFT, DWC, Drip Irrigation",
+        "Closed-loop: water recycling, nutrient reuse, waste minimization",
+        "Key nutrients: N-P-K + micronutrients",
+        "AI controls: flow rates, nutrient concentration, aeration, delivery timing"
+      ]
+    },
+    {
+      "query": "Mars radiation protection greenhouse shielding crop resilience",
+      "results_count": 4,
+      "source_documents": [
+        "s3://start-hack-documents/07_From_Mars_to_Earth_Innovation_Impact.md",
+        "s3://start-hack-documents/01_Mars_Environment_Extended.md",
+        "s3://start-hack-documents/03_Crop_Profiles_Extended.md",
+        "s3://start-hack-documents/04_Plant_Stress_and_Response_Guide.md"
+      ],
+      "key_findings": [
+        "Mars lacks global magnetic field - higher radiation",
+        "Greenhouse structure provides shielding",
+        "Material selection contributes to radiation shielding",
+        "Sensor/electronic systems need protection"
+      ]
+    },
+    {
+      "query": "crop varieties suitable for space controlled environment agriculture",
+      "results_count": 3,
+      "source_documents": [
+        "s3://start-hack-documents/03_Crop_Profiles_Extended.md",
+        "s3://start-hack-documents/07_From_Mars_to_Earth_Innovation_Impact.md",
+        "s3://start-hack-documents/02_Controlled_Environment_Agriculture_Principles.md"
+      ],
+      "key_findings": [
+        "Portfolio: 40-50% Potatoes, 20-30% Legumes, 15-20% Leafy greens, 5-10% Radish+Herbs",
+        "Crew: 4 astronauts, ~12,000 kcal/day total, 360-540g protein/day",
+        "Caloric backbone: potatoes (77 kcal/100g, 4-8 kg/m2/cycle)",
+        "Protein security: beans/peas (80-120 kcal, 5-9g protein/100g)",
+        "Micronutrient: lettuce (Vit K, A, folate)",
+        "Psychological: herbs (basil, chives) for crew morale"
+      ]
+    }
+  ],
+  "knowledge_base_documents_discovered": [
+    {
+      "id": "01",
+      "name": "Mars Environment Extended",
+      "uri": "s3://start-hack-documents/01_Mars_Environment_Extended.md"
+    },
+    {
+      "id": "02",
+      "name": "Controlled Environment Agriculture Principles",
+      "uri": "s3://start-hack-documents/02_Controlled_Environment_Agriculture_Principles.md"
+    },
+    {
+      "id": "03",
+      "name": "Crop Profiles Extended",
+      "uri": "s3://start-hack-documents/03_Crop_Profiles_Extended.md"
+    },
+    {
+      "id": "04",
+      "name": "Plant Stress and Response Guide",
+      "uri": "s3://start-hack-documents/04_Plant_Stress_and_Response_Guide.md"
+    },
+    {
+      "id": "05",
+      "name": "Human Nutritional Strategy",
+      "uri": "s3://start-hack-documents/05_Human_Nutritional_Strategy.md"
+    },
+    {
+      "id": "07",
+      "name": "From Mars to Earth Innovation Impact",
+      "uri": "s3://start-hack-documents/07_From_Mars_to_Earth_Innovation_Impact.md"
+    }
+  ]
+}

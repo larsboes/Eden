@@ -1,0 +1,395 @@
+{
+  "metadata": {
+    "mission_start_ls": 150,
+    "ls_rate_deg_per_sol": 0.5381,
+    "mars_year_sols": 669,
+    "mars_year_earth_days": 687,
+    "eccentricity": 0.0934,
+    "perihelion_ls": 251,
+    "approximation": "Linear Ls progression (360/669 deg/sol). Real Mars orbit has eccentricity-driven variation in angular velocity, but linear approximation is within 5-10 deg for mission planning purposes.",
+    "dust_risk_levels": {
+      "low": "Ls 0-150: Minimal historical dust activity. Clear skies typical.",
+      "moderate": "Ls 150-180, 330-360: Occasional regional dust storms. Monitor closely.",
+      "high": "Ls 180-200, 260-330: Frequent regional storms, possible global events. Greenhouse shielding protocols active.",
+      "extreme": "Ls 200-260: Peak global dust storm probability (perihelion region). Solar panel output can drop 90%+. Maximum water/energy reserves required."
+    },
+    "solar_factor_notes": "Relative solar irradiance at Mars surface (clear sky). 1.0 = orbit-averaged mean (~590 W/m2 at Mars mean distance). Actual surface irradiance after atmosphere: ~250-440 W/m2 depending on dust. Factor ranges from ~0.83 (aphelion, Ls 71) to ~1.19 (perihelion, Ls 251). During dust storms, effective PAR for greenhouse can drop to <10% of clear-sky values.",
+    "sources": [
+      "Mars Climate Database (MCD) v6.1 - LMD/Oxford/IAA",
+      "Zurek & Martin 1993, J. Geophys. Res. 98(E2), 3247-3259",
+      "Montabone et al. 2015, Icarus 251, 65-95",
+      "Clancy et al. 2000, J. Geophys. Res. 105(E4), 9553-9571",
+      "Allison & McEwen 2000, Planet. Space Sci. 48, 215-235 (Mars calendar)"
+    ]
+  },
+  "calendar": [
+    {
+      "sol": 1,
+      "ls_deg": 150.0,
+      "season": "Northern Summer",
+      "dust_risk": "moderate",
+      "solar_factor": 0.96,
+      "notes": "Mission start. Late northern summer. Greenhouse commissioning window."
+    },
+    {
+      "sol": 11,
+      "ls_deg": 155.4,
+      "season": "Northern Summer",
+      "dust_risk": "moderate",
+      "solar_factor": 0.978,
+      "notes": "First crop plantings should be underway."
+    },
+    {
+      "sol": 21,
+      "ls_deg": 160.8,
+      "season": "Northern Summer",
+      "dust_risk": "moderate",
+      "solar_factor": 0.995,
+      "notes": ""
+    },
+    {
+      "sol": 31,
+      "ls_deg": 166.1,
+      "season": "Northern Summer",
+      "dust_risk": "moderate",
+      "solar_factor": 1.012,
+      "notes": ""
+    },
+    {
+      "sol": 41,
+      "ls_deg": 171.5,
+      "season": "Northern Summer",
+      "dust_risk": "moderate",
+      "solar_factor": 1.03,
+      "notes": "Pre-storm prep: verify water reserves, check dust seals."
+    },
+    {
+      "sol": 51,
+      "ls_deg": 176.9,
+      "season": "Northern Summer",
+      "dust_risk": "moderate",
+      "solar_factor": 1.047,
+      "notes": "Approaching autumnal equinox. Dust season imminent."
+    },
+    {
+      "sol": 61,
+      "ls_deg": 182.3,
+      "season": "Northern Autumn",
+      "dust_risk": "high",
+      "solar_factor": 1.064,
+      "notes": "Northern autumnal equinox. Dust storm season begins. Switch to storm-resilient crop schedules."
+    },
+    {
+      "sol": 71,
+      "ls_deg": 187.7,
+      "season": "Northern Autumn",
+      "dust_risk": "high",
+      "solar_factor": 1.081,
+      "notes": "Regional dust storms increasingly likely."
+    },
+    {
+      "sol": 81,
+      "ls_deg": 193.0,
+      "season": "Northern Autumn",
+      "dust_risk": "high",
+      "solar_factor": 1.097,
+      "notes": ""
+    },
+    {
+      "sol": 91,
+      "ls_deg": 198.4,
+      "season": "Northern Autumn",
+      "dust_risk": "high",
+      "solar_factor": 1.112,
+      "notes": "Global dust storm window opens. Maximum vigilance. Trigger contingency water stockpiling."
+    },
+    {
+      "sol": 101,
+      "ls_deg": 203.8,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.126,
+      "notes": "EXTREME dust risk begins. Historical: 2001 global storm started at Ls ~185."
+    },
+    {
+      "sol": 111,
+      "ls_deg": 209.2,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.139,
+      "notes": ""
+    },
+    {
+      "sol": 121,
+      "ls_deg": 214.6,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.151,
+      "notes": "Historical: 2018 global storm peaked Ls ~210-220 (killed Opportunity)."
+    },
+    {
+      "sol": 131,
+      "ls_deg": 220.0,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.161,
+      "notes": ""
+    },
+    {
+      "sol": 141,
+      "ls_deg": 225.3,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.17,
+      "notes": ""
+    },
+    {
+      "sol": 151,
+      "ls_deg": 230.7,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.178,
+      "notes": "Approaching perihelion. Solar intensity rising but dust may block it."
+    },
+    {
+      "sol": 161,
+      "ls_deg": 236.1,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.184,
+      "notes": ""
+    },
+    {
+      "sol": 171,
+      "ls_deg": 241.5,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.188,
+      "notes": ""
+    },
+    {
+      "sol": 181,
+      "ls_deg": 246.9,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.19,
+      "notes": "Near perihelion. Peak solar irradiance in clear conditions."
+    },
+    {
+      "sol": 191,
+      "ls_deg": 252.2,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.19,
+      "notes": "Perihelion (Ls 251). Peak solar irradiance. Peak dust storm probability. Demo climax zone."
+    },
+    {
+      "sol": 201,
+      "ls_deg": 257.6,
+      "season": "Northern Autumn",
+      "dust_risk": "extreme",
+      "solar_factor": 1.189,
+      "notes": "Global dust storm window narrowing."
+    },
+    {
+      "sol": 211,
+      "ls_deg": 263.0,
+      "season": "Northern Autumn",
+      "dust_risk": "high",
+      "solar_factor": 1.186,
+      "notes": "Extreme risk receding but regional storms still frequent."
+    },
+    {
+      "sol": 221,
+      "ls_deg": 268.4,
+      "season": "Northern Autumn",
+      "dust_risk": "high",
+      "solar_factor": 1.181,
+      "notes": "Northern winter solstice approaching. Shortest northern days."
+    },
+    {
+      "sol": 231,
+      "ls_deg": 273.8,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.175,
+      "notes": "Northern winter begins. CO2 ice caps growing at north pole."
+    },
+    {
+      "sol": 241,
+      "ls_deg": 279.1,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.166,
+      "notes": ""
+    },
+    {
+      "sol": 251,
+      "ls_deg": 284.5,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.157,
+      "notes": ""
+    },
+    {
+      "sol": 261,
+      "ls_deg": 289.9,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.146,
+      "notes": ""
+    },
+    {
+      "sol": 271,
+      "ls_deg": 295.3,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.133,
+      "notes": ""
+    },
+    {
+      "sol": 281,
+      "ls_deg": 300.7,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.12,
+      "notes": ""
+    },
+    {
+      "sol": 291,
+      "ls_deg": 306.1,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.105,
+      "notes": ""
+    },
+    {
+      "sol": 301,
+      "ls_deg": 311.4,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.09,
+      "notes": ""
+    },
+    {
+      "sol": 311,
+      "ls_deg": 316.8,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.073,
+      "notes": ""
+    },
+    {
+      "sol": 321,
+      "ls_deg": 322.2,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.057,
+      "notes": ""
+    },
+    {
+      "sol": 331,
+      "ls_deg": 327.6,
+      "season": "Northern Winter",
+      "dust_risk": "high",
+      "solar_factor": 1.039,
+      "notes": "Dust storm season winding down. Transition to calmer period."
+    },
+    {
+      "sol": 341,
+      "ls_deg": 333.0,
+      "season": "Northern Winter",
+      "dust_risk": "moderate",
+      "solar_factor": 1.022,
+      "notes": "Storm risk dropping. Safe to resume aggressive planting schedules."
+    },
+    {
+      "sol": 351,
+      "ls_deg": 338.3,
+      "season": "Northern Winter",
+      "dust_risk": "moderate",
+      "solar_factor": 1.004,
+      "notes": ""
+    },
+    {
+      "sol": 361,
+      "ls_deg": 343.7,
+      "season": "Northern Winter",
+      "dust_risk": "moderate",
+      "solar_factor": 0.987,
+      "notes": ""
+    },
+    {
+      "sol": 371,
+      "ls_deg": 349.1,
+      "season": "Northern Winter",
+      "dust_risk": "moderate",
+      "solar_factor": 0.97,
+      "notes": ""
+    },
+    {
+      "sol": 381,
+      "ls_deg": 354.5,
+      "season": "Northern Winter",
+      "dust_risk": "moderate",
+      "solar_factor": 0.953,
+      "notes": "Approaching spring equinox."
+    },
+    {
+      "sol": 391,
+      "ls_deg": 359.9,
+      "season": "Northern Winter",
+      "dust_risk": "moderate",
+      "solar_factor": 0.936,
+      "notes": "Northern spring equinox (Ls 0). New Mars year. CO2 caps sublimating. Dust risk minimal."
+    },
+    {
+      "sol": 401,
+      "ls_deg": 5.2,
+      "season": "Northern Spring",
+      "dust_risk": "low",
+      "solar_factor": 0.921,
+      "notes": "Spring. Clear skies, low dust. Optimal planting window for final harvest cycle."
+    },
+    {
+      "sol": 411,
+      "ls_deg": 10.6,
+      "season": "Northern Spring",
+      "dust_risk": "low",
+      "solar_factor": 0.906,
+      "notes": ""
+    },
+    {
+      "sol": 421,
+      "ls_deg": 16.0,
+      "season": "Northern Spring",
+      "dust_risk": "low",
+      "solar_factor": 0.892,
+      "notes": "Final crop cycle should be nearing harvest."
+    },
+    {
+      "sol": 431,
+      "ls_deg": 21.4,
+      "season": "Northern Spring",
+      "dust_risk": "low",
+      "solar_factor": 0.879,
+      "notes": ""
+    },
+    {
+      "sol": 441,
+      "ls_deg": 26.8,
+      "season": "Northern Spring",
+      "dust_risk": "low",
+      "solar_factor": 0.867,
+      "notes": "Mission winding down. Focus on final harvests and seed storage."
+    },
+    {
+      "sol": 450,
+      "ls_deg": 31.6,
+      "season": "Northern Spring",
+      "dust_risk": "low",
+      "solar_factor": 0.857,
+      "notes": "Mission end. Northern spring, clear skies."
+    }
+  ]
+}

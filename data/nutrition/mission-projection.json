@@ -1,0 +1,469 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "generated": "2026-03-19T14:30:00Z",
+    "source": "Computed from crop-profiles.json and crew-requirements.json (KB-aligned v2.0)",
+    "methodology": "Total yield per crop = area_m2 x yield_kg_per_m2_per_cycle x cycles_in_450_sols. Nutrient totals = total_yield_kg x (nutrition_per_100g / 100) x 1000. Requirements = daily_per_astronaut x crew_size x duration_sols. Calorie baseline: 3,000 kcal/person/day (Syngenta KB).",
+    "notes": "A 100m2 greenhouse supplements stored food — it cannot be the sole calorie source. This matches NASA BIO-Plex research findings. The greenhouse excels at providing fresh vitamins, minerals, and psychological benefit. KB-aligned crop mix increases caloric coverage from 14.5% to 17.7% through expanded potato allocation."
+  },
+  "yield_summary": {
+    "crops": [
+      {
+        "name": "Potato",
+        "zone": "caloric",
+        "area_m2": 45,
+        "cycles": 4,
+        "yield_per_cycle_kg": 225.0,
+        "total_yield_kg": 900.0,
+        "total_calories_kcal": 693000,
+        "total_protein_g": 18000,
+        "total_fat_g": 900,
+        "total_carbs_g": 157500,
+        "total_fiber_g": 19800,
+        "total_vitamin_c_mg": 177300,
+        "total_iron_mg": 7200,
+        "total_calcium_mg": 108000,
+        "total_vitamin_k_ug": 18000,
+        "total_folate_ug": 144000
+      },
+      {
+        "name": "Soybean",
+        "zone": "protein",
+        "area_m2": 15,
+        "cycles": 4,
+        "yield_per_cycle_kg": 4.5,
+        "total_yield_kg": 18.0,
+        "total_calories_kcal": 80280,
+        "total_protein_g": 6570,
+        "total_fat_g": 3582,
+        "total_carbs_g": 5436,
+        "total_fiber_g": 1674,
+        "total_vitamin_c_mg": 1080,
+        "total_iron_mg": 2826,
+        "total_calcium_mg": 49860,
+        "total_vitamin_k_ug": 8460,
+        "total_folate_ug": 67500
+      },
+      {
+        "name": "Lentil",
+        "zone": "protein",
+        "area_m2": 10,
+        "cycles": 4,
+        "yield_per_cycle_kg": 2.0,
+        "total_yield_kg": 8.0,
+        "total_calories_kcal": 28240,
+        "total_protein_g": 2064,
+        "total_fat_g": 88,
+        "total_carbs_g": 4808,
+        "total_fiber_g": 856,
+        "total_vitamin_c_mg": 360,
+        "total_iron_mg": 600,
+        "total_calcium_mg": 4480,
+        "total_vitamin_k_ug": 400,
+        "total_folate_ug": 38320
+      },
+      {
+        "name": "Lettuce",
+        "zone": "leafy_green",
+        "area_m2": 10,
+        "cycles": 11,
+        "yield_per_cycle_kg": 40.0,
+        "total_yield_kg": 440.0,
+        "total_calories_kcal": 66000,
+        "total_protein_g": 6160,
+        "total_fat_g": 880,
+        "total_carbs_g": 12760,
+        "total_fiber_g": 5720,
+        "total_vitamin_c_mg": 40480,
+        "total_iron_mg": 3960,
+        "total_calcium_mg": 158400,
+        "total_vitamin_k_ug": 555720,
+        "total_folate_ug": 321200
+      },
+      {
+        "name": "Spinach",
+        "zone": "leafy_green",
+        "area_m2": 8,
+        "cycles": 9,
+        "yield_per_cycle_kg": 20.0,
+        "total_yield_kg": 180.0,
+        "total_calories_kcal": 41400,
+        "total_protein_g": 5220,
+        "total_fat_g": 720,
+        "total_carbs_g": 6480,
+        "total_fiber_g": 3960,
+        "total_vitamin_c_mg": 50580,
+        "total_iron_mg": 4860,
+        "total_calcium_mg": 178200,
+        "total_vitamin_k_ug": 869220,
+        "total_folate_ug": 349200
+      },
+      {
+        "name": "Radish",
+        "zone": "quick_harvest",
+        "area_m2": 7,
+        "cycles": 15,
+        "yield_per_cycle_kg": 17.5,
+        "total_yield_kg": 262.5,
+        "total_calories_kcal": 42000,
+        "total_protein_g": 1838,
+        "total_fat_g": 263,
+        "total_carbs_g": 8925,
+        "total_fiber_g": 4200,
+        "total_vitamin_c_mg": 38850,
+        "total_iron_mg": 788,
+        "total_calcium_mg": 65625,
+        "total_vitamin_k_ug": 3413,
+        "total_folate_ug": 65625
+      },
+      {
+        "name": "Basil",
+        "zone": "support",
+        "area_m2": 3,
+        "cycles": 12,
+        "yield_per_cycle_kg": 2.4,
+        "total_yield_kg": 28.8,
+        "total_calories_kcal": 6624,
+        "total_protein_g": 922,
+        "total_fat_g": 173,
+        "total_carbs_g": 778,
+        "total_fiber_g": 461,
+        "total_vitamin_c_mg": 5184,
+        "total_iron_mg": 922,
+        "total_calcium_mg": 50976,
+        "total_vitamin_k_ug": 119462,
+        "total_folate_ug": 19584
+      }
+    ],
+    "totals": {
+      "total_yield_kg": 1837.3,
+      "total_calories_kcal": 957544,
+      "total_protein_g": 40774,
+      "total_fat_g": 6606,
+      "total_carbs_g": 196687,
+      "total_fiber_g": 36671,
+      "total_vitamin_c_mg": 313834,
+      "total_iron_mg": 21156,
+      "total_calcium_mg": 615541,
+      "total_vitamin_k_ug": 1574675,
+      "total_folate_ug": 1005429,
+      "total_potassium_mg": 6743445,
+      "total_zinc_mg": 6764,
+      "note": "Excludes microgreens (2m2 support zone) — treated as emergency vitamin bridge, not modeled in projections"
+    }
+  },
+  "projection": {
+    "calories": {
+      "required_total_kcal": 5400000,
+      "projected_total_kcal": 957544,
+      "coverage_pct": 17.7,
+      "daily_from_greenhouse_kcal_per_person": 532,
+      "deficit_kcal_per_person_per_day": 2468,
+      "note": "Greenhouse covers ~17.7% of caloric needs (up from 14.5% in v1 due to expanded potato allocation). Remaining 82.3% from stored rations. Potato alone contributes 693,000 kcal — 72.3% of all greenhouse calories. This is consistent with Syngenta KB positioning potato as 'caloric backbone'."
+    },
+    "protein": {
+      "required_total_g": 108000,
+      "projected_total_g": 40774,
+      "coverage_pct": 37.8,
+      "daily_from_greenhouse_g_per_person": 22.7,
+      "note": "Potato is the largest protein source by mass (18,000g — 44.2%) due to sheer yield volume. Soybean provides 6,570g (16.1%) at much higher density (36.5g/100g). Combined legumes (soybean+lentil) provide 8,634g (21.2%)."
+    },
+    "fat": {
+      "required_total_g": 126000,
+      "projected_total_g": 6606,
+      "coverage_pct": 5.2,
+      "daily_from_greenhouse_g_per_person": 3.7,
+      "note": "CRITICAL GAP. Soybean is the ONLY meaningful fat source (3,582g = 54.2% of greenhouse fat). Loss of soybean crop is a mission-critical event for fat supply. Stored oils and fats are absolutely essential."
+    },
+    "carbs": {
+      "required_total_g": 630000,
+      "projected_total_g": 196687,
+      "coverage_pct": 31.2,
+      "daily_from_greenhouse_g_per_person": 109.3,
+      "note": "Potato dominates carb production at 157,500g (80.1% of greenhouse carbs). KB-aligned potato expansion from 15m2 to 45m2 tripled carb output. Significant improvement over v1 (18.9%)."
+    },
+    "fiber": {
+      "required_total_g": 45000,
+      "projected_total_g": 36671,
+      "coverage_pct": 81.5,
+      "daily_from_greenhouse_g_per_person": 20.4,
+      "note": "Strong coverage. Potato (54.0%), lettuce (15.6%), and radish (11.5%) are top fiber sources. Near self-sufficient for fiber."
+    },
+    "vitamin_c": {
+      "required_total_mg": 162000,
+      "projected_total_mg": 313834,
+      "coverage_pct": 193.7,
+      "daily_from_greenhouse_mg_per_person": 174.4,
+      "note": "LARGE SURPLUS. Potato alone provides 177,300mg (56.5% of greenhouse total, 109.4% of requirement). Spinach (16.1%), lettuce (12.9%), and radish (12.4%) contribute additional coverage. Even losing one crop, Vitamin C remains above 100%."
+    },
+    "iron": {
+      "required_total_mg": 14400,
+      "projected_total_mg": 21156,
+      "coverage_pct": 146.9,
+      "daily_from_greenhouse_mg_per_person": 11.8,
+      "note": "SURPLUS. Potato (34.0%), spinach (23.0%), lettuce (18.7%), and soybean (13.4%) all contribute. Note: plant-based iron (non-heme) has lower bioavailability (~5-12%) vs heme iron. Effective coverage closer to 40-60%. Vitamin C surplus significantly aids iron absorption."
+    },
+    "calcium": {
+      "required_total_mg": 1800000,
+      "projected_total_mg": 615541,
+      "coverage_pct": 34.2,
+      "daily_from_greenhouse_mg_per_person": 342.0,
+      "note": "Moderate gap. Spinach (29.0%), lettuce (25.7%), potato (17.6%) are top sources. Spinach calcium partially blocked by oxalates (~75% reduction). Effective coverage ~22-25%. Improved over v1 (22.3%) due to lettuce addition."
+    },
+    "vitamin_d": {
+      "required_total_ug": 27000,
+      "projected_total_ug": 0,
+      "coverage_pct": 0.0,
+      "daily_from_greenhouse_ug_per_person": 0,
+      "note": "ZERO production. No plant produces Vitamin D. Mandatory supplementation from stored vitamins. Bone density at elevated risk in Mars gravity (0.38g)."
+    },
+    "vitamin_k": {
+      "required_total_ug": 216000,
+      "projected_total_ug": 1574675,
+      "coverage_pct": 729.0,
+      "daily_from_greenhouse_ug_per_person": 874.8,
+      "note": "MASSIVE SURPLUS. Spinach (55.2%), lettuce (35.3%), and basil (7.6%) are powerhouse vitamin K sources. This was a key reason for adding lettuce to the KB-aligned crop mix. Vitamin K is essential for blood clotting — critical for any surgical emergency on Mars."
+    },
+    "folate": {
+      "required_total_ug": 720000,
+      "projected_total_ug": 1005429,
+      "coverage_pct": 139.6,
+      "daily_from_greenhouse_ug_per_person": 558.6,
+      "note": "SURPLUS. Spinach (34.7%), lettuce (31.9%), potato (14.3%), and soybean (6.7%) are key sources. Folate is critical for DNA synthesis and repair — important in radiation-exposed environment."
+    },
+    "potassium": {
+      "required_total_mg": 6300000,
+      "projected_total_mg": 6743445,
+      "coverage_pct": 107.0,
+      "daily_from_greenhouse_mg_per_person": 3746.4,
+      "note": "SURPLUS. Potato (56.2%) dominates due to sheer yield volume (421mg/100g x 900kg). Spinach (14.9%), lettuce (12.7%), and radish (9.1%) contribute significantly. Potassium is critical for muscle function, nerve signaling, and fluid balance. The KB-aligned potato expansion turned this from a projected gap into a surplus."
+    },
+    "zinc": {
+      "required_total_mg": 19800,
+      "projected_total_mg": 6764,
+      "coverage_pct": 34.2,
+      "daily_from_greenhouse_mg_per_person": 3.8,
+      "note": "MODERATE GAP. Soybean (13.0%), spinach (13.3%), lettuce (13.0%), radish (11.6%), and potato (39.9%) all contribute small amounts but no crop is zinc-dense. Stored supplements and fortified foods essential. Plant-based zinc has lower bioavailability (~25%) than animal sources, so effective coverage closer to 20-25%."
+    }
+  },
+  "gaps": [
+    {
+      "nutrient": "vitamin_d",
+      "coverage_pct": 0.0,
+      "severity": "critical",
+      "mitigation": "Supplement from stored vitamin D3 tablets. 27,000 ug total mission requirement. Greenhouse cannot address this gap.",
+      "crew_risk": "Bone density loss compounded by Mars partial gravity (0.38g). Immune function decline. All 4 crew affected equally."
+    },
+    {
+      "nutrient": "fat",
+      "coverage_pct": 5.2,
+      "severity": "critical",
+      "mitigation": "Stored oils (olive, canola), nut butters, and freeze-dried foods provide remaining 95% of fat requirement. Soybean is the only greenhouse fat source — its loss triggers immediate stored fat allocation increase.",
+      "crew_risk": "Fat is essential for hormone production, brain function, and fat-soluble vitamin absorption (A, D, E, K). Dr. Okonkwo's vegetarian preference makes soybean especially critical."
+    },
+    {
+      "nutrient": "calories",
+      "coverage_pct": 17.7,
+      "severity": "high",
+      "mitigation": "Expected and planned for. Stored rations provide base calories. Greenhouse provides fresh nutrients and psychological benefit of fresh food. 17.7% is a meaningful improvement over v1 (14.5%) due to KB-aligned potato expansion.",
+      "crew_risk": "If stored rations damaged or insufficient, crew faces caloric deficit within days. Greenhouse alone cannot sustain crew. Eng. Volkov's 3,300 kcal/day adjusted need is most vulnerable."
+    },
+    {
+      "nutrient": "calcium",
+      "coverage_pct": 34.2,
+      "severity": "moderate",
+      "mitigation": "Lettuce addition improved calcium (from 22.3% to 34.2%). Spinach calcium partially blocked by oxalates. Effective coverage ~22-25%. Calcium supplements from stored supply essential.",
+      "crew_risk": "Bone density loss is the #1 health concern for Mars missions. Calcium is critical for skeletal maintenance in 0.38g gravity."
+    },
+    {
+      "nutrient": "protein",
+      "coverage_pct": 37.8,
+      "severity": "moderate",
+      "mitigation": "Stored protein sources (freeze-dried meat, protein powder, legume-based rations) supplement greenhouse output. Soybean + lentil provide 8,634g of high-quality plant protein.",
+      "crew_risk": "Muscle atrophy in reduced gravity compounded by inadequate protein. Critical for Eng. Volkov due to EVA workload."
+    },
+    {
+      "nutrient": "carbs",
+      "coverage_pct": 31.2,
+      "severity": "moderate",
+      "mitigation": "Major improvement from v1 (18.9% to 31.2%) via expanded potato allocation. Stored rice and grain products supplement.",
+      "crew_risk": "Carbs are primary energy source. Deficit impacts cognitive performance and physical endurance."
+    },
+    {
+      "nutrient": "fiber",
+      "coverage_pct": 81.5,
+      "severity": "low",
+      "mitigation": "Near self-sufficient. Potato and fresh vegetables provide strong fiber base. Minimal supplementation needed.",
+      "crew_risk": "Digestive health. Lower priority than macronutrient gaps."
+    },
+    {
+      "nutrient": "zinc",
+      "coverage_pct": 34.2,
+      "severity": "moderate",
+      "mitigation": "Stored zinc supplements and fortified foods essential. Plant-based zinc bioavailability ~25%, so effective coverage ~20-25%. No single crop is zinc-dense — soybean (4.9mg/100g) and lentil (4.8mg/100g) are best but low yield.",
+      "crew_risk": "Zinc is critical for immune function, wound healing, and protein synthesis. Deficiency impairs immune response — elevated risk in isolated Mars crew. Eng. Volkov's higher metabolic demand increases zinc requirements."
+    }
+  ],
+  "surpluses": [
+    {
+      "nutrient": "vitamin_k",
+      "coverage_pct": 729.0,
+      "note": "Massive surplus from spinach + lettuce + basil. Critical for blood clotting in surgical emergencies. Loss of leafy green zone would still leave ~100% coverage from basil alone."
+    },
+    {
+      "nutrient": "vitamin_c",
+      "coverage_pct": 193.7,
+      "note": "Strong surplus. Potato alone covers 109.4% of requirement. Even total loss of leafy green zone maintains coverage above 100%. Anti-scurvy measure secured."
+    },
+    {
+      "nutrient": "iron",
+      "coverage_pct": 146.9,
+      "note": "Nominal surplus but plant-based non-heme iron has low bioavailability (5-12%). Effective coverage ~40-60%. Vitamin C surplus significantly aids absorption (2-6x improvement)."
+    },
+    {
+      "nutrient": "folate",
+      "coverage_pct": 139.6,
+      "note": "Surplus from leafy greens and legumes. Important for DNA repair in radiation-exposed environment. Lettuce addition was key driver."
+    },
+    {
+      "nutrient": "potassium",
+      "coverage_pct": 107.0,
+      "note": "SURPLUS. KB-aligned potato expansion is the driver — potato alone provides 56.2% of greenhouse potassium (3,789,000mg). Spinach (14.9%), lettuce (12.7%), and radish (9.1%) contribute meaningful amounts. Critical for muscle function and nerve signaling in Mars gravity."
+    }
+  ],
+  "timeline": [
+    {
+      "sol": 0,
+      "event": "mission_start",
+      "status": "All seeds planted. Greenhouse environment stabilizing. 100% nutrition from stored supplies.",
+      "greenhouse_contribution_pct": 0
+    },
+    {
+      "sol": 25,
+      "event": "first_radish_harvest",
+      "status": "FIRST FRESH FOOD ON MARS. Radish harvest: ~17.5 kg. Crew eats fresh-pulled radishes for the first time since leaving Earth.",
+      "greenhouse_contribution_pct": 0.5,
+      "crew_note": "Spc. Reyes pulls the first radish — crew gathers in the galley. This is a psychological milestone. 'Radish Day' established as crew tradition."
+    },
+    {
+      "sol": 35,
+      "event": "first_lettuce_harvest",
+      "status": "First lettuce harvest: ~40 kg. Fresh salads now possible. Basil also reaching first harvest.",
+      "greenhouse_contribution_pct": 1.5,
+      "crew_note": "Cmdr. Chen prepares first fresh salad — lettuce, radish, basil. Crew morale visibly improved."
+    },
+    {
+      "sol": 45,
+      "event": "first_spinach_harvest",
+      "status": "First spinach harvest: ~20 kg. Vitamin C, iron, and vitamin K entering crew diet. All three fast-cycle crops now producing.",
+      "greenhouse_contribution_pct": 3,
+      "crew_note": "Cmdr. Chen's preferred spinach now available. Cut-and-come-again harvest begins."
+    },
+    {
+      "sol": 55,
+      "event": "second_radish_harvest",
+      "status": "Second radish cycle complete: cumulative 35 kg radish. Radish proving its morale value — fastest turnaround in greenhouse.",
+      "greenhouse_contribution_pct": 4
+    },
+    {
+      "sol": 75,
+      "event": "third_lettuce_harvest",
+      "status": "Lettuce on third cycle. Continuous fresh greens established. Second spinach cycle underway.",
+      "greenhouse_contribution_pct": 6
+    },
+    {
+      "sol": 90,
+      "event": "first_potato_harvest",
+      "status": "CALORIC BACKBONE COMES ONLINE. First potato harvest: ~225 kg. Massive calorie injection. First protein harvest: soybean ~4.5 kg, lentil ~2.0 kg.",
+      "greenhouse_contribution_pct": 12,
+      "crew_note": "Eng. Volkov's comfort food now available — potatoes remind him of home. Dr. Okonkwo prepares first lentil soup from greenhouse-grown lentils."
+    },
+    {
+      "sol": 135,
+      "event": "steady_state_approaching",
+      "status": "Radish on cycle 5, lettuce on cycle 4, spinach on cycle 3. Fast-cycle crops in full production cadence. Second potato cycle planted.",
+      "greenhouse_contribution_pct": 14
+    },
+    {
+      "sol": 185,
+      "event": "second_potato_harvest",
+      "status": "Second potato harvest: cumulative 450 kg potato. Second protein harvest: cumulative soybean 9 kg, lentil 4 kg. Greenhouse at full steady-state production.",
+      "greenhouse_contribution_pct": 17
+    },
+    {
+      "sol": 225,
+      "event": "mid_mission",
+      "status": "Mission halfway point. All crops in steady rotation. Radish on cycle 8, lettuce on cycle 6, spinach on cycle 5. Third potato cycle midway.",
+      "greenhouse_contribution_pct": 17.7,
+      "crew_note": "Crew has had continuous access to fresh food since Sol 25. Radish alone has provided 8 harvests — 140 kg of fresh crunchy food."
+    },
+    {
+      "sol": 280,
+      "event": "third_potato_harvest",
+      "status": "Third potato harvest: cumulative 675 kg potato. Third protein harvest. Radish on cycle 10.",
+      "greenhouse_contribution_pct": 17.7
+    },
+    {
+      "sol": 300,
+      "event": "third_quarter",
+      "status": "75% through mission. Stored rations inventory check critical. Greenhouse performing nominally. Fourth and final potato cycle planted.",
+      "greenhouse_contribution_pct": 17.7,
+      "crew_note": "Stored ration monitoring intensifies. Any crop failure now directly impacts mission food security."
+    },
+    {
+      "sol": 375,
+      "event": "fourth_potato_harvest",
+      "status": "Fourth and final potato harvest: cumulative 900 kg potato total. Final protein harvests. Radish on cycle 13.",
+      "greenhouse_contribution_pct": 17.7
+    },
+    {
+      "sol": 405,
+      "event": "final_crop_cycles",
+      "status": "Last radish cycles (14-15) in progress. Last lettuce cycle (11) planted. Last spinach cycle (9) in progress. No more potato or legume cycles possible.",
+      "greenhouse_contribution_pct": 17.7
+    },
+    {
+      "sol": 450,
+      "event": "mission_end",
+      "status": "Final harvests collected. Total greenhouse yield: 1,837.3 kg fresh food across 450 sols. Mission complete.",
+      "greenhouse_contribution_pct": 17.7,
+      "final_totals": {
+        "total_fresh_food_kg": 1837.3,
+        "total_calories_from_greenhouse": 957544,
+        "days_with_fresh_food": 425,
+        "note": "First 25 sols had no fresh food. From Sol 25 (first radish) onward, crew had continuous access to greenhouse produce. Radish provided first harvest 25 sols earlier than any other crop in v1."
+      }
+    }
+  ],
+  "water_budget": {
+    "daily_water_need_l": 262.5,
+    "breakdown": {
+      "potato_l": 157.5,
+      "soybean_l": 31.5,
+      "lentil_l": 18.0,
+      "lettuce_l": 25.0,
+      "spinach_l": 16.0,
+      "radish_l": 10.5,
+      "basil_l": 3.0,
+      "microgreens_l": 1.0
+    },
+    "note": "Total 262.5 L/day. Potato dominates water budget (60.0%) due to 45m2 allocation. Water recycling (transpiration capture) recovers ~60-70%, reducing net consumption to ~91.9 L/sol. Within 120 L/sol desalination capacity with margin.",
+    "recycling_efficiency_pct": 65,
+    "net_daily_consumption_l": 91.9
+  },
+  "comparison_to_v1": {
+    "total_yield_change": "+554.8 kg (1,282.5 → 1,837.3 kg, +43.3%)",
+    "calorie_coverage_change": "+3.2% (14.5% → 17.7%)",
+    "protein_coverage_change": "+5.6% (32.2% → 37.8%)",
+    "carb_coverage_change": "+12.3% (18.9% → 31.2%)",
+    "vitamin_c_coverage_change": "+60.2% (133.5% → 193.7%)",
+    "first_harvest_change": "Sol 30 → Sol 25 (5 sols earlier, radish vs spinach)",
+    "key_improvements": [
+      "Potato expansion (15m2 → 45m2) tripled caloric backbone",
+      "Radish provides first fresh food 5 sols earlier than v1",
+      "Lettuce addition brings massive vitamin K (729% coverage) and folate (139.6%)",
+      "Dropped low-efficiency wheat (0.5 kg/m2) and high-water tomato",
+      "Total yield up 43.3% with better nutritional profile alignment to KB"
+    ]
+  }
+}

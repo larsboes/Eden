@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "generated": "2026-03-19T14:30:00Z",
+    "source": "Pre-computed triage scenarios for VITA agent and Layer 1 Triage Reflexes (KB-aligned v2.0 crop mix)",
+    "triage_colors": {
+      "RED": "Immediate intervention required. High salvageability if acted upon within hours.",
+      "YELLOW": "Deferrable. Monitor and intervene within 1-3 sols.",
+      "GREEN": "Stable. Schedule intervention during next maintenance window.",
+      "BLACK": "Expectant. Cost of saving exceeds projected yield. Accept loss and reallocate."
+    },
+    "notes": "Each scenario includes nutritional deltas computed from crop-profiles.json and mission-projection.json v2.0. crew_impact and human_note fields are mandatory for Council transparency. KB-aligned crop mix means potato blight is now MUCH scarier (45% of greenhouse area vs 15% in v1)."
+  },
+  "scenarios": [
+    {
+      "id": "TRIAGE-001",
+      "trigger": "Lettuce bolting — heat stress causes complete leafy green zone vitamin K/folate loss",
+      "cause": "Temperature spike above 24C during Sol 150-155 due to HVAC malfunction. All lettuce plants bolt prematurely — leaves become bitter, flower stalks emerge. Spinach in adjacent beds also heat-stressed but not yet bolting (threshold 25C).",
+      "affected_zone": "leafy_green",
+      "affected_crop": "Lettuce",
+      "affected_area_m2": 10,
+      "salvageability_score": 0.10,
+      "triage_color": "BLACK",
+      "reasoning": "Bolted lettuce cannot be reversed — once flower stalk initiates, leaf quality is permanently degraded. Accept loss for current cycle, replant immediately. With 35-day cycle, first new harvest at Sol 190. Spinach can partially compensate but has different nutritional profile. Vitamin K coverage drops from 729% to 472% (spinach + basil cover the gap). Folate drops from 139.6% to 95.0% — near critical threshold.",
+      "crew_impact": "Vitamin K: drops from 729% to 472% — still massive surplus, no crew risk. Folate: drops from 139.6% to 95.0% — concerning but above minimum. Vitamin C: loses 40,480mg (12.9% of greenhouse total) — still 173% coverage. Calcium: loses 158,400mg (25.7% of greenhouse calcium). Lettuce was 440 kg of fresh food — loss means no fresh salads for 35 sols until replant produces. Crew morale impact from losing variety.",
+      "mitigation": [
+        "Replant lettuce immediately — first new harvest at Sol 190 (35 sols from replant)",
+        "Deploy microgreens from reserve zone as stopgap fresh green (harvestable in 10-14 sols)",
+        "Protect spinach from same heat event — if spinach also bolts, folate drops below 60% (critical)",
+        "Fix HVAC malfunction as Priority 1 — Eng. Volkov assigned",
+        "Increase spinach cut-and-come-again frequency to partially compensate fresh greens gap",
+        "Basil harvest can provide some salad-like greens in emergency"
+      ],
+      "human_note": "Cmdr. Chen's preferred lunch was lettuce wraps with spinach and basil. Loss of lettuce removes a key meal variety. Spc. Reyes will be frustrated — she monitored these plants daily. VITA recommends extra radish portions as fresh crunchy substitute (radish's fast cycle means continuous supply). Dr. Okonkwo should prepare vitamin-K-rich spinach meals to maintain folate intake.",
+      "nutritional_delta": {
+        "calories_pct": -6.9,
+        "protein_pct": -15.1,
+        "vitamin_c_pct": -12.9,
+        "vitamin_k_pct": -35.3,
+        "folate_pct": -31.9,
+        "calcium_pct": -25.7,
+        "note": "Percentages are of total greenhouse production lost, not of crew requirements"
+      },
+      "recovery_time_sols": 35,
+      "council_vote_recommendation": "FLORA: Accept loss, replant, protect spinach from cascade. AQUA: No water reallocation needed. VITA: Microgreens bridge, extra radish. SENTINEL: HVAC repair Priority 1. ORACLE: Model folate coverage during 35-sol gap."
+    },
+    {
+      "id": "TRIAGE-002",
+      "trigger": "Soybean radiation damage during flowering — protein + fat loss (CRITICAL: only fat source)",
+      "cause": "Coronal mass ejection (CME) during BBCH 60-70 (flowering/pod development). Cosmic ray exposure causes flower abortion and empty pods in 60% of soybean plants. Lentils in same zone affected at 40% loss rate (slightly more radiation-sensitive but different growth stage).",
+      "affected_zone": "protein",
+      "affected_crop": "Soybean",
+      "affected_area_m2": 15,
+      "salvageability_score": 0.40,
+      "triage_color": "RED",
+      "reasoning": "40% of soybean plants still viable — prioritize water and nutrients to surviving plants. Lost flowers cannot be recovered but healthy plants can still produce full pods. This is MISSION-CRITICAL because soybean is the ONLY meaningful fat source in the greenhouse (3,582g = 54.2% of all greenhouse fat). Lentil loss is concerning for protein but not catastrophic since potato provides 18,000g protein.",
+      "crew_impact": "Soybean yield drops from 18 kg to 10.8 kg across remaining cycles. Fat coverage drops from 5.2% to 3.1% — already critical gap worsens. Protein coverage drops from 37.8% to 34.3%. Combined with lentil loss: protein drops to 33.1%. Fat from greenhouse becomes negligible. Stored oils become even more mission-critical. Dr. Okonkwo's vegetarian diet most impacted — soybean was primary protein AND fat source.",
+      "mitigation": [
+        "Triage surviving soybean plants — concentrate all resources on healthiest 40%",
+        "Activate radiation shields for remaining flowering cycle immediately",
+        "Increase lentil planting density in any available space (lentils mature in same timeframe)",
+        "Request crew increase stored protein and fat ration allocation by 25%",
+        "Compost failed soybean biomass — recycle nutrients to surviving plants and potato zone",
+        "Release stored nut butter reserves for Dr. Okonkwo immediately",
+        "Long-term: consider dedicating 2m2 of microgreen zone to soybean sprouts (harvestable in 7 days, provides some fat)"
+      ],
+      "human_note": "Soybean is the ONLY meaningful fat source in the greenhouse. This is now more critical than in v1 because we dropped tomato (which provided trace fat). Dr. Okonkwo's vegetarian preference makes this loss particularly impactful — lentils alone provide minimal fat (1.1g/100g vs soybean's 19.9g/100g). VITA recommends releasing stored nut butter reserves for Dr. Okonkwo and increasing stored oil allocations for all crew. Spc. Reyes should inspect all protein zone plants hourly during radiation event.",
+      "nutritional_delta": {
+        "calories_pct": -5.0,
+        "protein_pct": -10.4,
+        "fat_pct": -32.5,
+        "iron_pct": -8.0,
+        "calcium_pct": -4.9,
+        "note": "Soybean 60% loss + lentil 40% loss combined"
+      },
+      "recovery_time_sols": 95,
+      "council_vote_recommendation": "FLORA: Triage to healthy plants, maximize next cycle density. AQUA: Reallocate failed-plant water to surviving soybean. VITA: Release stored fats immediately, modify Dr. Okonkwo's meal plan. SENTINEL: Radiation shields mandatory — check all zone shielding. ORACLE: Model fat coverage scenarios for remaining mission."
+    },
+    {
+      "id": "TRIAGE-003",
+      "trigger": "Water system failure — 50% reduction in irrigation capacity for 10 sols",
+      "cause": "Desalination membrane partial failure. Output drops from 120 L/sol to 60 L/sol. Repair parts require 10 sols to fabricate from spares.",
+      "affected_zone": "all",
+      "affected_crop": "All crops",
+      "affected_area_m2": 100,
+      "salvageability_score": 0.65,
+      "triage_color": "RED",
+      "reasoning": "10-sol water rationing required. Potato now consumes 60% of water budget (157.5 L/day) — it cannot receive full allocation. Triage by calories-per-liter and drought tolerance. Priority: 1) Potato (caloric backbone, 3-day drought tolerance — CANNOT lose this), 2) Soybean (only fat source, 5-day tolerance), 3) Lentil (4-day tolerance), 4) Lettuce (1-day tolerance — most at risk), 5) Spinach (2-day tolerance), 6) Radish (2-day tolerance), 7) Basil (1-day tolerance — expendable).",
+      "crew_impact": "If managed with triage irrigation: 15-25% yield loss across next 1-2 harvest cycles. Lettuce and basil most affected — fresh greens reduced for 2-3 cycles after recovery. If unmanaged: catastrophic — lettuce and basil die within 1-2 sols, spinach and radish within 2-3 sols, potato within 3-4 sols. Losing potato means losing 72.3% of greenhouse calories.",
+      "mitigation": [
+        "Implement emergency irrigation triage protocol immediately",
+        "Priority 1: Potato (157.5 L/day normal -> 85 L/day emergency) — accept 20% yield loss, tubers survive drought better than foliage",
+        "Priority 2: Soybean (31.5 L/day normal -> 18 L/day emergency) — drought tolerant for 5 sols",
+        "Priority 3: Lentil (18 L/day normal -> 10 L/day emergency) — drought tolerant for 4 sols",
+        "Priority 4: Lettuce (25 L/day normal -> 10 L/day emergency) — wilting expected, may lose current cycle",
+        "Priority 5: Spinach (16 L/day normal -> 7 L/day emergency) — wilting expected",
+        "Priority 6: Radish (10.5 L/day normal -> 5 L/day emergency) — root crops handle drought better than leafy",
+        "Priority 7: Basil (3 L/day normal -> 1 L/day emergency) — accept loss if necessary",
+        "Microgreens: 1 L/day normal -> 0.5 L/day — minimal impact",
+        "Total emergency allocation: 136.5 L/day -> but only 60 L/sol net available after recycling drops",
+        "Maximize transpiration capture — seal dome, increase humidity recovery to 75%+",
+        "Eng. Volkov to prioritize desalination repair as sole EVA task"
+      ],
+      "human_note": "Potato now takes 60% of the water budget — this is the downside of KB-aligned potato expansion. In a water crisis, potato's huge water need creates a brutal triage decision. But losing potato means losing 72.3% of greenhouse calories — unacceptable. Spc. Reyes will monitor all crops hourly during water rationing. Lettuce — the newest addition — takes the heaviest proportional cut. Cmdr. Chen should brief crew on expected duration and recovery timeline. Eng. Volkov's sole focus: membrane repair.",
+      "nutritional_delta": {
+        "calories_pct": -4.5,
+        "protein_pct": -5.0,
+        "vitamin_c_pct": -8.0,
+        "iron_pct": -4.0,
+        "note": "Deltas assume successful 10-sol triage with emergency allocations. Failure to triage results in 50-70% losses."
+      },
+      "recovery_time_sols": 10,
+      "council_vote_recommendation": "FLORA: Triage irrigation by calorie-per-liter efficiency. AQUA: Seal dome, maximize recovery, target 75% recycling. VITA: Monitor crew morale, maintain meal routines with stored food. SENTINEL: Fabrication priority for membrane repair, assign Volkov full-time. ORACLE: Model 10-sol water deficit impact per crop, provide daily recovery estimates."
+    },
+    {
+      "id": "TRIAGE-004",
+      "trigger": "Potato blight — fungal infection in caloric backbone (45% of greenhouse area at risk)",
+      "cause": "Phytophthora infestans detected on potato leaves at Sol 210. Humidity spike during lighting maintenance allowed spore germination. 30% of potato plants showing late blight symptoms. With 45m2 of potato, this is 13.5m2 infected — larger than any single crop's TOTAL area in v1.",
+      "affected_zone": "caloric",
+      "affected_crop": "Potato",
+      "affected_area_m2": 45,
+      "salvageability_score": 0.55,
+      "triage_color": "RED",
+      "reasoning": "THIS IS THE SCARIEST SCENARIO IN v2.0. Potato is 45% of greenhouse area and 72.3% of greenhouse calories. A 30% blight means losing 13.5m2 — that's more area than the entire protein zone. Late blight spreads rapidly in humid conditions. Immediate action: isolate infected plants, reduce humidity to 50%, remove and compost infected foliage. Tubers already formed underground may be safe if harvested early. Uninfected 70% must be protected with environmental controls. Deploy basil trimmings near potato zone — basil VOCs suppress Phytophthora spores.",
+      "crew_impact": "If 30% of potato crop lost across remaining cycles: total potato yield drops from 900 kg to 630 kg. Calorie coverage drops from 17.7% to 12.9%. Carb coverage drops from 31.2% to 21.8%. Vitamin C from potatoes drops proportionally (but still above 100% from other sources). If blight spreads to 60%+: calorie coverage drops below 10%, approaching v1 levels but with fewer backup crops. This is a mission-level food security event.",
+      "mitigation": [
+        "Immediately isolate infected 30% — physical barrier between rows, remove all infected foliage",
+        "Harvest any tubers from infected plants NOW (tubers underground may be clean)",
+        "Drop Caloric zone humidity to 50% — below Phytophthora spore germination threshold",
+        "Increase air circulation — activate all fans in Caloric zone to maximum",
+        "Deploy basil from Support zone — move basil plants to potato zone perimeter (antifungal VOCs)",
+        "Increase basil harvest frequency — spread fresh-cut basil throughout potato zone for maximum VOC release",
+        "If spread continues beyond 50%: accept cycle loss for infected area, sterilize that section, replant",
+        "Consider emergency potato planting in any available space (even reserve zone) to recover yield",
+        "Monitor protein zone — Phytophthora has limited host range but vigilance required",
+        "Spc. Reyes on 4-hour monitoring rotation for potato zone until contained"
+      ],
+      "human_note": "IN V2.0 THIS IS NOW TERRIFYING. Potato went from 15m2 (15% of greenhouse) to 45m2 (45%). A blight event threatens 72.3% of greenhouse calories. This is the single highest-impact failure scenario. Eng. Volkov's comfort food AND the crew's caloric backbone are both at risk. Basil's companion planting role is now mission-critical — those antifungal VOCs are the first line of defense. VITA recommends: Spc. Reyes as primary responder (daily monitoring expertise), Eng. Volkov on environmental controls (humidity, airflow), Cmdr. Chen managing crew communication. Dr. Okonkwo should prepare contingency meal plans using stored rations.",
+      "nutritional_delta": {
+        "calories_pct": -21.7,
+        "carbs_pct": -24.0,
+        "protein_pct": -13.3,
+        "vitamin_c_pct": -16.9,
+        "fiber_pct": -16.2,
+        "note": "If 30% of potato lost across ALL remaining cycles. Actual loss depends on containment speed."
+      },
+      "recovery_time_sols": 90,
+      "council_vote_recommendation": "FLORA: Isolate aggressively, deploy basil VOCs, harvest clean tubers early. AQUA: Drop humidity to 50%, maximize airflow. VITA: Contingency meal plans, support Volkov morale. SENTINEL: Environmental monitoring every 4 hours, track spore counts. ORACLE: Model blight spread rate at different humidity levels, estimate containment probability."
+    },
+    {
+      "id": "TRIAGE-005",
+      "trigger": "Extended dust storm — 30% solar for 15 sols with cascading water/light failure",
+      "cause": "Regional dust storm reduces solar panel output to 30% for 15 sols. Power budget forces grow light reduction across all zones. Desalination output drops to 36 L/sol. Combined light + water stress across entire greenhouse.",
+      "affected_zone": "all",
+      "affected_crop": "All crops — light-sensitive crops most affected",
+      "affected_area_m2": 100,
+      "salvageability_score": 0.60,
+      "triage_color": "YELLOW",
+      "reasoning": "15-sol combined light + water reduction is survivable IF managed with aggressive triage. Potato's massive water need (157.5 L/day) is the main constraint — with only 36 L/sol net available, potato gets cut to ~55% of normal. Fast-cycle crops (radish, lettuce) can be sacrificed for current cycle and replanted post-storm since they recover in 25-35 sols. Slow-cycle crops (potato, soybean, lentil) must be protected — losing a cycle means 90-95 sols of lost production.",
+      "crew_impact": "Combined effect of reduced light + reduced water: 20-30% yield loss across next 1-2 harvest cycles for slow crops. Fast-cycle crops may lose current cycle entirely but recover within 1 cycle post-storm. Fresh food gap of 10-20 sols after storm as delayed harvests ripple through schedule. Crew returns to stored rations temporarily. Darkness + food stress = highest crew morale risk.",
+      "mitigation": [
+        "LIGHT TRIAGE by growth stage priority:",
+        "  Critical (maintain 12h minimum): Soybean BBCH 60-70 (flowering), Potato BBCH 50-70 (tuber formation/bulking)",
+        "  Moderate (reduce to 8h): Lentil, Spinach in vegetative growth",
+        "  Low (reduce to 6h): Radish, Lettuce, Basil — accept current cycle loss, replant post-storm",
+        "  Mature crops near harvest: can tolerate 6h for final ripening",
+        "WATER TRIAGE: Follow TRIAGE-003 emergency protocol but with 36 L/sol (not 60)",
+        "  Potato: 85 L/day normal -> 45 L/day (accept 30% yield loss this cycle)",
+        "  Soybean: 18 L/day normal -> 10 L/day",
+        "  Lentil: 10 L/day normal -> 5 L/day",
+        "  All others: minimal maintenance watering only",
+        "Pre-storm protocol if warning available: top battery, max desalination for 48h (+240L reserve), pre-water all crops heavily",
+        "Seal dome for maximum transpiration capture — target 80% recycling during storm",
+        "Reduce non-essential power: dim dashboard displays, reduce telemetry to hourly, minimize lighting in non-crop areas",
+        "Maintain galley lighting at normal levels — meal preparation is key morale activity"
+      ],
+      "human_note": "Extended darkness affects crew psychology as well as crops. With potato at 45% of area and 60% of water budget, the triage math is brutal during a dust storm. VITA recommends: 1) Maintain meal routines at ALL costs — even if using only stored food, the act of communal eating sustains morale. 2) Cmdr. Chen should brief crew on expected duration and recovery timeline daily. 3) Dr. Okonkwo can use reduced-activity period for crop health documentation. 4) Spc. Reyes will be stressed watching her plants suffer — assign her the recovery planning role to channel that energy productively. 5) Eng. Volkov monitors power systems and battery state.",
+      "nutritional_delta": {
+        "calories_pct": -6.0,
+        "protein_pct": -5.5,
+        "vitamin_c_pct": -10.0,
+        "overall_yield_loss_pct": -18.0,
+        "note": "Deltas assume 15-sol storm with managed triage. Each additional 5 sols adds ~7% yield loss due to compounding stress. Fast-cycle crop losses recover within 25-35 sols post-storm."
+      },
+      "recovery_time_sols": 35,
+      "council_vote_recommendation": "FLORA: Light triage by growth stage, sacrifice fast-cycle current crops. AQUA: Emergency water rationing at 36 L/sol, seal dome for 80% recycling. VITA: Crew morale highest priority — maintain meal routines, daily briefings. SENTINEL: Track storm duration hourly, battery state monitoring, model extension scenarios. ORACLE: Simulate yield recovery timeline post-storm, calculate break-even sol for each crop."
+    }
+  ]
+}
