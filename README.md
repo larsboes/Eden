@@ -22,3 +22,19 @@ This project was built for the **Syngenta x AWS** challenge at StartHack 2026, c
 
 ## Getting Started
 Please refer to the `docs/QUICKSTART.md` or `docs/README.md` for detailed instructions on setting up the environment, configuring the AWS credentials, and running the digital twin simulation.
+
+## Architecture & Gallery
+
+**Greenkube K8s Greenhouse Architecture**
+![Greenkube Architecture](greenkube_k8s_greenhouse_architecture.svg)
+
+**Project Photos & Snapshots**
+- ![Photo 1](resources/PHOTO-2026-03-20-01-33-18.jpg)
+- ![Photo 2](resources/PHOTO-2026-03-20-01-33-18%202.jpg)
+- ![Photo 3](resources/PHOTO-2026-03-20-01-33-18%203.jpg)
+- ![Photo 4](resources/PHOTO-2026-03-20-07-55-17.jpg)
+- ![Photo 5](resources/PHOTO-2026-03-20-07-55-17%202.jpg)
+- ![Photo 6](resources/PHOTO-2026-03-20-07-55-17%203.jpg)
+- ![Photo 7](resources/PHOTO-2026-03-20-08-00-10.jpg)
+- ![Photo 8](resources/PHOTO-2026-03-20-08-00-10%202.jpg)
+
