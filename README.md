@@ -8,6 +8,8 @@ Eden is an autonomous AI agent system designed to manage a Martian greenhouse. T
 
 This project was built for the **Syngenta x AWS** challenge at StartHack 2026, combining cutting-edge biology with digital innovation and autonomous agents (AWS Bedrock AgentCore) to optimize nutrient output, dietary balance, and resource efficiency in extreme environments.
 
+> **Note:** This repository was created with a clean git history for public release, as the original private repository contained hardcoded AWS and NASA API keys in its commit history. All secrets have been scrubbed and replaced with placeholders.
+
 ## Key Features
 - **Autonomous AI Agent**: Manages crop cycles, nutrient output, and resource consumption using AWS AgentCore.
 - **Digital Twin Simulation**: A working simulation that visualizes the state of the Martian greenhouse.
